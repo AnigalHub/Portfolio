@@ -1,5 +1,5 @@
 <template>
-    <div id="home">
+    <div id="Home">
       <div class="container">
         <div class="text">
           <b-row>
@@ -32,8 +32,8 @@
 </script>
 
 <style scoped>
-  #home{
-    background: url("../static/background.jpg") 100% 100% no-repeat;
+  #Home{
+    background: url("../static/45.jpg") 100% 100% no-repeat;
     background-size: 100% 100%;
     height: 100vh;
   }
@@ -45,6 +45,7 @@
   }
   .text{
     color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.99);
     margin-top: 15%;
     height: 50%;
     width: 100%;
