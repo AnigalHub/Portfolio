@@ -39,7 +39,7 @@
   }
   img{
     width: 100%;
-    height: 28vh;
+    height: 25vh;
   }
 
   .grid-item {
