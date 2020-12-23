@@ -1,7 +1,7 @@
 <template>
     <div id="Home">
       <div class="container">
-        <div class="text">
+        <div class="descr">
           <b-row>
             <b-col cols="7">
               <p class="name">
@@ -43,7 +43,7 @@
     filter: contrast(110%);
     border: 5px solid white;
   }
-  .text{
+  .descr{
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.99);
     margin-top: 15%;
@@ -67,5 +67,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .btn {
+    background: transparent !important;
+  }
+  .row{
+    margin-top: 0 !important;
   }
 </style>
