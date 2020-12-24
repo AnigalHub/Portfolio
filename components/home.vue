@@ -33,7 +33,7 @@
 
 <style scoped>
   #Home{
-    background: url("../static/45.jpg") 100% 100% no-repeat;
+    background: url("../static/background.jpg") 100% 100% no-repeat;
     background-size: 100% 100%;
     height: 100vh;
   }
