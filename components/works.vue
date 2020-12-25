@@ -2,22 +2,18 @@
     <div id="Works">
       <b-container>
         <h2>Мои работы</h2>
-        <div class="grid-container">
-          <div class="grid-item">
-            <img src="../static/home_prom.jpg">
-          </div>
-          <div class="grid-item">
-            <img src="../static/home_prom2.png">
-          </div>
-          <div class="grid-item">
-            <img src="../static/home_gts.png">
-          </div>
-          <div class="grid-item">
-            <img src="../static/home_priamyeruki.jpg">
-          </div>
-          <div class="grid-item">
-            <img src="../static/home_avacont.jpg">
-          </div>
+        <div class="flex-container">
+         <div v-for="(work,index) in WorksRow" :key="index">
+           <b-row>
+             <b-col cols="6">
+               <img :src="work.src" :alt="work.alt"/>
+             </b-col>
+             <b-col>
+               cc
+             </b-col>
+           </b-row>
+
+         </div>
         </div>
       </b-container>
     </div>
@@ -25,29 +21,55 @@
 
 <script>
     export default {
-        name: "works"
+        name: "works",
+        data(){
+          return{
+            WorksRow:[
+              {
+                src:'./home_prom.jpg',
+                alt:'Промэлектронсервис',
+              },
+              {
+                src:'./home_prom2.png',
+                alt:'Промэлектронсервис_2',
+              },
+              {
+                src:'./home_gts.png',
+                alt:'Гостехносервис',
+              },
+              {
+                src:'./home_priamyeruki.jpg',
+                alt:'Прямые_руки',
+              },
+              {
+                src:'./home_avacont.jpg',
+                alt:'Аваконт',
+              }
+            ]
+          }
+        }
     }
 </script>
 
-<style scoped>
-  .grid-container {
-    margin-top: 2%;
-    display: grid;
-    grid-gap: 25px 25px;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+<style lang="scss" scoped>
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
   }
-  img{
-    width: 100%;
-    height: 25vh;
-  }
-
-  .grid-item {
+  .flex-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 5px 5px 5px rgb(24, 31, 49);
     text-align: center;
   }
-  .grid-item:hover {
+  .flex-container > div:hover{
     box-shadow: 8px 10px 10px rgb(24, 31, 49);
   }
+  .col-6{
+    padding: 0 !important;
+  }
+  .row{
+    margin: 0 !important;
+  }
+
 </style>
