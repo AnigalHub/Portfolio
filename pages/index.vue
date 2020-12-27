@@ -43,6 +43,9 @@ export default {
     color: #090c13 !important;
     padding: 3rem 0 !important;
   }
+  #Works .col{
+    background: rgba(208, 204, 203, 0.31);
+  }
   #Skills,#Reviews{
     background: rgba(208, 204, 203, 0.61);
     color: #090c13 !important;
@@ -64,11 +67,16 @@ export default {
   .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e") !important;
   }
-
+  .svg_name{
+    fill: #090c13;
+  }
 }
 @media screen and (prefers-color-scheme: dark){
   a{
     color: white !important;
+  }
+  #Works .col{
+    background: rgba(208, 204, 203, 0.61);
   }
   #About, #Works,#Contacts{
     background: #090c13;
@@ -86,6 +94,9 @@ export default {
   }
   .svg_color{
     fill:#ffffff;
+  }
+  .svg_name{
+    fill: #ffffff;
   }
 }
 #Nav,#Myfooter{
@@ -158,6 +169,7 @@ h3{
     }
     .svg_3{
       float: left;
+      padding-right: 0.2rem;
       width: 50px !important;
     }
     .last_skills{
@@ -168,13 +180,13 @@ h3{
   }
   #Works{
     .flex-container > div {
-      width: 30%;
-      margin: 0 1.5% 2% 1.5% !important;
+      width: 47%;
+      margin: 0 1.2% 2.5% 1.2% !important;
       text-align: center;
     }
     img{
       width: 100%;
-      height: 25vh;
+      height: 20vh;
     }
   }
 
