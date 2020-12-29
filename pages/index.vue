@@ -34,22 +34,23 @@ export default {
 .container {
   padding: 15px !important;
 }
+a{
+  color: #2868ad !important;
+}
 @media screen and (prefers-color-scheme: light){
-  a{
+  #Contacts a{
     color: #090c13 !important;
   }
   #About, #Works,#Contacts{
     background: white;
     color: #090c13 !important;
-    padding: 3rem 0 !important;
   }
   #Works .col{
-    background: rgba(208, 204, 203, 0.31);
+    background: rgba(208, 204, 203, 0.21);
   }
   #Skills,#Reviews{
     background: rgba(208, 204, 203, 0.61);
     color: #090c13 !important;
-    padding: 3rem 0 !important;
   }
   .carousel-caption{
     color: #090c13 !important;
@@ -72,21 +73,19 @@ export default {
   }
 }
 @media screen and (prefers-color-scheme: dark){
-  a{
+  #Contacts a{
     color: white !important;
   }
-  #Works .col{
-    background: rgba(208, 204, 203, 0.61);
+  #Works .col {
+    background: #090c13;
   }
   #About, #Works,#Contacts{
     background: #090c13;
     color: white !important;
-    padding: 3rem 0 !important;
   }
   #Skills,#Reviews{
     background: #0c0f17;
     color: white !important;
-    padding: 3rem 0 !important;
   }
   h2{
     border-bottom: 2px solid white;
@@ -99,6 +98,10 @@ export default {
     fill: #ffffff;
   }
 }
+
+#About, #Works,#Contacts,#Skills,#Reviews{
+  padding: 3rem 0 !important;
+}
 #Nav,#Myfooter{
   background: #030407;
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.63);
@@ -108,7 +111,7 @@ export default {
   padding: 0.5rem 0 !important;
   text-align: center;
 }
-h2,h3,.text,.author,.nav-link,.navbar-brand{
+h2,h3,.text,.text_works,.author,.nav-link,.navbar-brand{
   font-family: 'Piazzolla', serif;
 }
 h2{
@@ -121,10 +124,24 @@ h2{
 h3{
   padding-bottom: 2.5% !important;
   text-align: center;
+  font-weight: 800;
+}
+h4{
+  font-weight: 500;
+  padding-bottom: 1% !important;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  text-decoration: underline;
 }
 .text,.nav-link,.navbar-brand{
-  font-size: 1.3rem !important;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
+.text_works{
+  font-size: 1.18rem;
+  line-height: 1.2rem;
+}
+
 .author{
   font-size: 1.2rem !important;
 }
@@ -170,7 +187,7 @@ h3{
     .svg_3{
       float: left;
       padding-right: 0.2rem;
-      width: 50px !important;
+      width: 33% !important;
     }
     .last_skills{
       width: 50% !important;
@@ -180,14 +197,255 @@ h3{
   }
   #Works{
     .flex-container > div {
-      width: 47%;
+      width: 100%;
       margin: 0 1.2% 2.5% 1.2% !important;
       text-align: center;
     }
     img{
       width: 100%;
-      height: 20vh;
+      height: 21.5vh;
     }
   }
+  #Contacts{
+    svg{
+      width: 75px;
+      height: 75px;
+    }
+  }
+@media screen and (max-width: 300px) {
+  .text,.nav-link,.navbar-brand{
+    font-size: 0.9rem !important;
+    line-height: 1.1rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  #About, #Works,#Contacts,#Skills,#Reviews{
+    padding: 1rem 0 !important;
+  }
+  .text_works,.text,.nav-link,.navbar-brand{
+    font-size: 1.1rem;
+    line-height: 1.15rem;
+  }
+
+  h2{
+    font-size: 1.3rem !important;
+  }
+  h3{
+    font-size: 1.15rem !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+  }
+  h4{
+    font-size: 1.15rem !important;
+  }
+  #About{
+    svg{
+      width: 75px;
+      height: 75px;
+    }
+    .row{
+      flex-direction: column;
+      .col{
+        margin-top: 5%;
+      }
+    }
+  }
+  #Skills{
+    .col{
+      padding: 0 15px !important;
+    }
+     .col:first-child{
+      padding: 0 8px !important;
+    }
+    .col-3{
+      margin-left: 2%;
+    }
+    .important_row{
+      flex-direction: column;
+      .row{
+        margin-top: -1% !important;
+      }
+    }
+    svg{
+      width: 65px;
+      height: 75px;
+    }
+    .last_skills{
+      width: 100% !important;
+      margin-left: -3% !important;
+    }
+  }
+  #Works{
+    .col-4{
+      display: none;
+    }
+  }
+  #Contacts{
+    svg{
+      width: 65px;
+      height: 65px;
+    }
+  }
+}
+@media screen and (min-width: 500px)and (max-width: 768px) {
+  #About, #Works,#Contacts,#Skills,#Reviews{
+    padding: 1rem 0 !important;
+  }
+  #About h2, #Contacts h2{
+    width: 4em;
+  }
+  #About{
+    svg{
+      width: 80px;
+      height: 80px;
+    }
+    .col{
+      padding: 0 5px !important;
+    }
+  }
+  h2{
+    font-size: 1.3rem !important;
+  }
+  h3{
+    font-size: 1.2rem !important;
+  }
+  h4{
+    font-size: 1.15rem !important;
+    font-weight: 600;
+  }
+  .text_works,
+  .text,.nav-link,.navbar-brand{
+    font-size: 1rem;
+    line-height: 1.15rem;
+  }
+  #Skills{
+   .important_row .col .col:first-child{
+      padding: 0 10px !important;
+    }
+    .col{
+      padding: 0 15px !important;
+    }
+    .important_row{
+      flex-direction: column;
+      .row{
+        margin-top: -1% !important;
+      }
+    }
+    svg{
+      width: 65px;
+      height: 75px;
+    }
+    .last_skills{
+      width: 100% !important;
+      margin-top: -1% !important;
+      margin-left: -3% !important;
+    }
+  }
+  #Works{
+    .col-4{
+      display: none;
+    }
+  }
+  #Contacts{
+    svg{
+      width: 65px;
+      height: 65px;
+    }
+    .col{
+      padding: 0 5px !important;
+    }
+  }
+}
+@media screen and (min-width: 768px)and (max-width: 992px) {
+  #About, #Works,#Contacts,#Skills,#Reviews{
+    padding: 1.5rem 0 !important;
+  }
+  #About h2, #Contacts h2{
+    width: 4em;
+  }
+  h2{
+    font-size: 1.5rem !important;
+  }
+  h3{
+    font-size: 1.3rem !important;
+  }
+  h4{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+  }
+  .text_works,.text,.nav-link,.navbar-brand{
+    font-size: 1.1rem;
+    line-height: 1.15rem;
+  }
+  #About{
+    svg{
+      width: 90px;
+      height: 90px;
+    }
+  }
+  #Skills{
+    .col{
+      padding: 0 10px !important;
+    }
+    svg{
+      width: 85px;
+      height: 85px;
+    }
+  }
+  #Works{
+    .col-4{
+      flex: 0 0 34% !important;
+      max-width: 34% !important;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #Contacts{
+    svg{
+      width: 65px;
+      height: 65px;
+    }
+    .col{
+      padding: 0 5px !important;
+    }
+  }
+}
+@media screen and (min-width: 992px)and (max-width: 1200px) {
+  #About, #Works,#Contacts,#Skills,#Reviews{
+    padding: 2rem 0 !important;
+  }
+  #About h2, #Contacts h2{
+    width: 4em;
+  }
+  h2{
+    font-size: 1.7rem !important;
+  }
+  h3{
+    font-size: 1.5rem !important;
+  }
+  h4{
+    font-size: 1.3rem !important;
+  }
+  .text,.nav-link,.navbar-brand{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .text_works{
+    font-size: 1.15rem !important;
+    line-height: 1.2rem;
+  }
+  #Skills{
+    .col{
+      padding: 0 15px !important;
+    }
+    svg{
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+
 
 </style>
