@@ -42,7 +42,7 @@ a{
     color: #090c13 !important;
   }
   #About, #Works,#Contacts{
-    background: white;
+    background: rgba(255, 255, 255, 0.38);
     color: #090c13 !important;
   }
   #Works .col{
@@ -195,18 +195,16 @@ h4{
       margin-left: auto;
     }
   }
-  #Works{
-    .flex-container > div {
-      width: 100%;
-      margin: 0 1.2% 2.5% 1.2% !important;
-      text-align: center;
-    }
-    img{
-      width: 100%;
-      height: 21.5vh;
-    }
+#Works{
+  .col-4{
+    flex: 0 0 28% !important;
+    max-width: 28% !important;
   }
+}
   #Contacts{
+    .flex-container > div {
+      width: 25%;
+    }
     svg{
       width: 75px;
       height: 75px;
@@ -282,8 +280,20 @@ h4{
   }
   #Contacts{
     svg{
-      width: 65px;
+      width: 55px;
       height: 65px;
+      float: left;
+    }
+    p{
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      padding: 2%;
+      margin-bottom: 0 !important;
+    }
+    .flex-container > div {
+      width:100% !important;
+      margin-left: 10%;
     }
   }
 }
@@ -324,6 +334,7 @@ h4{
     }
     .col{
       padding: 0 15px !important;
+      margin-left: -2%;
     }
     .important_row{
       flex-direction: column;
@@ -346,15 +357,23 @@ h4{
       display: none;
     }
   }
-  #Contacts{
-    svg{
-      width: 65px;
-      height: 65px;
+    #Contacts{
+      .flex-container > div {
+        width:50% !important;
+      }
+      svg{
+        width: 55px;
+        height: 65px;
+        float: left;
+      }
+      p{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        padding: 5%;
+      }
     }
-    .col{
-      padding: 0 5px !important;
-    }
-  }
+
 }
 @media screen and (min-width: 768px)and (max-width: 992px) {
   #About, #Works,#Contacts,#Skills,#Reviews{
@@ -396,10 +415,6 @@ h4{
     .col-4{
       flex: 0 0 34% !important;
       max-width: 34% !important;
-    }
-    img{
-      width: 100%;
-      height: 100%;
     }
   }
   #Contacts{
