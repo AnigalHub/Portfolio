@@ -2,13 +2,13 @@
   <div id="Contacts">
     <b-container>
       <h2>Контакты</h2>
-      <b-row class="text">
-        <b-col v-for="information in ContactsRow" :key="information.text">
+      <b-row class="flex-container text">
+        <div v-for="information in ContactsRow" :key="information.text">
             <a :href="information.href" :target="information.target">
               <component :is="information.svg"/>
-              <div class="text">{{information.text}}</div>
+              <p class="text">{{information.text}}</p>
             </a>
-        </b-col>
+        </div>
       </b-row>
     </b-container>
   </div>
@@ -59,12 +59,15 @@
   .text{
     text-align: center;
   }
-  .row{
-    margin-top: 5% !important;
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+  }
+  .flex-container > div {
+    text-align: center;
   }
   svg{
-    width: 75px;
-    height: 75px;
     display: block;
     margin-left: auto;
     margin-right: auto;
