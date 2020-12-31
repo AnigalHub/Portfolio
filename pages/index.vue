@@ -37,6 +37,73 @@ export default {
 a{
   color: #2868ad !important;
 }
+#About, #Works,#Contacts,#Skills,#Reviews{
+  padding: 3rem 0 !important;
+}
+#Nav,#Myfooter{
+  background: #030407;
+  box-shadow: 0 6px 6px -6px rgba(255, 255, 255, 0.63);
+  color: white;
+}
+#Myfooter{
+  padding: 0.5rem 0 !important;
+  text-align: center;
+}
+h2,h3,.text,.text_works,.author,.nav-link,.navbar-brand{
+  font-family: 'Piazzolla', serif;
+}
+h2{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 2% !important;
+}
+h3{
+  padding-bottom: 2.5% !important;
+  text-align: center;
+  font-weight: 800;
+}
+h4{
+  font-weight: 500;
+  padding-bottom: 1% !important;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  text-decoration: underline;
+}
+.text,.nav-link,.navbar-brand{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.text_works{
+  font-size: 1.18rem;
+  line-height: 1.2rem;
+}
+.author{
+  font-size: 1.2rem !important;
+}
+#logo{
+  width: 60px;
+  height: 50px;
+}
+.nav-link,.navbar-brand{
+  color: white !important;
+}
+.nav-link{
+  padding: 0.5rem 1.5rem !important;
+}
+#About h2, #Contacts h2{
+  width: 6em;
+}
+#Skills h2{
+  width: 10em;
+}
+#Works h2{
+  width: 8em;
+}
+#Reviews h2{
+  width: 4em;
+}
 @media screen and (prefers-color-scheme: light){
   #Contacts a{
     color: #090c13 !important;
@@ -98,125 +165,103 @@ a{
     fill: #ffffff;
   }
 }
-
-#About, #Works,#Contacts,#Skills,#Reviews{
-  padding: 3rem 0 !important;
-}
-#Nav,#Myfooter{
-  background: #030407;
-  box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.63);
-  color: white;
-}
-#Myfooter{
-  padding: 0.5rem 0 !important;
-  text-align: center;
-}
-h2,h3,.text,.text_works,.author,.nav-link,.navbar-brand{
-  font-family: 'Piazzolla', serif;
-}
-h2{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-weight: 800;
-  padding-bottom: 2% !important;
-}
-h3{
-  padding-bottom: 2.5% !important;
-  text-align: center;
-  font-weight: 800;
-}
-h4{
-  font-weight: 500;
-  padding-bottom: 1% !important;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  text-decoration: underline;
-}
-.text,.nav-link,.navbar-brand{
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-}
-.text_works{
-  font-size: 1.18rem;
-  line-height: 1.2rem;
-}
-
-.author{
-  font-size: 1.2rem !important;
-}
-#logo{
-  width: 60px;
-  height: 50px;
-}
-.nav-link,.navbar-brand{
-  color: white !important;
-}
-.nav-link{
-  padding: 0.5rem 1.5rem !important;
-}
-#About h2, #Contacts h2{
-  width: 6em;
-}
-#Skills h2{
-  width: 10em;
-}
-#Works h2{
-  width: 8em;
-}
-#Reviews h2{
-  width: 4em;
-}
-  #About{
-    svg{
-      width: 100px;
-      height: 100px;
-      display: block !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
+#Home{
+  .row{
+    padding-top: 15%;
   }
-  #Skills{
-    svg{
-      display: block !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      width: 95px;
-      height: 95px;
-    }
-    .svg_3{
-      float: left;
-      padding-right: 0.2rem;
-      width: 33% !important;
-    }
-    .last_skills{
-      width: 50% !important;
-      margin-right: auto;
-      margin-left: auto;
-    }
+  button{
+    margin-top: 15%;
   }
-#Works{
-  .col-4{
-    flex: 0 0 28% !important;
-    max-width: 28% !important;
+  height: 100%;
+  .name{
+    font-size: 60px;
+  }
+  .front{
+    font-size: 45px;
   }
 }
-  #Contacts{
-    .flex-container > div {
-      width: 25%;
-    }
-    svg{
-      width: 75px;
-      height: 75px;
-    }
+#About{
+  svg{
+    width: 100px;
+    height: 100px;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
+}
+#Skills{
+  svg{
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 95px;
+    height: 95px;
+  }
+  .svg_3{
+    float: left;
+    padding-right: 0.2rem;
+    width: 33% !important;
+  }
+  .last_skills{
+    width: 50% !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+#Contacts{
+  .flex-container > div {
+    width: 25%;
+  }
+  svg{
+    width: 75px;
+    height: 75px;
+  }
+}
 @media screen and (max-width: 300px) {
-  .text,.nav-link,.navbar-brand{
+  .text_works,.text,.nav-link,.navbar-brand{
     font-size: 0.9rem !important;
     line-height: 1.1rem !important;
   }
+  #Home{
+    .row{
+      .col-7{
+        width: 70% !important;
+      }
+    }
+  }
 }
 @media screen and (max-width: 500px) {
+  #Home{
+    height: 100%;
+    .row{
+      padding-top: 0;
+      flex-direction: column-reverse;
+      .col-7{
+        max-width: 100%;
+        padding-top: 0 !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%
+      }
+    }
+    img{
+      width: 45%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid white;
+    }
+    .name{
+      font-size: 20px;
+      padding-top: 2%;
+    }
+    .front{
+      font-size: 16px;
+    }
+    button{
+      display: none;
+    }
+  }
   #About, #Works,#Contacts,#Skills,#Reviews{
     padding: 1rem 0 !important;
   }
@@ -251,6 +296,7 @@ h4{
   #Skills{
     .col{
       padding: 0 15px !important;
+      margin-left: -2.5%;
     }
      .col:first-child{
       padding: 0 8px !important;
@@ -267,21 +313,22 @@ h4{
     svg{
       width: 65px;
       height: 75px;
+      margin-left: 18% !important;
     }
     .last_skills{
       width: 100% !important;
-      margin-left: -3% !important;
+      margin-left: -2% !important;
     }
   }
   #Works{
-    .col-4{
+    .col-3{
       display: none;
     }
   }
   #Contacts{
     svg{
-      width: 55px;
-      height: 65px;
+      width: 40px;
+      height: 50px;
       float: left;
     }
     p{
@@ -293,11 +340,42 @@ h4{
     }
     .flex-container > div {
       width:100% !important;
-      margin-left: 10%;
+      margin-left: 20%;
     }
   }
 }
 @media screen and (min-width: 500px)and (max-width: 768px) {
+  #Home{
+    height: 100%;
+    .row{
+      padding-top: 0;
+      flex-direction: column-reverse;
+      .col-7{
+        max-width: 100%;
+        padding-top: 0 !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%
+      }
+    }
+    img{
+      width: 40%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 3px solid white;
+    }
+    .name{
+      font-size: 25px;
+      padding-top: 2%;
+    }
+    .front{
+      font-size: 20px;
+    }
+    button{
+      display: none;
+    }
+  }
   #About, #Works,#Contacts,#Skills,#Reviews{
     padding: 1rem 0 !important;
   }
@@ -353,7 +431,7 @@ h4{
     }
   }
   #Works{
-    .col-4{
+    .col-3{
       display: none;
     }
   }
@@ -362,8 +440,8 @@ h4{
         width:50% !important;
       }
       svg{
-        width: 55px;
-        height: 65px;
+        width: 50px;
+        height: 50px;
         float: left;
       }
       p{
@@ -376,6 +454,36 @@ h4{
 
 }
 @media screen and (min-width: 768px)and (max-width: 992px) {
+  #Home{
+    height: 100%;
+    .row{
+      padding-top: 0;
+      flex-direction: column-reverse;
+      .col-7{
+        max-width: 100%;
+        padding-top: 0 !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%
+      }
+    }
+    img{
+      width: 40%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .name{
+      font-size: 30px;
+      padding-top: 2%;
+    }
+    .front{
+      font-size: 25px;
+    }
+    button{
+      display: none;
+    }
+  }
   #About, #Works,#Contacts,#Skills,#Reviews{
     padding: 1.5rem 0 !important;
   }
@@ -412,14 +520,14 @@ h4{
     }
   }
   #Works{
-    .col-4{
-      flex: 0 0 34% !important;
-      max-width: 34% !important;
+    .col-3{
+      flex: 0 0 30% !important;
+      max-width: 30% !important;
     }
   }
   #Contacts{
     svg{
-      width: 65px;
+      width: 55px;
       height: 65px;
     }
     .col{
@@ -428,6 +536,23 @@ h4{
   }
 }
 @media screen and (min-width: 992px)and (max-width: 1200px) {
+  #Home{
+    height: 100%;
+    .row{
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    .name{
+      font-size: 50px;
+      padding-top: 5%;
+    }
+    .front{
+      font-size: 40px;
+    }
+    button{
+      display: none;
+    }
+  }
   #About, #Works,#Contacts,#Skills,#Reviews{
     padding: 2rem 0 !important;
   }
@@ -458,6 +583,13 @@ h4{
     svg{
       width: 85px;
       height: 85px;
+    }
+  }
+}
+@media screen and (min-width: 1200px)and (max-width: 1600px) {
+  #Home{
+    button{
+      margin-top: 10%;
     }
   }
 }
