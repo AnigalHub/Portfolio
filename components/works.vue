@@ -5,7 +5,7 @@
         <div class="flex-container">
          <div v-for="(work,index) in WorksRow" :key="index">
            <b-row>
-             <b-col cols="4">
+             <b-col cols="3">
                <img :src="work.src" :alt="work.alt"/>
              </b-col>
              <b-col>
@@ -49,7 +49,7 @@
                 src:'./home_gts.png',
                 alt:'Гостехносервис',
                 name_company:'Сайт для компании «Гостехносервис»',
-                descr_company:'Компания поставляет IT-оборудование, производит аксессуары и вычислительных комплексы',
+                descr_company:'Компания поставляет IT-оборудование, производит аксессуары и вычислительных комплексы.',
                 tecnology:'Одностраничный сайт на Vue.js (Sass, BootstrapVue) - с простой анимацией для svg-элементов ',
                 url:'https://gtekhno.ru/',
                 website:'gtekhno.ru',
@@ -99,8 +99,11 @@
   }
   .flex-container > div:hover{
     box-shadow: 7px 4px 16px -1px rgb(24, 31, 49);
+    img{
+      filter: contrast(110%);
+    }
   }
-  .col-4{
+  .col-3{
     padding: 0 !important;
   }
   .row{
