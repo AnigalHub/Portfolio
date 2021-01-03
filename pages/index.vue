@@ -147,11 +147,11 @@ h4{
     background: #090c13;
   }
   #About, #Works,#Contacts{
-    background: #090c13;
+    background: #0b0e17;
     color: white !important;
   }
   #Skills,#Reviews{
-    background: #0c0f17;
+    background: #090c13;
     color: white !important;
   }
   h2{
@@ -292,6 +292,12 @@ h4{
         margin-top: 5%;
       }
     }
+    .text{
+      width: 65%;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
   #Skills{
     .col{
@@ -341,6 +347,7 @@ h4{
     .flex-container > div {
       width:100% !important;
       margin-left: 20%;
+      margin-top: -2.5%;
     }
   }
 }
