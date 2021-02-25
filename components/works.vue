@@ -61,8 +61,8 @@
                 descr_company:'Компания оказывает услуги по изготовлению разнообразного декора, рекламных вывесок,\n' +
                   'сувенирной продукции, реставрация, брендирование.',
                 tecnology:'FIGMA (дизайн-макет сайта), HTML5, CSS3, Vue.js (Sass, BootstrapVue, Vue router), обратная связь на Javascript',
-                url:'',
-                website:'priamyeruki.ru',
+                url:'http://pryamye-ryki.ru/',
+                website:'pryamye-ryki.ru',
               },
               {
                 src:'./home_avacont.jpg',
@@ -71,7 +71,7 @@
                 descr_company:'Компания занимается изготовлением накладок из дерева под розетки,\n' +
                   ' выключатели, радиаторы, светильники и карнизы разных производителей.',
                 tecnology:'Создание макета сайта с помощью FIGMA. Разработка лендинга на Vue.js, HTML5, SASS, форма обратной связи и подсчет стоимости товара на JavaScript',
-                url:'',
+                url:'http://avacont.ru/',
                 website:'avacont.ru',
               }
             ]
