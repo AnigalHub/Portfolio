@@ -8,7 +8,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Frontend-разработчик - Игнатова Анна' },
+      { hid: 'keywords', name: 'description', content: 'Web-разработка, HTML5, CSS3, BOOTSTRAP, VUE.JS, JAVASCRIPT, SASS/SCSS, NUXT.JS, фреймворки' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icons.png' },
