@@ -14,14 +14,6 @@
             </b-row>
           </b-col>
         </b-row>
-        <b-row class="last_skills">
-          <b-col cols="3">
-            <Git_svg/>
-          </b-col>
-          <b-col class="text">
-            Навык работы с системой контроля версий Git (GitHub)
-          </b-col>
-        </b-row>
       </b-container>
     </div>
 </template>
@@ -34,9 +26,10 @@
     import Flexbox_svg from "~/components/svg_skills/flexbox_svg";
     import Git_svg from "~/components/svg_skills/git_svg";
     import Html_css from "~/components/svg_skills/html_css_bootstrap";
+    import NodeAndWebpack_svg from "~/components/svg_skills/node_and_webpack_svg";
     export default {
         name: "skills",
-      components: {Git_svg, Flexbox_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_css},
+      components: {Git_svg, Flexbox_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_css, NodeAndWebpack_svg},
       data(){
           return{
             SkillsRow:[
@@ -44,31 +37,39 @@
                 programming_languages:[
                   {
                     svg:Html_css,
-                    descr_skills:'Уверенные знания HTML5,CSS3,BOOTSTRAP',
+                    descr_skills:'Отличные знания HTML5,CSS3,BOOTSTRAP',
+                  },
+                  {
+                    svg:Javascript_svg,
+                    descr_skills: 'Уверенные знания JAVASCRIPT',
                   },
                   {
                     svg: Vue_svg,
                     descr_skills: 'Опыт работы с фреймворком VUE.JS',
                   },
                   {
-                    svg:Javascript_svg,
-                    descr_skills: 'Базовые знания JAVASCRIPT',
+                    svg:Sass_svg,
+                    descr_skills:'Работа с препроцессором SASS/SCSS',
                   }
                 ]
               },
               {
                 programming_languages:[
                   {
-                    svg:Sass_svg,
-                    descr_skills:'Работа с препроцессором SASS/SCSS',
+                    svg:NodeAndWebpack_svg,
+                    descr_skills: 'Базовые знания NODE.JS, WEBPACK',
+                  },
+                  {
+                    svg: Flexbox_svg,
+                    descr_skills: 'Практический опыт адаптивной кроссбраузерной верски (в том числе FLEXBOX и GRID)',
                   },
                   {
                     svg: Nuxt_svg,
                     descr_skills: 'Умение работать с фреймворком NUXT.JS',
                   },
                   {
-                    svg: Flexbox_svg,
-                    descr_skills: 'Практический опыт адаптивной кроссбраузерной верски (в том числе flexbox и grid)',
+                    svg:Git_svg,
+                    descr_skills: 'Навык работы с системой контроля версий GIT',
                   }
                 ]
               },
