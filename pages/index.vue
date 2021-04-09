@@ -38,7 +38,7 @@ a{
   color: #2868ad !important;
 }
 #About, #Works,#Contacts,#Skills,#Reviews{
-  padding: 3rem 0 !important;
+  padding: 2.5rem 0 !important;
 }
 #Nav,#Myfooter{
   background: #030407;
@@ -65,8 +65,9 @@ h3{
   font-weight: 800;
 }
 h4{
+  font-size: 1.35rem !important;
   font-weight: 500;
-  padding-bottom: 1% !important;
+  padding: 1.2% 0 0.8% 0 !important;
   font-family: 'Playfair Display', serif;
   text-align: center;
   text-decoration: underline;
@@ -112,8 +113,15 @@ h4{
     background: rgba(255, 255, 255, 0.38);
     color: #090c13 !important;
   }
-  #Works .col{
-    background: rgba(208, 204, 203, 0.21);
+  #Works{
+    .flex-container > div {
+      background: #eef4f8;
+      border: medium ridge #b2b2b4;
+      box-shadow: 3px 2px 7px -1px rgb(24, 31, 49);
+    }
+    img{
+      border-bottom: medium ridge #a7a7aa;
+    }
   }
   #Skills,#Reviews{
     background: rgba(208, 204, 203, 0.61);
@@ -143,8 +151,18 @@ h4{
   #Contacts a{
     color: white !important;
   }
-  #Works .col {
-    background: #090c13;
+  #Works{
+    .flex-container > div {
+      background: #011624;
+      border: medium ridge #1c2126;
+      box-shadow: 3px 2px 7px -1px #1c2126;
+      &:hover{
+        box-shadow: 6px 4px 9px -1px #1c2126;
+      }
+    }
+    img{
+      border-bottom: medium ridge #1c2126;
+    }
   }
   #About, #Works,#Contacts{
     background: #0b0e17;
@@ -269,7 +287,6 @@ h4{
     font-size: 1.1rem;
     line-height: 1.15rem;
   }
-
   h2{
     font-size: 1.3rem !important;
   }
@@ -327,8 +344,12 @@ h4{
     }
   }
   #Works{
-    .col-3{
-      display: none;
+    .flex-container{
+      margin: 0 5%;
+    }
+    .flex-container > div {
+      width: 100%;
+      margin: 0 0 8% 0 !important;
     }
   }
   #Contacts{
@@ -438,11 +459,12 @@ h4{
     }
   }
   #Works{
-    .col-3{
-      display: none;
+    .flex-container > div {
+      width: 46%;
+      margin: 0 1.25% 2.3% 1.25% !important;
     }
   }
-    #Contacts{
+  #Contacts{
       .flex-container > div {
         width:50% !important;
       }
@@ -458,7 +480,6 @@ h4{
         padding: 5%;
       }
     }
-
 }
 @media screen and (min-width: 768px)and (max-width: 992px) {
   #Home{
@@ -527,9 +548,9 @@ h4{
     }
   }
   #Works{
-    .col-3{
-      flex: 0 0 30% !important;
-      max-width: 30% !important;
+    .flex-container > div {
+      width: 46%;
+      margin: 0 1.25% 2.3% 1.25% !important;
     }
   }
   #Contacts{
