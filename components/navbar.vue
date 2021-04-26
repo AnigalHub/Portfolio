@@ -37,16 +37,6 @@
   }
 
 </script>
-<style lang="scss">
-  .navbar-brand{
-    padding-bottom: 0 !important;
-  }
-</style>
 <style scoped lang="scss">
-  .container {
-    padding: 0 !important;
-  }
-  .navbar{
-    padding: 0 !important;
-  }
+
 </style>

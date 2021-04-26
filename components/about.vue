@@ -24,18 +24,15 @@
         return {
             AboutMeRow:[
               {
-                name:'Немного о себе',
-                svg: About_me_svg,
+                name:'Немного о себе', svg: About_me_svg,
                 description:"Занимаюсь Web-разработкой с 2019 года: выполняю верстку и программирование уникальных сайтов.",
               },
               {
-                name:'Образование',
-                svg: Education_svg,
+                name:'Образование', svg: Education_svg,
                 description:"Закончила бакалавриат в Москвском Авиационном Институте (МАИ) по направлению - Информатика и вычислительная техника.",
               },
               {
-                name:'Самообразование',
-                svg: Self_education_svg,
+                name:'Самообразование', svg: Self_education_svg,
                 description:"Постоянно развиваюсь в IT-сфере: изучаю новые технологии и современные фреймворки.",
               },
             ]
@@ -45,10 +42,5 @@
 </script>
 
 <style scoped>
-  .row{
-    margin-top: 5% !important;
-  }
-  .text{
-    text-align: center;
-  }
+
 </style>

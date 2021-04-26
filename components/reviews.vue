@@ -57,43 +57,7 @@
       }
     }
 </script>
-<style lang="scss">
-  .carousel-caption{
-    left: 0 !important;
-    right: 0 !important;
-    bottom: auto;
-    top: 1% !important;
-    text-align: inherit !important;
-    .author {
-      text-align: end !important;
-    }
-  }
-  .w-100 {
-    width: 100% !important;
-    height: 100% !important;
-  }
 
-</style>
 <style lang="scss" scoped>
-  .carousel-control-prev {
-    float: left !important;
-  }
-  .carousel-control-prev, .carousel-control-next {
-    position: relative !important;
-    width: 5% !important;
-    margin-left: 45%;
-    margin-top: 2%;
-  }
-  .text{
-    font-style: italic;
-    display: block;
-    margin: 2% 5% 0 5% ;
-    height: 10vh;
-  }
-  .author{
-    margin-top: 7%;
-    margin-left: 50%;
-    justify-content: end !important;
-    font-weight: 800;
-  }
+
 </style>
