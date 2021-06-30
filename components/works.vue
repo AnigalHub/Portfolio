@@ -95,6 +95,15 @@
                 url:'',
                 website:'(сайт на стадии разработки)',
               },
+              {
+                src:'./snake.png',
+                alt:'',
+                name_company:'PixelPerfect',
+                descr_company:'Верстка по PSD-макету',
+                tecnology:'Разработка одностраничного адаптивного сайта на Vue.js с помощью PixelPerfect (Pixel Perfect под Google Chrome), JavaScript, BootstrapVue, HTML5, Sass.',
+                url:'',
+                website:'(отсутствует)',
+              },
             ]
           }
         }
