@@ -96,7 +96,7 @@
                 website:'(сайт на стадии разработки)',
               },
               {
-                src:'',
+                src:'/home_pixelperfect.png',
                 alt:'',
                 name_company:'Your favourite creative agency template - Startup (layout)',
                 descr_company:'Верстка одностраничного адаптивного сайта по PSD-макету в технике Pixel Perfect',
