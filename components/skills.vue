@@ -37,7 +37,7 @@
                 programming_languages:[
                   {svg:Html_css, descr_skills:'Отличные знания HTML5, CSS3, BOOTSTRAP',},
                   {svg:Javascript_svg, descr_skills: 'Уверенные знания JAVASCRIPT',},
-                  {svg: Vue_svg, descr_skills: 'Опыт работы с фреймворком VUE.JS',},
+                  {svg: Vue_svg, descr_skills: 'Опыт работы с фреймворком VUE.JS (Vue Router, Vuex)',},
                   {svg:Sass_svg, descr_skills:'Работа с препроцессором SASS/SCSS',}
                 ]
               },
