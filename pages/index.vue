@@ -301,8 +301,8 @@ h4{
   /*блоки с работами*/
   .flex-container  > div {
       text-align: center;
-      width: 31.15%;
-      margin: 0 1.05% 2.3% 1.05% !important;
+      width: 31%;
+      margin: 0 1% 2% 1% !important;
     /*картинки*/
       img {
         width: 100%;
@@ -315,6 +315,7 @@ h4{
         img {filter: contrast(110%);}
       }
     }
+
   /*абзац*/
   p{
     margin-bottom: 0.4rem !important;
