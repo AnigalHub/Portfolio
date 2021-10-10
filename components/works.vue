@@ -3,7 +3,7 @@
       <b-container>
         <h2>Мои работы</h2>
         <div class="flex-container">
-         <div v-for="(work,index) in WorksRow" :key="index">
+         <div v-for="(work,index) in WorksRow" :key="index" @click="showModal(work)">
            <img :src="work.src" :alt="work.alt"/>
            <h4>{{work.name_company}}</h4>
            <p class="text_works">{{work.descr_company}}</p>
@@ -11,6 +11,12 @@
            <p class="text_works"><b>{{work.text}}</b><a :href="work.url" target="_blank"> {{work.website}}</a></p>
          </div>
         </div>
+        <b-modal ref="my-modal" id="img" size="lg" centered :title="SelectedWorks.name_company">
+          <img :src="SelectedWorks.src" :alt="SelectedWorks.alt"/>
+          <p class="text_works">{{SelectedWorks.descr_company}}</p>
+          <p class="text_works"><b>Использованные технологии:</b><br>{{SelectedWorks.tecnology}}</p>
+          <p class="text_works"><b>{{SelectedWorks.text}}</b><a :href="SelectedWorks.url" target="_blank"> {{SelectedWorks.website}}</a></p>
+        </b-modal>
       </b-container>
     </div>
 </template>
@@ -20,6 +26,10 @@
         name: "works",
         data(){
           return{
+            SelectedWorks:{
+              src:'',
+              alt:'',
+            },
             WorksRow:[
               {
                 src:'./home_prom.jpg',
@@ -134,10 +144,45 @@
               },
             ]
           }
-        }
+        },
+      methods:{
+          showModal(work){
+            this.SelectedWorks = work;
+            this.$refs['my-modal'].show()
+          }
+      }
     }
 </script>
+<style>
+  /*стили которые переписаны с бутстрапа (переносить отсюда нельзя!!!!!)*/
 
+  .modal-dialog img{ /*картинка в модальном окне*/
+    width: 100% !important;
+    box-shadow: none !important;
+  }
+  .close { /*"крестик" (размер) - кнопка закрытия модального окна*/
+    font-size: 2rem !important;
+    padding: 1rem .5rem !important;
+  }
+  .modal-header{ /*заголовок модального окна*/
+    padding: 0.5rem 1.5rem !important;
+    font-family:'EB Garamond', serif;
+  }
+  .modal-title{ /*фразы в заголовке модального меню*/
+    font-weight: 800;
+  }
+  .modal-body { /*тело модального окна*/
+    padding:0 1rem 1rem 1rem!important;
+  }
+  .modal-footer { /*footer-модального окна*/
+    display: none !important;
+  }
+  @media (min-width: 992px){
+    .modal-lg, .modal-xl { /*ширина модального окна на разных экранах*/
+      max-width: 720px !important;
+    }
+  }
+</style>
 <style lang="scss" scoped>
 
 </style>
