@@ -11,11 +11,18 @@
            <p class="text_works"><b>{{work.text}}</b><a :href="work.url" target="_blank"> {{work.website}}</a></p>
          </div>
         </div>
-        <b-modal ref="my-modal" id="img" size="lg" centered :title="SelectedWorks.name_company">
-          <img :src="SelectedWorks.src" :alt="SelectedWorks.alt"/>
-          <p class="text_works">{{SelectedWorks.descr_company}}</p>
-          <p class="text_works"><b>Использованные технологии:</b><br>{{SelectedWorks.tecnology}}</p>
-          <p class="text_works"><b>{{SelectedWorks.text}}</b><a :href="SelectedWorks.url" target="_blank"> {{SelectedWorks.website}}</a></p>
+        <b-modal ref="my-modal" id="img" size="lg" centered>
+          <h4>{{SelectedWorks.name_company}}</h4>
+          <b-row>
+            <b-col cols="7">
+              <img :src="SelectedWorks.src" :alt="SelectedWorks.alt"/>
+            </b-col>
+            <b-col>
+              <p class="text_works">{{SelectedWorks.descr_company}}</p>
+              <p class="text_works"><b>Использованные технологии:</b><br>{{SelectedWorks.tecnology}}</p>
+              <p class="text_works"><b>{{SelectedWorks.text}}</b><a :href="SelectedWorks.url" target="_blank"> {{SelectedWorks.website}}</a></p>
+            </b-col>
+          </b-row>
         </b-modal>
       </b-container>
     </div>
