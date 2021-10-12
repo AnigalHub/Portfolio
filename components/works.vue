@@ -11,7 +11,7 @@
            <p class="text_works"><b>{{work.text}}</b><a :href="work.url" target="_blank"> {{work.website}}</a></p>
          </div>
         </div>
-        <b-modal ref="my-modal" id="img" size="lg" centered>
+        <b-modal ref="my-modal" id="img" size="xl" centered>
           <h4>{{SelectedWorks.name_company}}</h4>
           <b-row>
             <b-col cols="7">
@@ -186,7 +186,7 @@
   }
   @media (min-width: 992px){
     .modal-lg, .modal-xl { /*ширина модального окна на разных экранах*/
-      max-width: 720px !important;
+      max-width: 1200px !important;
     }
   }
 </style>
