@@ -11,18 +11,8 @@
            <p class="text_works"><b>{{work.text}}</b><a :href="work.url" target="_blank"> {{work.website}}</a></p>
          </div>
         </div>
-        <b-modal ref="my-modal" id="img" size="xl" centered>
-          <h4>{{SelectedWorks.name_company}}</h4>
-          <b-row>
-            <b-col cols="7">
-              <img :src="SelectedWorks.src" :alt="SelectedWorks.alt"/>
-            </b-col>
-            <b-col>
-              <p class="text_works">{{SelectedWorks.descr_company}}</p>
-              <p class="text_works"><b>Использованные технологии:</b><br>{{SelectedWorks.tecnology}}</p>
-              <p class="text_works"><b>{{SelectedWorks.text}}</b><a :href="SelectedWorks.url" target="_blank"> {{SelectedWorks.website}}</a></p>
-            </b-col>
-          </b-row>
+        <b-modal ref="my-modal" id="img" size="xl" :title="SelectedWorks.name_company" centered>
+          <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
         </b-modal>
       </b-container>
     </div>
@@ -39,6 +29,7 @@
             },
             WorksRow:[
               {
+                main_src:'./prom.jpg',
                 src:'./home_prom.jpg',
                 alt:'Промэлектронсервис',
                 name_company:'Сайт для компании «Промэлектронсервис»',
@@ -186,7 +177,7 @@
   }
   @media (min-width: 992px){
     .modal-lg, .modal-xl { /*ширина модального окна на разных экранах*/
-      max-width: 1200px !important;
+      max-width: 768px !important;
     }
   }
 </style>
