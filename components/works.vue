@@ -40,6 +40,7 @@
                 website:'promelektronservis.ru',
               },
               {
+                main_src:'./prom2.jpg',
                 src:'./home_prom2.png',
                 alt:'Промэлектронсервис_2',
                 name_company:'Сайт для компании «Промэлектронсервис»',
@@ -50,6 +51,7 @@
                 website:'(сайт не был запущен)',
               },
               {
+                main_src:'./gts.jpg',
                 src:'./home_gts.png',
                 alt:'Гостехносервис',
                 name_company:'Сайт для компании «Гостехносервис»',
@@ -60,6 +62,7 @@
                 website:'gtekhno.ru',
               },
               {
+                main_src:'./priamyeruki.jpg',
                 src:'./home_priamyeruki.jpg',
                 alt:'Прямые_руки',
                 name_company:'Сайт для компании «Аваконт»',
@@ -71,6 +74,7 @@
                 website:'pryamye-ryki.ru',
               },
               {
+                main_src:'./avacont.jpg',
                 src:'./home_avacont.jpg',
                 alt:'Аваконт',
                 name_company:'Сайт для компании «Аваконт»',
@@ -82,6 +86,7 @@
                 website:'avacont.ru',
               },
               {
+                main_src:'./valencia.png',
                 src:'./home_valencia.png',
                 alt:'Валенсия',
                 name_company:'Сайт для компании «Валенсия»',
@@ -92,6 +97,7 @@
                 website:'(отсутствует)',
               },
               {
+                main_src:'./training.png',
                 src:'./training.png',
                 alt:'Математический тренажёр',
                 name_company:'Математический тренажёр',
@@ -99,6 +105,7 @@
                 tecnology:'Разработка теста: логика на JavaScript, отображение с помощью обращения JavaScript к DOM-дереву, написанному на HTML5. Использование CSS3. Сборка теста на Webpack.',
               },
               {
+                main_src:'./snake.png',
                 src:'./snake.png',
                 alt:'Игра "Змейка"',
                 name_company:'Игра "Змейка"',
@@ -106,6 +113,7 @@
                 tecnology:'Разработка игры: логика на JavaScript, отображение с помощью Canvas. Компиляция игры происходит с помощью инструмента Webpack.',
               },
               {
+                main_src:'./pixelperfect.png',
                 src:'/home_pixelperfect.png',
                 alt:'pixelperfect',
                 name_company:'Your favourite creative agency template - Startup (layout)',
@@ -113,6 +121,7 @@
                 tecnology:'Разработка сайта на Vue.js, с помощью BootstrapVue, HTML5, Sass.',
               },
               {
+                main_src:'./parser.png',
                 src:'/parser.png',
                 alt:'parser',
                 name_company:'Парсинг сайта ',
@@ -120,6 +129,7 @@
                 tecnology:'Разработка логики на Node.js с использованием библиотеки Axios. Вывод информации в консоль, прохождение по сайту с заданным интервалом повтора',
               },
               {
+                main_src:'./api.png',
                 src:'/api.png',
                 alt:'api',
                 name_company:'Проект “Аптечка”',
@@ -127,6 +137,7 @@
                 tecnology:'Разработка API: серверной части на Node.js с помощью Express.js и библиотеки Axios, клиентская часть на Vue.js c использованием  BootstrapVue.\n',
               },
               {
+                main_src:'./TestTask.png',
                 src:'/TestTask.png',
                 alt:'TestTask',
                 name_company:'Тестовое задание от компании ida.lite - TestTask',
@@ -134,6 +145,7 @@
                 tecnology:'Разработка страницы со списком товаров на Nuxt.js, добавление/удаление товаров в списке - при помощи Vuex. Верстка страницы с использованием  Sass. Валидация формы.\n',
               },
               {
+                main_src:'./market.png',
                 src:'/market.png',
                 alt:'market',
                 name_company:'Тестовое задание от компании ida.lite - Market',
@@ -177,7 +189,7 @@
   }
   @media (min-width: 992px){
     .modal-lg, .modal-xl { /*ширина модального окна на разных экранах*/
-      max-width: 768px !important;
+      max-width: 900px !important;
     }
   }
 </style>
