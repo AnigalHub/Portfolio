@@ -307,7 +307,10 @@ h4{
       img {
         width: 100%;
         height: auto;
+        cursor: pointer;
       }
+    /*заголов, параграф*/
+    h4,p{cursor: default;}
     /*при наведении*/
       &:hover {
         box-shadow: 6px 4px 9px -1px rgb(13, 19, 33);
