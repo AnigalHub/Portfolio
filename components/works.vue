@@ -3,8 +3,8 @@
       <b-container>
         <h2>Мои работы</h2>
         <div class="flex-container">
-         <div v-for="(work,index) in WorksRow" :key="index" @click="showModal(work)">
-           <img :src="work.src" :alt="work.alt"/>
+         <div v-for="(work,index) in WorksRow" :key="index">
+           <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
            <h4>{{work.name_company}}</h4>
            <p class="text_works">{{work.descr_company}}</p>
            <p class="text_works"><b>Использованные технологии:</b><br>{{work.tecnology}}</p>
@@ -97,7 +97,7 @@
                 website:'(отсутствует)',
               },
               {
-                main_src:'./training.png',
+                main_src:'./main_training.jpg',
                 src:'./training.png',
                 alt:'Математический тренажёр',
                 name_company:'Математический тренажёр',
@@ -105,7 +105,7 @@
                 tecnology:'Разработка теста: логика на JavaScript, отображение с помощью обращения JavaScript к DOM-дереву, написанному на HTML5. Использование CSS3. Сборка теста на Webpack.',
               },
               {
-                main_src:'./snake.png',
+                main_src:'./main_snake.jpg',
                 src:'./snake.png',
                 alt:'Игра "Змейка"',
                 name_company:'Игра "Змейка"',
@@ -121,15 +121,15 @@
                 tecnology:'Разработка сайта на Vue.js, с помощью BootstrapVue, HTML5, Sass.',
               },
               {
-                main_src:'./parser.png',
-                src:'/parser.png',
+                main_src:'./main.jpg',
+                src:'/parser.jpg',
                 alt:'parser',
                 name_company:'Парсинг сайта ',
                 descr_company:'Сбор информации о ценах определенного препарата на сайте stolichki.ru',
                 tecnology:'Разработка логики на Node.js с использованием библиотеки Axios. Вывод информации в консоль, прохождение по сайту с заданным интервалом повтора',
               },
               {
-                main_src:'./api.png',
+                main_src:'./main_api.png',
                 src:'/api.png',
                 alt:'api',
                 name_company:'Проект “Аптечка”',
@@ -137,7 +137,7 @@
                 tecnology:'Разработка API: серверной части на Node.js с помощью Express.js и библиотеки Axios, клиентская часть на Vue.js c использованием  BootstrapVue.\n',
               },
               {
-                main_src:'./TestTask.png',
+                main_src:'./main_TestTask.png',
                 src:'/TestTask.png',
                 alt:'TestTask',
                 name_company:'Тестовое задание от компании ida.lite - TestTask',
@@ -145,7 +145,7 @@
                 tecnology:'Разработка страницы со списком товаров на Nuxt.js, добавление/удаление товаров в списке - при помощи Vuex. Верстка страницы с использованием  Sass. Валидация формы.\n',
               },
               {
-                main_src:'./market.png',
+                main_src:'./main_market.png',
                 src:'/market.png',
                 alt:'market',
                 name_company:'Тестовое задание от компании ida.lite - Market',
@@ -182,14 +182,14 @@
     font-weight: 800;
   }
   .modal-body { /*тело модального окна*/
-    padding:0 1rem 1rem 1rem!important;
+    padding:0 !important;
   }
   .modal-footer { /*footer-модального окна*/
     display: none !important;
   }
   @media (min-width: 992px){
     .modal-lg, .modal-xl { /*ширина модального окна на разных экранах*/
-      max-width: 900px !important;
+      max-width: 750px !important;
     }
   }
 </style>
