@@ -494,7 +494,7 @@ h4{
   /*Компонент - "Отзывы"*/
   #Reviews{
     /*место под текст и автора*/
-    .carousel-item{height: 370px;}
+    .carousel-item{height: 270px;}
     /*автор*/
     .author{display: none;}
   }
@@ -613,7 +613,7 @@ h4{
   /*Компонент - "Отзывы"*/
   #Reviews{
     /*место под текст и автора*/
-    .carousel-item{height: 250px;}
+    .carousel-item{height: 180px;}
     /*автор*/
     .author{display: none;}
   }
