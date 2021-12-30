@@ -192,8 +192,14 @@ h4{
     background: #090c13;
     color: white !important;
   }
+  /*контент модального окошка*/
+  .modal-content{
+    background: black !important;
+    color: white;
+  }
   /*Компонент - "Мои работы"*/
   #Works{
+
     /*блоки под каждую работу*/
     .flex-container > div {
       background: #011624;
