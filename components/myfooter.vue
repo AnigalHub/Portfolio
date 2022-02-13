@@ -1,7 +1,7 @@
 <template>
     <div id="Myfooter">
       <b-container class="text">
-        Copyright © 2021 <br>
+        Copyright © 2022 <br>
         <Logo_svg/>
         Ignatova Anna
       </b-container>
