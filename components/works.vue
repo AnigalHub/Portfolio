@@ -160,6 +160,14 @@
                 descr_company:'Страницы: Меню, Алфавит с животными, две игры: "Собери пару", "Конструктор слов"',
                 tecnology:'Разработка игр на Vue.js, логика игр на JavaScript, перетаскивание при помощи Drag and Drop, верстка и анимация с помошью Sass. Svg к играм отрисовывались в Adobe Illustrator. ',
               },
+              {
+                main_src:'',
+                src:'',
+                alt:'tgbot',
+                name_company:'Телеграм-бот "Напоминалка"',
+                descr_company:'',
+                tecnology:'',
+              },
             ]
           }
         },
