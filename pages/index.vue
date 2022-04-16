@@ -151,8 +151,7 @@ h4{
     /*блоки под каждую работу*/
     .flex-container > div {
       background: #eef4f8;
-      border: medium ridge #b2b2b4;
-      box-shadow: 3px 2px 7px -1px rgb(24, 31, 49);
+      border: 1px solid #b2b2b4;
     }
     /*картинки*/
     img{border-bottom: medium ridge #a7a7aa;}
@@ -202,9 +201,6 @@ h4{
     /*блоки под каждую работу*/
     .flex-container > div {
       background: #011624;
-      border: medium ridge #1c2126;
-      box-shadow: 3px 2px 7px -1px #1c2126;
-      &:hover{box-shadow: 6px 4px 9px -1px #1c2126;}
     }
     /*картинки*/
     img{border-bottom: medium ridge #1c2126;}
