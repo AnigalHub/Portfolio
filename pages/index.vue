@@ -199,7 +199,6 @@ h4{
   }
   /*Компонент - "Мои работы"*/
   #Works{
-
     /*блоки под каждую работу*/
     .flex-container > div {
       background: #011624;
@@ -307,8 +306,8 @@ h4{
   /*блоки с работами*/
   .flex-container  > div {
       text-align: center;
-      width: 31%;
-      margin: 0 1% 2% 1% !important;
+      width: 32%;
+      margin: 0 .2% 2% .2% !important;
     /*картинки*/
       img {
         width: 100%;
