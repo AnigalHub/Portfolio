@@ -25,11 +25,17 @@
     import Nuxt_svg from "~/components/svg_skills/nuxt_svg";
     import Flexbox_svg from "~/components/svg_skills/flexbox_svg";
     import Git_svg from "~/components/svg_skills/git_svg";
-    import Html_css from "~/components/svg_skills/html_css_bootstrap";
-    import NodeAndWebpack_svg from "~/components/svg_skills/node_and_webpack_svg";
+    import Html_svg from "~/components/svg_skills/html_svg";
+    import Css_svg from "~/components/svg_skills/css_svg";
+    import Bootstrap_svg from "~/components/svg_skills/boostrap_svg";
+    import NodeAndWebpack_svg from "~/components/svg_skills/node_svg";
+    import PostgreSQL_svg from "~/components/svg_skills/postgre_sql";
+    import Typescript_svg from "~/components/svg_skills/typescript_svg";
+    import Express_svg from "~/components/svg_skills/express_svg";
     export default {
         name: "skills",
-      components: {Git_svg, Flexbox_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_css, NodeAndWebpack_svg},
+      components: {Git_svg, Flexbox_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_svg, NodeAndWebpack_svg,PostgreSQL_svg,
+        Typescript_svg, Bootstrap_svg, Express_svg},
       data(){
           return{
             SkillsRow:[
@@ -38,22 +44,30 @@
                 programming_languages:[
                   {svg: Vue_svg, descr_skills: 'Vue.js (options API)',},
                   {svg:Javascript_svg, descr_skills: 'Javascript',},
-                  {svg:Javascript_svg, descr_skills: 'Typescript',},
+                  {svg:Typescript_svg, descr_skills: 'Typescript',},
+
                 ]
               },
               {
                 programming_languages:[
                   {svg: Nuxt_svg, descr_skills: 'Nuxt.js',},
-                  {svg:Html_css, descr_skills:'HTML',},
-                  {svg:Sass_svg, descr_skills:'CSS (SASS)',},
-                  {svg:Html_css, descr_skills:'Boostrap',},
+                  {svg:Html_svg, descr_skills:'HTML',},
+                  {svg:Css_svg, descr_skills:'CSS',},
+
                 ]
               },
               {
                 programming_languages:[
+                  {svg:Bootstrap_svg, descr_skills:'Boostrap',},
+                  {svg:Sass_svg, descr_skills:'SASS/SCSS',},
                   {svg:NodeAndWebpack_svg, descr_skills: 'Node.js',},
-                  {svg:NodeAndWebpack_svg, descr_skills: 'Express.js',},
-                  {svg:NodeAndWebpack_svg, descr_skills: 'PostgreSQL',},
+
+                ]
+              },
+              {
+                programming_languages:[
+                  {svg:Express_svg, descr_skills: 'Express.js',},
+                  {svg:PostgreSQL_svg, descr_skills: 'PostgreSQL',},
                   {svg:Git_svg, descr_skills: 'Git',}
                 ]
               },
