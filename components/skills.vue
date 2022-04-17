@@ -72,26 +72,6 @@
                 ]
               },
             ]
-            /*
-            SkillsRow:[
-              {
-                programming_languages:[
-                  {svg:Html_css, descr_skills:'Отличные знания HTML5, CSS3, BOOTSTRAP',},
-                  {svg:Javascript_svg, descr_skills: 'Уверенные знания JAVASCRIPT',},
-                  {svg: Vue_svg, descr_skills: 'Опыт работы с фреймворком VUE.JS',},
-                  {svg:Sass_svg, descr_skills:'Работа с препроцессором SASS/SCSS',}
-                ]
-              },
-              {
-                programming_languages:[
-                  {svg:NodeAndWebpack_svg, descr_skills: 'Базовые знания NODE.JS, WEBPACK',},
-                  {svg: Flexbox_svg, descr_skills: 'Практический опыт адаптивной кроссбраузерной верски (в том числе FLEXBOX и GRID)',},
-                  {svg: Nuxt_svg, descr_skills: 'Умение работать с фреймворком NUXT.JS',},
-                  {svg:Git_svg, descr_skills: 'Навык работы с системой контроля версий GIT',}
-                ]
-              },
-            ]
-            */
           }
       }
     }
