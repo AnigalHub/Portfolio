@@ -27,13 +27,13 @@
     import Html_svg from "~/components/svg_skills/html_svg";
     import Css_svg from "~/components/svg_skills/css_svg";
     import Bootstrap_svg from "~/components/svg_skills/boostrap_svg";
-    import NodeAndWebpack_svg from "~/components/svg_skills/node_svg";
+    import Node_svg from "~/components/svg_skills/node_svg";
     import PostgreSQL_svg from "~/components/svg_skills/postgre_sql";
     import Typescript_svg from "~/components/svg_skills/typescript_svg";
     import Express_svg from "~/components/svg_skills/express_svg";
     export default {
         name: "skills",
-      components: {Git_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_svg, NodeAndWebpack_svg, PostgreSQL_svg,
+      components: {Git_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_svg, Node_svg, PostgreSQL_svg,
         Typescript_svg, Bootstrap_svg, Express_svg},
       data(){
           return{
