@@ -5,7 +5,7 @@
         <b-row class="important_row">
           <b-col v-for="(skill,index) in SkillsRow" :key="index">
             <b-row v-for="language in skill.programming_languages" :key="language.descr_skills">
-              <b-col cols="3">
+              <b-col cols="4">
                 <component :key="index" :is="language.svg"/>
               </b-col>
               <b-col class="text">
@@ -33,6 +33,33 @@
       data(){
           return{
             SkillsRow:[
+
+              {
+                programming_languages:[
+                  {svg: Vue_svg, descr_skills: 'Vue.js (options API)',},
+                  {svg:Javascript_svg, descr_skills: 'Javascript',},
+                  {svg:Javascript_svg, descr_skills: 'Typescript',},
+                ]
+              },
+              {
+                programming_languages:[
+                  {svg: Nuxt_svg, descr_skills: 'Nuxt.js',},
+                  {svg:Html_css, descr_skills:'HTML',},
+                  {svg:Sass_svg, descr_skills:'CSS (SASS)',},
+                  {svg:Html_css, descr_skills:'Boostrap',},
+                ]
+              },
+              {
+                programming_languages:[
+                  {svg:NodeAndWebpack_svg, descr_skills: 'Node.js',},
+                  {svg:NodeAndWebpack_svg, descr_skills: 'Express.js',},
+                  {svg:NodeAndWebpack_svg, descr_skills: 'PostgreSQL',},
+                  {svg:Git_svg, descr_skills: 'Git',}
+                ]
+              },
+            ]
+            /*
+            SkillsRow:[
               {
                 programming_languages:[
                   {svg:Html_css, descr_skills:'Отличные знания HTML5, CSS3, BOOTSTRAP',},
@@ -50,6 +77,7 @@
                 ]
               },
             ]
+            */
           }
       }
     }
