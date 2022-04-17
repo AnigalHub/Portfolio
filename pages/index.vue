@@ -293,8 +293,8 @@ h4{
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 95px;
-    height: 95px;
+    width: 85px;
+    height: 85px;
   }
 }
 /*Компонент - "Мои работы"*/
