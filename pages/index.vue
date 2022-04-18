@@ -263,7 +263,7 @@ h4{
   .front{font-size: 45px;}
 }
 /*Компонент - "Об мне"*/
-#About,#Education{
+#About{
   /*параметры сетки бутстрап (блоки на пункты)*/
   //.row{margin-top: 1% !important;}
   /*текст в компоненте "Об мне"*/
@@ -276,6 +276,17 @@ h4{
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+/*Компонент - "Об мне"*/
+#Education{
+  /*svg пунктов*/
+  svg{
+    width: 300px;
+    height: 265px;
+    margin-top: -40px;
+    margin-left: -50px;
+    display: block !important;
   }
 }
 /*Компонент - "Ключевые навыки"*/
