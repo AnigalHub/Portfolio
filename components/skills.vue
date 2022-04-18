@@ -1,7 +1,7 @@
 <template>
     <div id="Skills">
       <b-container>
-      <h2>Ключевые навыки</h2>
+      <h2>Профессиональные навыки</h2>
         <b-row class="important_row">
           <b-col v-for="(skill,index) in SkillsRow" :key="index">
             <b-row v-for="language in skill.programming_languages" :key="language.descr_skills">
@@ -59,7 +59,7 @@
                 programming_languages:[
                   {svg:Bootstrap_svg, descr_skills:'Boostrap',},
                   {svg:Sass_svg, descr_skills:'SASS/SCSS',},
-                  {svg:NodeAndWebpack_svg, descr_skills: 'Node.js',},
+                  {svg:Node_svg, descr_skills: 'Node.js',},
 
                 ]
               },
