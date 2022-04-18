@@ -132,7 +132,7 @@ h4{
   //  box-shadow: 0 8px 8px -8px  #090c13 ;
   }
   /*Компоненты - "Об мне", "Мои работы", "Контакты"*/
-  #About, #Skills,#Reviews,#Contacts{
+  #About, #Skills,#Contacts{
      padding: 2% 0 3%;
     background: rgba(255, 255, 255, 0.38);
     color: #090c13 !important;
@@ -144,7 +144,7 @@ h4{
     color: #090c13 !important;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
-  #About, #Skills,#Reviews,#Education{
+  #About, #Skills,#Education{
     padding: 2% 0 2%;
   }
   #Contacts{
@@ -157,14 +157,6 @@ h4{
       background: #eef4f8;
       box-shadow: 2px 6px 15px rgba(0,0,0,.25);
     }
-  }
-  /*Компонент - "Отзывы"*/
-  #Reviews{
-    /*содержимое карусели*/
-    .carousel-caption{color: #090c13 !important;}
-    /*стрелки карусели*/
-    .carousel-control-next-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;}
-    .carousel-control-prev-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e") !important;}
   }
   /*Компонент - "Контакты"*/
   #Contacts{
@@ -188,8 +180,8 @@ h4{
     background: #0b0e17;
     color: white !important;
   }
-  /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
-  #Skills,#Reviews{
+  /*Компонент "Ключевые навыки"*/
+  #Skills{
     background: #090c13;
     color: white !important;
   }
@@ -304,11 +296,8 @@ h4{
   }
   /*svg навыков (языков, фреймворков, ..)*/
   svg{
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
   }
 }
 /*Компонент - "Мои работы"*/
@@ -339,32 +328,6 @@ h4{
   p{
     margin-bottom: 0.4rem !important;
     padding: 1%;
-  }
-}
-/*Компонент - "Отзывы"*/
-#Reviews{
-  /*левая стрелка карусели*/
-  .carousel-control-prev {float: left !important;}
-  /*стрелки карусели*/
-  .carousel-control-prev, .carousel-control-next {
-    position: relative !important;
-    width: 5% !important;
-    margin-left: 45%;
-    margin-top: 2%;
-  }
-  /*текст в компоненте "Отзывы"*/
-  .text{
-    font-style: italic;
-    display: block;
-    margin: 2% 5% 0 5% ;
-    height: 10vh;
-  }
-  /*текст для компонента - "Отзывы" (автор отзыва)*/
-  .author{
-    margin-top: 7%;
-    margin-left: 50%;
-    justify-content: end !important;
-    font-weight: 800;
   }
 }
 /*Компонент - "Контакты"*/
@@ -404,7 +367,7 @@ h4{
 }
 @media screen and (max-width: 500px) {
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Reviews, #Contacts{padding: 1rem 0 !important;}
+  #About, #Skills, #Works, #Contacts{padding: 1rem 0 !important;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_works,.text,.nav-link,.navbar-brand{
     font-size: 1.1rem;
@@ -507,13 +470,6 @@ h4{
       }
     }
   }
-  /*Компонент - "Отзывы"*/
-  #Reviews{
-    /*место под текст и автора*/
-    .carousel-item{height: 270px;}
-    /*автор*/
-    .author{display: none;}
-  }
   /*Компонент - "Контакты"*/
   #Contacts{
     /*svg контактной информации*/
@@ -574,7 +530,7 @@ h4{
     button{display: none;}
   }
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Reviews, #Contacts{padding: 1rem 0 !important;}
+  #About, #Skills, #Works, #Contacts{padding: 1rem 0 !important;}
   /*заголовки для компонентов "Об мне", "Контакты"*/
   #About h2, #Contacts h2{width: 4em;}
   /*заголовки*/
@@ -625,13 +581,6 @@ h4{
       width: 46%;
       margin: 0 1.25% 2.3% 1.25% !important;
     }
-  }
-  /*Компонент - "Отзывы"*/
-  #Reviews{
-    /*место под текст и автора*/
-    .carousel-item{height: 180px;}
-    /*автор*/
-    .author{display: none;}
   }
   /*Компонент - "Контакты"*/
   #Contacts{
@@ -689,7 +638,7 @@ h4{
     button{display: none;}
   }
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Reviews, #Contacts{padding: 1.5rem 0 !important;}
+  #About, #Skills, #Works, #Contacts{padding: 1.5rem 0 !important;}
   /*заголовки для компонентов "Об мне", "Контакты"*/
   #About h2, #Contacts h2{width: 4em;}
   /*заголовки*/
@@ -759,7 +708,7 @@ h4{
     button{display: none;}
   }
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Reviews, #Contacts{padding: 2rem 0 !important;}
+  #About, #Skills, #Works, #Contacts{padding: 2rem 0 !important;}
   /*заголовки для компонентов "Об мне", "Контакты"*/
   #About h2, #Contacts h2{width: 4em;}
   /*заголовки*/
