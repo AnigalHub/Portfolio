@@ -3,12 +3,25 @@
       <b-container>
         <h2>Обо мне</h2>
         <b-row>
+          <b-col cols="3">
+            <component :is="about_me_svg"/>
+         <!--   <component :is="self_education_svg"/>
+            -->
+          </b-col>
+          <b-col>
+            <ul>
+              <li v-for="paragraph in AboutMeRow"  class="text">{{paragraph.description}}</li>
+            </ul>
+          </b-col>
+        </b-row>
+     <!--   <b-row>
           <b-col v-for="paragraph in AboutMeRow" :key="paragraph.name">
             <h3>{{paragraph.name}}</h3>
             <component :is="paragraph.svg"/>
             <p class="text">{{paragraph.description}}</p>
           </b-col>
         </b-row>
+        -->
       </b-container>
     </div>
 </template>
@@ -22,6 +35,24 @@
       components: {About_me_svg, Self_education_svg, Education_svg,},
       data() {
         return {
+          about_me_svg:About_me_svg,
+          self_education_svg:Self_education_svg,
+          AboutMeRow:[
+            {
+              description:"C 2019 года училась создавать макеты и и занималась версткой простых адаптивных сайтов;",
+            },
+            {
+              description: "C 2020 года начала изучать Vue.js и делать сайты с обратной связью для клиентов;\n",
+            },
+            {
+              description:"C 2021 года улучшила свои знания в Vue.js и начала изучать Node.js, Express.js для серверного взаимодействия с клиентами, используя Postgresql. А также начала изучать TypeScript;\n",
+
+            },
+            {
+             description: "Cейчас пишу телеграм-бота - напоминальщик событий.\n",
+            },
+          ]
+          /*
             AboutMeRow:[
               {
                 name:'Немного о себе', svg: About_me_svg,
@@ -36,6 +67,7 @@
                 description:"Постоянно развиваюсь в IT-сфере: изучаю новые технологии и современные фреймворки.",
               },
             ]
+           */
         }
       }
     }
