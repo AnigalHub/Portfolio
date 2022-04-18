@@ -144,7 +144,7 @@ h4{
     color: #090c13 !important;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
-  #About, #Skills,#Reviews{
+  #About, #Skills,#Reviews,#Education{
     padding: 2% 0 2%;
   }
   #Contacts{
