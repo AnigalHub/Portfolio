@@ -3,9 +3,10 @@
       <Home/>
       <Navbar/>
       <About/>
+      <Education/>
       <Skills/>
       <Works/>
-      <Reviews/>
+     <!-- <Reviews/> -->
       <Contacts/>
       <Myfooter/>
     </div>
@@ -20,8 +21,9 @@ import Works from "~/components/works";
 import Reviews from "~/components/reviews";
 import Contacts from "~/components/contacts";
 import Myfooter from "~/components/myfooter";
+import Education from "~/components/education";
 export default {
-  components: {Myfooter, Contacts, Reviews, Works, Skills, About, Navbar, Home}
+  components: {Education, Myfooter, Contacts, Reviews, Works, Skills, About, Navbar, Home}
 }
 </script>
 
@@ -51,8 +53,6 @@ export default {
 .container {padding: 15px !important;}
 /*ссылки*/
 a{color: #2868ad !important;}
-/*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-#About, #Skills, #Works, #Reviews, #Contacts{padding: 2.5rem 0 !important;}
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
   background: #030407;
@@ -71,10 +71,13 @@ h4{font-family: 'Playfair Display', serif;}
 /*заголовки*/
 h2{
   margin-left: auto;
+  font-family: 'El Messiri', sans-serif;
+  font-weight: 500 !important;
+  color: #de6a13;
+  font-size: 1.6rem !important;
   margin-right: auto;
   text-align: center;
-  font-weight: 800;
-  padding-bottom: 2% !important;
+  padding-bottom: 1% !important;
 }
 h3{
   padding-bottom: 2.5% !important;
@@ -82,9 +85,8 @@ h3{
   font-weight: 800;
 }
 h4{
-  font-size: 1.35rem !important;
-  padding: 1.2% 0 0.8% 0 !important;
-  text-align: center;
+  font-size: 1.2rem !important;
+ //text-align: center;
   font-weight: 600;
 }
 /*текст, пункты меню, фраза в логотипе*/
@@ -109,19 +111,12 @@ h4{
 /*меню*/
 .navbar{padding: 0 !important;}
 /*все кнопки в меню,блок под логотип*/
-.nav-link,.navbar-brand{
+.navbar .nav-link,.navbar-brand{
   color: white !important;
 }
 /*все кнопки в меню*/
 .nav-link{padding: 0.5rem 1.5rem !important;}
-/*заголовки для компонентов "Об мне", "Контакты"*/
-#About h2, #Contacts h2{width: 6em;}
-/*заголовок для компонента "Ключевые навыки"*/
-#Skills h2{width: 10em;}
-/*заголовок для компонента "Мои работы"*/
-#Works h2{width: 8em;}
-/*заголовок для компонента "Отзывы"*/
-#Reviews h2{width: 4em;}
+
 /*контейнер, который включает в себя повтор блоков*/
 .flex-container {
   display: flex;
@@ -133,28 +128,35 @@ h4{
 @media screen and (prefers-color-scheme: light){
   /*заголовок*/
   h2 {
-    border-bottom: 2px solid  #090c13 ;
-    box-shadow: 0 8px 8px -8px  #090c13 ;
+   // border-bottom: 2px solid  #090c13 ;
+  //  box-shadow: 0 8px 8px -8px  #090c13 ;
   }
   /*Компоненты - "Об мне", "Мои работы", "Контакты"*/
-  #About, #Works,#Contacts{
+  #About, #Skills,#Reviews,#Contacts{
+     padding: 2% 0 3%;
     background: rgba(255, 255, 255, 0.38);
     color: #090c13 !important;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
-  #Skills,#Reviews{
-    background: rgba(208, 204, 203, 0.61);
+
+    #Works, #Education{
+    background: rgba(220, 220, 220, 0.96);
     color: #090c13 !important;
+  }
+  /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
+  #About, #Skills,#Reviews{
+    padding: 2% 0 2%;
+  }
+  #Contacts{
+    padding:1% 0 2%;
   }
   /*Компонент - "Мои работы"*/
   #Works{
     /*блоки под каждую работу*/
     .flex-container > div {
       background: #eef4f8;
-      border: 1px solid #b2b2b4;
+      box-shadow: 2px 6px 15px rgba(0,0,0,.25);
     }
-    /*картинки*/
-    img{border-bottom: medium ridge #a7a7aa;}
   }
   /*Компонент - "Отзывы"*/
   #Reviews{
@@ -261,15 +263,16 @@ h4{
   .front{font-size: 45px;}
 }
 /*Компонент - "Об мне"*/
-#About{
+#About,#Education{
   /*параметры сетки бутстрап (блоки на пункты)*/
-  .row{margin-top: 5% !important;}
+  //.row{margin-top: 1% !important;}
   /*текст в компоненте "Об мне"*/
-  .text{text-align: center;}
+ // .text{text-align: center;}
   /*svg пунктов*/
   svg{
-    width: 100px;
-    height: 100px;
+    width: 265px;
+    height: 265px;
+    margin-top: -40px;
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -293,17 +296,17 @@ h4{
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 85px;
-    height: 85px;
+    width: 65px;
+    height: 65px;
   }
 }
 /*Компонент - "Мои работы"*/
 #Works{
   /*блоки с работами*/
   .flex-container  > div {
-      text-align: center;
-      width: 32%;
-      margin: 0 .2% 2% .2% !important;
+      width:  32.25%;
+
+      margin: 0 0 2% 1% !important;
     /*картинки*/
       img {
         width: 100%;
@@ -311,12 +314,13 @@ h4{
         cursor: pointer;
       }
     /*заголов, параграф*/
-    h4,p{cursor: default;}
+    h4,p{
+      padding: 1% 2% !important;
+      cursor: default;
+    }
     /*при наведении*/
       &:hover {
-        box-shadow: 6px 4px 9px -1px rgb(13, 19, 33);
-        /*картинки*/
-        img {filter: contrast(110%);}
+        box-shadow: 2px 6px 15px rgba(0,0,0,.4);
       }
     }
 
@@ -366,8 +370,8 @@ h4{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
   }
 }
  /***********************АДАПТИВНОСТЬ******************/
