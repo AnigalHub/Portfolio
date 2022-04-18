@@ -1,7 +1,6 @@
 <template>
   <div id="Contacts">
     <b-container>
-      <h2>Контакты</h2>
       <div class="flex-container text">
         <div v-for="information in ContactsRow" :key="information.text">
             <a :href="information.href" :target="information.target">
