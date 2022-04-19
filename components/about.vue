@@ -17,19 +17,8 @@
           </b-col>
           <b-col cols="3">
             <component :is="about_me_svg"/>
-
-
-          </b-col>
-
-        </b-row>
-     <!--   <b-row>
-          <b-col v-for="paragraph in AboutMeRow" :key="paragraph.name">
-            <h3>{{paragraph.name}}</h3>
-            <component :is="paragraph.svg"/>
-            <p class="text">{{paragraph.description}}</p>
           </b-col>
         </b-row>
-        -->
       </b-container>
     </div>
 </template>
