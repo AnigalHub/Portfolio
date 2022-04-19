@@ -240,18 +240,23 @@ h4{
   .name{
     padding-top: 1%;
     font-size: 1.8rem;
-    color: #ffffff;
+    color: white;
     text-align: center;
     font-family: 'El Messiri', sans-serif;
   }
   /*фраза-Junior Frontend-разработчик*/
   .front{
     font-family: 'El Messiri', sans-serif;
-    text-shadow: .9px .9px 0 #0b1131, 2px 2px 0 #707070;
+    //text-shadow: .9px .9px 0 #eee, 2px 2px 0 #707070;
 
     // text-shadow: 1px 1px 2px #391e09, 0 0 1em #e7bba5, 0 0 0.2em #d9b6a4;
     font-weight: 500 !important;
     color: #d95219;
+    text-shadow:
+      0 0 4px #000,
+      0 0 4px #000,
+       2px 2px 0 #7b2b0b;
+
     font-size: 3rem;
     text-align: center;
   }
