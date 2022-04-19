@@ -3,16 +3,24 @@
       <b-container>
         <h2>Обо мне</h2>
         <b-row>
-          <b-col cols="3">
-            <component :is="about_me_svg"/>
-         <!--   <component :is="self_education_svg"/>
-            -->
+          <b-col cols="2" class="name">
+            <div >
+              Возраст: 24 года
+              <br>
+              Опыт работы: 1 год
+            </div>
           </b-col>
           <b-col>
             <ul>
               <li v-for="paragraph in AboutMeRow"  class="text">{{paragraph.description}}</li>
             </ul>
           </b-col>
+          <b-col cols="3">
+            <component :is="about_me_svg"/>
+
+
+          </b-col>
+
         </b-row>
      <!--   <b-row>
           <b-col v-for="paragraph in AboutMeRow" :key="paragraph.name">
@@ -29,7 +37,7 @@
 <script>
     import Education_svg from "~/components/svg_about/education_svg";
     import Self_education_svg from "~/components/svg_about/self_education";
-    import About_me_svg from "~/components/svg_about/about_me";
+    import About_me_svg from "~/components/education_svg";
     export default {
       name: "about",
       components: {About_me_svg, Self_education_svg, Education_svg,},
