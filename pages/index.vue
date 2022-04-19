@@ -6,7 +6,6 @@
       <Education/>
       <Skills/>
       <Works/>
-     <!-- <Reviews/> -->
       <Contacts/>
       <Myfooter/>
     </div>
@@ -18,12 +17,12 @@ import Navbar from "~/components/navbar";
 import About from "~/components/about";
 import Skills from "~/components/skills";
 import Works from "~/components/works";
-import Reviews from "~/components/reviews";
+
 import Contacts from "~/components/contacts";
 import Myfooter from "~/components/myfooter";
 import Education from "~/components/education";
 export default {
-  components: {Education, Myfooter, Contacts, Reviews, Works, Skills, About, Navbar, Home}
+  components: {Education, Myfooter, Contacts, Works, Skills, About, Navbar, Home}
 }
 </script>
 
