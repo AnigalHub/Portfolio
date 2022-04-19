@@ -241,7 +241,11 @@ h4{
     padding-top: 1%;
     font-size: 1.8rem;
     color: white;
-    text-align: center;
+    text-align: center;  text-shadow:
+    0 0 350px #787777,
+    0 0 4px #000,
+    0 0 4px #9e9c9c,
+    2px 2px 0 #262525;
     font-family: 'El Messiri', sans-serif;
   }
   /*фраза-Junior Frontend-разработчик*/
@@ -253,9 +257,10 @@ h4{
     font-weight: 500 !important;
     color: #d95219;
     text-shadow:
+      0 0 120px #000,
+      0 0 3px #1a0901,
       0 0 4px #000,
-      0 0 4px #000,
-       2px 2px 0 #7b2b0b;
+       1px 1px 0 #7b2b0b;
 
     font-size: 3rem;
     text-align: center;
