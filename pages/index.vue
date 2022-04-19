@@ -1,6 +1,6 @@
 <template>
     <div>
-     <!-- <Home/> -->
+      <Home/>
       <Navbar/>
       <About/>
       <Education/>
@@ -50,7 +50,7 @@ export default {
 </style>
 <style lang="scss">
 /*контейнер на блоки посередине экрана*/
-.container {padding: 15px !important;}
+.container {padding: 10px !important;}
 /*ссылки*/
 a{color: #2868ad !important;}
 /*Компоненты меню и футера*/
@@ -85,6 +85,9 @@ h3{
   font-weight: 800;
 }
 h4{
+  margin-top: 1%;
+  color: #0c6ec4;font-family: 'El Messiri', sans-serif;
+  margin-bottom: 0 !important;
   font-size: 1.2rem !important;
  //text-align: center;
   font-weight: 600;
@@ -121,7 +124,7 @@ h4{
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
@@ -133,19 +136,19 @@ h4{
   }
   /*Компоненты - "Об мне", "Мои работы", "Контакты"*/
   #About, #Skills,#Contacts{
-     padding: 2% 0 3%;
     background: rgba(255, 255, 255, 0.38);
     color: #090c13 !important;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
 
     #Works, #Education{
-    background: rgba(220, 220, 220, 0.96);
+      background: rgba(220, 220, 220, 0.96);
+      padding: 2% 0 3%;
     color: #090c13 !important;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
-  #About, #Skills,#Education{
-    padding: 2% 0 2%;
+  #About, #Skills,#Education, #Works{
+    padding: 2.5% 0 2.5%;
   }
   #Contacts{
     padding:1% 0 2%;
@@ -220,42 +223,47 @@ h4{
     width: 100%;
     filter: contrast(110%);
     border: 5px solid white;
+    margin-bottom: 4%;
   }
   /*блок на информацию и картинку)*/
   #data_about_me{
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.99);
   }
-  /*кнопка*/
-  button{
-    border: 2px solid white;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
+  img{
+    width: 230px;
+    height: 230px;
     display: block;
-    margin: 15% auto 5% auto;
-  }
-  /*кнопка*/
-  .btn {background: transparent !important;}
-  /*параметры сетки бутстрап (блок на информацию)*/
-  .col-7{padding: 8% 0 0 3% !important;}
-  /*параметры сетки бутстрап (блок под картинку)*/
-  .col{padding: 0 !important;}
-  /*параметры сетки бутстрап (блок на информацию и картинку)*/
-  .row{
-    padding-top: 15%;
-    margin-top: 0 !important;
+    margin: 0 auto;
   }
   /*имя*/
   .name{
-    font-size: 60px;
-    font-weight: 800 !important;
+    padding-top: 1%;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'El Messiri', sans-serif;
   }
   /*фраза-Junior Frontend-разработчик*/
-  .front{font-size: 45px;}
+  .front{
+    font-family: 'El Messiri', sans-serif;
+    text-shadow: .9px .9px 0 #0b1131, 2px 2px 0 #707070;
+
+    // text-shadow: 1px 1px 2px #391e09, 0 0 1em #e7bba5, 0 0 0.2em #d9b6a4;
+    font-weight: 500 !important;
+    color: #d95219;
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 /*Компонент - "Об мне"*/
-#About{
+#About,#Education{
+  /*имя*/
+  .name{
+    padding-top: 1%;
+    font-size: 1.4rem;
+    font-family: 'El Messiri', sans-serif;
+  }
   /*параметры сетки бутстрап (блоки на пункты)*/
   //.row{margin-top: 1% !important;}
   /*текст в компоненте "Об мне"*/
@@ -270,49 +278,49 @@ h4{
     margin-right: auto !important;
   }
 }
-/*Компонент - "Об мне"*/
 #Education{
-  /*svg пунктов*/
-  svg{
-    width: 300px;
-    height: 265px;
-    margin-top: -40px;
-    margin-left: -50px;
-    display: block !important;
+  .col{
+    margin-left: 100px;
   }
 }
+
 /*Компонент - "Ключевые навыки"*/
 #Skills{
   /*параметры сетки бутстрап (ключевые навыки)*/
   .row{margin-top: 2% !important;}
   /*параметры сетки бутстрап (часть ключевых навыков, текст)*/
-  .col{
-    padding: 0 !important;
-  }
   /*текст в компоненте "Ключевые навыки"*/
   .text{
-    display: flex;
-    align-items: center;
+    //display: flex;
+    text-align: center;
   }
   /*svg навыков (языков, фреймворков, ..)*/
   svg{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+
+  }
+  .flex-container  > div {
+    width: 15%;
+    margin: 0 .8% 1% !important;
   }
 }
 /*Компонент - "Мои работы"*/
 #Works{
   /*блоки с работами*/
   .flex-container  > div {
-      width:  32.25%;
-
-      margin: 0 0 2% 1% !important;
+      width:  32%;
+    display: block;
+      margin: 0 .65% 2%!important;
     /*картинки*/
       img {
         width: 100%;
         height: auto;
         cursor: pointer;
       }
+
     /*заголов, параграф*/
     h4,p{
       padding: 1% 2% !important;
