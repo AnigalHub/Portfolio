@@ -2,18 +2,17 @@
     <div id="Skills">
       <b-container>
       <h2>Профессиональные навыки</h2>
-        <b-row class="important_row">
-          <b-col v-for="(skill,index) in SkillsRow" :key="index">
-            <b-row v-for="language in skill.programming_languages" :key="language.descr_skills">
-              <b-col cols="4">
-                <component :key="index" :is="language.svg"/>
-              </b-col>
-              <b-col class="text">
-                {{language.descr_skills}}
-              </b-col>
-            </b-row>
-          </b-col>
-        </b-row>
+        <div class="flex-container">
+          <div v-for="(skill,index) in SkillsRow" :key="index">
+            <div>
+              <component :key="index" :is="skill.svg"/>
+
+              <div class="text">
+                {{skill.descr_skills}}
+              </div>
+            </div>
+        </div>
+        </div>
       </b-container>
     </div>
 </template>
@@ -38,38 +37,18 @@
       data(){
           return{
             SkillsRow:[
-
-              {
-                programming_languages:[
                   {svg: Vue_svg, descr_skills: 'Vue.js (options API)',},
                   {svg:Javascript_svg, descr_skills: 'Javascript',},
                   {svg:Typescript_svg, descr_skills: 'Typescript',},
-
-                ]
-              },
-              {
-                programming_languages:[
                   {svg: Nuxt_svg, descr_skills: 'Nuxt.js',},
                   {svg:Html_svg, descr_skills:'HTML',},
                   {svg:Css_svg, descr_skills:'CSS',},
-
-                ]
-              },
-              {
-                programming_languages:[
                   {svg:Bootstrap_svg, descr_skills:'Boostrap',},
                   {svg:Sass_svg, descr_skills:'SASS/SCSS',},
                   {svg:Node_svg, descr_skills: 'Node.js',},
-
-                ]
-              },
-              {
-                programming_languages:[
                   {svg:Express_svg, descr_skills: 'Express.js',},
                   {svg:PostgreSQL_svg, descr_skills: 'PostgreSQL',},
                   {svg:Git_svg, descr_skills: 'Git',}
-                ]
-              },
             ]
           }
       }
