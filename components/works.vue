@@ -3,7 +3,7 @@
       <b-container>
         <h2>Мои работы</h2>
         <div>
-          <b-tabs content-class="mt-3" fill>
+          <b-tabs fill>
             <b-tab title="Сайты" active>
               <div class="flex-container">
                 <div v-for="(work,index) in WorksSites" :key="index">
@@ -77,7 +77,7 @@
                 src:'./home_gts.png',
                 alt:'Гостехносервис',
                 name_company:'Сайт компании «Гостехносервис»',
-                tecnology:'Vue.js, BootstrapVue, Sass',
+                tecnology:'Vue.js, BootstrapVue, Sass.',
 
               },
               {
@@ -85,14 +85,14 @@
                 src:'./home_priamyeruki.jpg',
                 alt:'Прямые_руки',
                 name_company:'Сайт компании «Аваконт»',
-                tecnology:'Vue.js (BootstrapVue, Vue router), Sass, Express.js.',
+                tecnology:'Vue.js (BootstrapVue, VueRouter), Sass, Express.js.',
               },
               {
                 main_src:'./avacont.jpg',
                 src:'./home_avacont.jpg',
                 alt:'Аваконт',
                 name_company:'Сайт компании «Аваконт»',
-                tecnology:'Vue.js, JavaScript, HTML, SASS, Express.js,',
+                tecnology:'Vue.js, JavaScript, HTML, SASS, Express.js.',
 
               },
               {
