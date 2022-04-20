@@ -17,7 +17,6 @@ import Navbar from "~/components/navbar";
 import About from "~/components/about";
 import Skills from "~/components/skills";
 import Works from "~/components/works";
-
 import Contacts from "~/components/contacts";
 import Myfooter from "~/components/myfooter";
 import Education from "~/components/education";
@@ -31,21 +30,6 @@ export default {
   .navbar-light .navbar-toggler {border-color: white !important;}
   /*фраза в логотипе*/
   .navbar-brand{padding-bottom: 0 !important;}
-  /*контент в карусели*/
-  .carousel-caption {
-    left: 0 !important;
-    right: 0 !important;
-    bottom: auto;
-    top: 1% !important;
-    text-align: inherit !important;
-  }
-  /*автор в карусели в компоненте "Отзывы"*/
-  .carousel-caption.author {text-align: end !important;}
-  /*контент в карусели*/
-  .w-100 {
-    width: 100% !important;
-    height: 100% !important;
-  }
 </style>
 <style lang="scss">
 /*контейнер на блоки посередине экрана*/
@@ -55,8 +39,11 @@ a{color: #2868ad !important;}
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
   background: #030407;
-  box-shadow: 0 6px 6px -6px rgba(255, 255, 255, 0.63);
   color: white;
+}
+/*Компонент меню*/
+#Nav{
+  box-shadow: 0 6px 6px -6px rgba(255, 255, 255, 0.63);
 }
 /*Компонент футера*/
 #Myfooter{
@@ -64,33 +51,29 @@ a{color: #2868ad !important;}
   text-align: center;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-h2,h3,.text,.text_works,.author,.nav-link,.navbar-brand{font-family: 'Piazzolla', serif;}
-/*заголовок (название работ)*/
-h4{font-family: 'Playfair Display', serif;}
+h2,.text,.text_works,.nav-link,.navbar-brand{font-family: 'Piazzolla', serif;}
 /*заголовки*/
 h2{
   margin-left: auto;
+  text-shadow: .45px .45px .45px #000;
   font-family: 'El Messiri', sans-serif;
   font-weight: 500 !important;
-  color: #de6a13;
   font-size: 1.6rem !important;
   margin-right: auto;
   text-align: center;
-  padding-bottom: 1% !important;
-}
-h3{
-  padding-bottom: 2.5% !important;
-  text-align: center;
-  font-weight: 800;
+  padding-bottom: 1%;
 }
 h4{
-  margin-top: 1%;
-  color: #0c6ec4;font-family: 'El Messiri', sans-serif;
   margin-bottom: 0 !important;
   font-size: 1.2rem !important;
- //text-align: center;
-  font-weight: 600;
+  font-weight: 700;
 }
+/*заголовок h4, имя, фраза "Junior Frontend-разработчик*/
+h4, #Home .name, #Home .front{
+  font-family: 'El Messiri', sans-serif;
+}
+/*заголовок h4, фраза "Junior Frontend-разработчик*/
+h2, #Home .front{color: #de6a13;}
 /*текст, пункты меню, фраза в логотипе*/
 .text,.nav-link,.navbar-brand{
   font-size: 1.2rem;
@@ -98,11 +81,9 @@ h4{
 }
 /*текст для компонента "Мои работы"*/
 .text_works{
-  font-size: 1.18rem;
-  line-height: 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
-/*текст для компонента - "Отзывы" (автор отзыва)*/
-.author{font-size: 1.2rem !important;}
 /*svg в логотипе*/
 #logo{
   width: 60px;
@@ -113,44 +94,45 @@ h4{
 /*меню*/
 .navbar{padding: 0 !important;}
 /*все кнопки в меню,блок под логотип*/
-.navbar .nav-link,.navbar-brand{
-  color: white !important;
-}
+.navbar .nav-link,.navbar-brand{color: white !important;}
 /*все кнопки в меню*/
 .nav-link{padding: 0.5rem 1.5rem !important;}
-
 /*контейнер, который включает в себя повтор блоков*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1%;
 }
+/*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
+#About, #Education, #Skills, #Works, #Contacts{padding: 2% 0 2.5%;}
+/*"Контакты"*/
+#Contacts{padding:1% 0 2%;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
-@media screen and (prefers-color-scheme: light){
-  /*заголовок*/
-  h2 {
-   // border-bottom: 2px solid  #090c13 ;
-  //  box-shadow: 0 8px 8px -8px  #090c13 ;
+@media screen and (prefers-color-scheme: dark){
+  /*пункты меню в tabs*/
+  .nav-link{color: black !important;}
+  /*фраза-Junior Frontend-разработчик*/
+  #Home .front{
+    text-shadow:
+      0 0 3px #000000,
+      0 0 70px #000000,
+      1.3px 1.25px 0 #321002;
   }
-  /*Компоненты - "Об мне", "Мои работы", "Контакты"*/
+  /*Компоненты - "Об мне","Ключевые навыки", "Контакты"*/
   #About, #Skills,#Contacts{
     background: rgba(255, 255, 255, 0.38);
     color: #090c13 !important;
   }
-  /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
-
-    #Works, #Education{
-      background: rgba(220, 220, 220, 0.96);
-      padding: 2% 0 3%;
+  /*Компоненты - "Об мне", "Образование"*/
+  #Works, #Education{
+    background: rgba(220, 220, 220, 0.96);
     color: #090c13 !important;
   }
-  /*Компоненты - "Об мне", "Ключевые навыки", "Отзывы"*/
-  #About, #Skills,#Education, #Works{
-    padding: 2.5% 0 2.5%;
-  }
-  #Contacts{
-    padding:1% 0 2%;
+  /*Компонент - "Об мне"*/
+  #About{
+    /*список - черточки (полосочки)*/
+    ul li:after {border-left: 1px dotted black;}
   }
   /*Компонент - "Мои работы"*/
   #Works{
@@ -158,6 +140,13 @@ h4{
     .flex-container > div {
       background: #eef4f8;
       box-shadow: 2px 6px 15px rgba(0,0,0,.25);
+      /*при наведении*/
+      &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
+      /*заголовок*/
+      h4{
+        background: rgba(248, 209, 179, 0.7);
+        border-bottom: 1px solid rgb(232, 195, 167);
+      }
     }
   }
   /*Компонент - "Контакты"*/
@@ -165,51 +154,69 @@ h4{
     /*ссылки (для данного компонента)*/
     a{color: #090c13 !important;}
   }
-  /*названия svg*/
-  .svg_name{fill: #090c13;}
   /*цвет svg*/
-  .svg_color{fill: #090c13;}
+  .express_svg,.svg_color{fill: #090c13;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
-@media screen and (prefers-color-scheme: dark){
-  /*заголовок*/
-  h2{
-    border-bottom: 2px solid white;
-    box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.63);
+@media screen and (prefers-color-scheme: light){
+  /*пункты меню в tabs*/
+  .nav-link{color: #afadad !important;}
+  /*tabs, активные пункты меню в tabs*/
+  .nav-tabs,.nav-link.active{
+    color: #afadad !important;
+    border-color: #afadad #afadad #afadad;
   }
-  /*Компоненты - "Об мне", "Мои работы", "Контакты"*/
-  #About, #Works,#Contacts{
+  /*активные пункты меню в tabs*/
+  .nav-link.active{background: rgba(0, 102, 255, 0.08) !important;}
+  /*фраза-Junior Frontend-разработчик*/
+  #Home .front{
+    text-shadow:
+      0 0 3px #000000,
+      0 0 70px #000000,
+      1.3px 1.25px 0 #321002;
+  }
+  /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
+  #About, #Skills,#Contacts{
     background: #0b0e17;
-    color: white !important;
+    color: #afadad !important;
   }
-  /*Компонент "Ключевые навыки"*/
-  #Skills{
+  /*Компоненты -  "Мои работы","Образование"*/
+  #Works, #Education{
     background: #090c13;
-    color: white !important;
+    color: #afadad !important;
+  }
+  /*Компонент - "Об мне"*/
+  #About{
+    /*список - черточки (полосочки)*/
+    ul li:after {border-left: 1px dotted #afadad;}
   }
   /*контент модального окошка*/
   .modal-content{
     background: black !important;
-    color: white;
+    color: #afadad;
   }
   /*Компонент - "Мои работы"*/
   #Works{
     /*блоки под каждую работу*/
     .flex-container > div {
       background: #011624;
+      box-shadow: 2px 5px 6px rgba(80, 79, 79, 0.4);
+      /*при наведении*/
+      &:hover {box-shadow: 2px 5px 6px rgba(80, 79, 79);}
+      /*заголовок*/
+      h4{
+        background: #010f18;
+        border-bottom: 1.5px solid black;
+      }
     }
-    /*картинки*/
-    img{border-bottom: medium ridge #1c2126;}
   }
   /*Компонент - "Контакты"*/
   #Contacts {
     /*ссылки (для данного компонента)*/
-    a{color: white !important;}
+    a{color: #afadad !important;}
   }
-  /*названия svg*/
-  .svg_color{fill:#ffffff;}
   /*цвет svg*/
-  .svg_name{fill: #ffffff;}
+  .express_svg,.svg_color{fill:  #afadad;}
 }
 
 /*Компонент - "Главный"*/
@@ -219,133 +226,134 @@ h4{
   /*картинка*/
   img{
     border-radius: 100%;
-    width: 100%;
-    filter: contrast(110%);
-    border: 5px solid white;
-    margin-bottom: 4%;
-  }
-  /*блок на информацию и картинку)*/
-  #data_about_me{
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.99);
-  }
-  img{
-    width: 230px;
-    height: 230px;
+    width: 160px;
+    height: 160px;
     display: block;
     margin: 0 auto;
+    border: 1px solid white;
   }
   /*имя*/
   .name{
-    padding-top: 1%;
+    padding: 1.5% 0 0;
     font-size: 1.8rem;
-    color: white;
-    text-align: center;  text-shadow:
-    0 0 350px #787777,
-    0 0 4px #000,
-    0 0 4px #9e9c9c,
-    2px 2px 0 #262525;
-    font-family: 'El Messiri', sans-serif;
+    color: #d5d3d3;
+    text-align: center;
+    text-shadow:
+      0 0 4px #000,
+      0 0 4.5px #9e9c9c,
+      0 0 350px #787777,
+      2px 2px 0 #262525;
+    margin-bottom: .5%;
   }
   /*фраза-Junior Frontend-разработчик*/
   .front{
-    font-family: 'El Messiri', sans-serif;
-    //text-shadow: .9px .9px 0 #eee, 2px 2px 0 #707070;
-
-    // text-shadow: 1px 1px 2px #391e09, 0 0 1em #e7bba5, 0 0 0.2em #d9b6a4;
-    font-weight: 500 !important;
-    color: #d95219;
-    text-shadow:
-      0 0 120px #000,
-      0 0 3px #1a0901,
-      0 0 4px #000,
-       1px 1px 0 #7b2b0b;
-
-    font-size: 3rem;
+    opacity: .98;
+    font-weight: 600 !important;
+    font-size: 2.25rem;
     text-align: center;
   }
 }
 /*Компонент - "Об мне"*/
-#About,#Education{
-  /*имя*/
-  .name{
-    padding-top: 1%;
-    font-size: 1.4rem;
-    font-family: 'El Messiri', sans-serif;
+#About{
+  /*список ненумерованный*/
+  ul{
+    list-style: none;
+    margin-top: -1em !important;
+    margin-left: -2.2rem !important;
   }
-  /*параметры сетки бутстрап (блоки на пункты)*/
-  //.row{margin-top: 1% !important;}
-  /*текст в компоненте "Об мне"*/
- // .text{text-align: center;}
-  /*svg пунктов*/
-  svg{
-    width: 265px;
-    height: 265px;
-    margin-top: -40px;
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  /*элементы списка*/
+  ul li {
+    position: relative;
+    padding: 15px 0 15px 40px;
+    cursor: default;
+    /*свой маркер - кружок*/
+    &:before {
+      position: absolute;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      background: #de6a13;
+      content: "";
+      left: 0;
+      transition: .3s ease-in-out;
+      top: 27px;
+    }
+    /*черточки (полосочки)*/
+    &:after {
+      position: absolute;
+      width: 1px;
+      bottom: -12px;
+      content: "";
+      left: 6px;
+      top: 48px;
+    }
+    /*при наведении*/
+    &:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+    /*последний элемент*/
+    &:last-child:after {content: none;}
   }
 }
+/*Компонент - "Образование"*/
 #Education{
-  .col{
-    margin-left: 100px;
+  /*сетка бутстрап*/
+  .col{padding-left: 12%;}
+  /*svg*/
+  svg{
+    width: auto;
+    height: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
 /*Компонент - "Ключевые навыки"*/
 #Skills{
-  /*параметры сетки бутстрап (ключевые навыки)*/
-  .row{margin-top: 2% !important;}
-  /*параметры сетки бутстрап (часть ключевых навыков, текст)*/
   /*текст в компоненте "Ключевые навыки"*/
-  .text{
-    //display: flex;
-    text-align: center;
-  }
+  .text{text-align: center;}
   /*svg навыков (языков, фреймворков, ..)*/
   svg{
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     display: block;
     margin: 0 auto;
-
   }
+  /*блоки под svg и название*/
   .flex-container  > div {
     width: 15%;
     margin: 0 .8% 1% !important;
+    cursor: default;
+    &:hover{
+      transition: 1s;
+      transform: scale(1.09);
+    }
   }
 }
 /*Компонент - "Мои работы"*/
 #Works{
   /*блоки с работами*/
   .flex-container  > div {
-      width:  32%;
+    width:  32%;
     display: block;
-      margin: 0 .65% 2%!important;
+    margin: 0 .65% 2%!important;
+    &:hover{
+      transition: 1s;
+      transform: scale(1.02);
+    }
+    /*при наведении*/
     /*картинки*/
-      img {
-        width: 100%;
-        height: auto;
-        cursor: pointer;
-      }
-
-    /*заголов, параграф*/
+    img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+    /*заголовок, параграф*/
     h4,p{
       padding: 1% 2% !important;
       cursor: default;
     }
-    /*при наведении*/
-      &:hover {
-        box-shadow: 2px 6px 15px rgba(0,0,0,.4);
-      }
-    }
-
-  /*абзац*/
-  p{
-    margin-bottom: 0.4rem !important;
-    padding: 1%;
   }
+  /*абзац*/
+  p{margin-bottom: 0.4rem !important;}
 }
 /*Компонент - "Контакты"*/
 #Contacts{
@@ -353,10 +361,14 @@ h4{
   .text{text-align: center;}
   /*блоки с контактной информацией*/
   .flex-container > div {
-      text-align: center;
-      width: 25%;
+    text-align: center;
+    width: 25%;
+    &:hover{
+      transition: 1s;
+      transform: scale(1.09);
+    }
   }
-  /*svg контактной информации*/
+  /*svg*/
   svg{
     display: block;
     margin-left: auto;
@@ -367,325 +379,173 @@ h4{
 }
  /***********************АДАПТИВНОСТЬ******************/
 
-@media screen and (max-width: 300px) {
-  /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_works,.text,.nav-link,.navbar-brand{
-    font-size: 0.9rem !important;
-    line-height: 1.1rem !important;
-  }
+@media screen and (max-width: 350px) {
   /*Компонент - "Главный"*/
   #Home{
-    /*параметры сетки бутстрап (блок на информацию и картинку)*/
-    .row{
-      /*параметры сетки бутстрап (блок на информацию)*/
-      .col-7{width: 70% !important;}
-    }
+    /*имя*/
+    .name{font-size: 1.3rem !important;}
+    /*фраза-Junior Frontend-разработчик*/
+    .front{ font-size: 1.4rem !important;}
+  }
+  /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
+  .text_works,.text,.nav-link,.navbar-brand{
+    font-size: 1.1rem !important;
+    line-height: 1.1rem !important;
   }
 }
 @media screen and (max-width: 500px) {
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Contacts{padding: 1rem 0 !important;}
+  #About, #Skills, #Works, #Contacts {padding: 1rem 0 !important;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_works,.text,.nav-link,.navbar-brand{
+  .text_works, .text, .nav-link, .navbar-brand {
     font-size: 1.1rem;
     line-height: 1.15rem;
   }
-  /*заголовки*/
-  h2{font-size: 1.3rem !important;}
-  h3{
-    font-size: 1.15rem !important;
-    padding-bottom: 0 !important;
-    margin: 0 !important;
-  }
-  h4{font-size: 1.15rem !important;}
+  /*заголовок*/
+  h4 {font-size: 1.15rem !important;}
   /*Компонент - "Главный"*/
-  #Home{
-    height: 100%;
-    /*параметры сетки бутстрап (блок на информацию и картинку)*/
-    .row{
-      padding-top: 0;
-      flex-direction: column-reverse;
-      /*параметры сетки бутстрап (блок на информацию)*/
-      .col-7{
-        max-width: 100%;
-        padding-top: 0 !important;
-        margin-left: auto;
-        margin-right: auto;
-        width: 55%
-      }
-    }
+  #Home {
     /*картинка*/
-    img{
-      width: 45%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border: 2px solid white;
+    img {
+      width: 100px;
+      height: 100px;
     }
+
     /*имя*/
-    .name{
-      font-size: 20px;
-      padding-top: 2%;
+    .name {
+      font-size: 1.5rem;
     }
+
     /*фраза-Junior Frontend-разработчик*/
-    .front{font-size: 16px;}
-    /*кнопка*/
-    button{display: none;}
+    .front {
+      font-size: 1.7rem;
+    }
   }
-  /*Компонент - "Об мне"*/
-  #About{
-    /*svg пунктов*/
-    svg{
-      width: 75px;
-      height: 75px;
-    }
-    /*параметры сетки бутстрап (блоки на пункты)*/
-    .row{
-      flex-direction: column;
-      /*параметры сетки бутстрап (блок с пунктом)*/
-      .col{margin-top: 5%;}
-    }
-    /*текст в компоненте "Об мне"*/
-    .text{
-      width: 65%;
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
+  /*Компонент - "Образование"*/
+  #Education {
+    /*сетка бутстрап*/
+    .row {
+      flex-direction: column-reverse;
+      /*элемент сетки бутстрап*/
+      .col {padding-left: 5%;}
+      /*svg*/
+      svg {display: none;}
     }
   }
   /*Компонент - "Ключевые навыки"*/
-  #Skills{
-    /*параметры сетки бутстрап (часть ключевых навыков, текст)*/
-    .col {
-      padding: 0 15px !important;
-      margin-left: -2.5%;
-    }
-    /*параметры сетки бутстрап (блок под svg)*/
-    .col-3{margin-left: 2%;}
-    /*параметры сетки бутстрап (блок с ключевыми навыками)*/
-    .important_row{
-      flex-direction: column;
-      /*параметры сетки бутстрап (ключевые навыки)*/
-      .row{margin-top: -1% !important;}
-    }
+  #Skills {
+    /*блоки под svg и название*/
+    .flex-container > div {width: 23%;}
     /*svg навыков (языков, фреймворков, ..)*/
-    svg{
-      width: 65px;
-      height: 75px;
-      margin-left: 18% !important;
+    svg {
+      width: 45px;
+      height: 45px;
     }
   }
   /*Компонент - "Мои работы"*/
-  #Works{
-    /*контейнер, который включает в себя повтор блоков*/
-    .flex-container {
-      margin: 0 5%;
-      /*блоки с работами*/
-      & > div {
-        width: 100%;
-        margin: 0 0 8% 0 !important;
-      }
+  #Works {
+    /*блоки с работами*/
+    .flex-container > div {
+      width: 100%;
+      margin: 0 5% 4% !important;
     }
   }
   /*Компонент - "Контакты"*/
-  #Contacts{
-    /*svg контактной информации*/
-    svg{
-      width: 40px;
-      height: 50px;
-      float: left;
-    }
-    /*абзац*/
-    p{
-      display: flex;
-      align-items: center;
-      height: 3rem;
-      padding: 2%;
-      margin-bottom: 0 !important;
-    }
+  #Contacts {
     /*блоки с контактной информацией*/
-    .flex-container > div {
-      width:100% !important;
-      margin-left: 20%;
-      margin-top: -2.5%;
+    .flex-container > div {width: 50% !important;}
+    /*svg контактной информации*/
+    svg {
+      width: 40px;
+      height: 40px;
     }
   }
 }
 @media screen and (min-width: 500px)and (max-width: 768px) {
   /*Компонент - "Главный"*/
   #Home{
-    height: 100%;
-    /*параметры сетки бутстрап (блок на информацию и картинку)*/
-    .row{
-      padding-top: 0;
-      flex-direction: column-reverse;
-      /*параметры сетки бутстрап (блок на информацию)*/
-      .col-7{
-        max-width: 100%;
-        padding-top: 0 !important;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%
-      }
-    }
     /*картинка*/
     img{
-      width: 40%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border: 3px solid white;
-    }
-    /*имя*/
-    .name{
-      font-size: 25px;
-      padding-top: 2%;
+      width: 100px;
+      height: 100px;
     }
     /*фраза-Junior Frontend-разработчик*/
-    .front{font-size: 20px;}
-    /*кнопка*/
-    button{display: none;}
+    .front{ font-size: 2rem;}
   }
-  /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Contacts{padding: 1rem 0 !important;}
-  /*заголовки для компонентов "Об мне", "Контакты"*/
-  #About h2, #Contacts h2{width: 4em;}
-  /*заголовки*/
-  h2{font-size: 1.3rem !important;}
-  h3{font-size: 1.2rem !important;}
-  h4{
-    font-size: 1.15rem !important;
-    font-weight: 600;
-  }
+  /*заголовок*/
+  h2{font-size: 1.4rem !important;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_works, .text,.nav-link,.navbar-brand{
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.15rem;
   }
-  /*Компонент - "Об мне"*/
-  #About{
-    /*svg пунктов*/
-    svg{
-      width: 80px;
-      height: 80px;
+  /*Компонент - "Главный"*/
+  #Education{
+    /*сетка бутстрап*/
+    .row {
+      flex-direction: column-reverse;
+      /*элемент сетки бутстрап*/
+      .col{padding-left: 5%;}
+      /*svg*/
+      svg{display: none;}
     }
-    /*параметры сетки бутстрап (блоки на пункты)*/
-    .col{padding: 0 5px !important;}
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
-    /*параметры сетки бутстрап (часть ключевых навыков, текст)*/
-    .col{
-      padding: 0 15px !important;
-      margin-left: -2%;
-    }
-    /*параметры сетки бутстрап (блок с ключевыми навыками)*/
-    .important_row{
-      flex-direction: column;
-      /*параметры сетки бутстрап (ключевые навыки)*/
-      .row{margin-top: -1% !important;}
-    }
+    /*блоки под svg и название*/
+    .flex-container  > div {width: 23%;}
     /*svg навыков (языков, фреймворков, ..)*/
     svg{
-      width: 65px;
-      height: 75px;
+      width: 55px;
+      height: 55px;
     }
   }
   /*Компонент - "Мои работы"*/
   #Works{
     /*блоки с работами*/
     .flex-container > div {
-      width: 46%;
-      margin: 0 1.25% 2.3% 1.25% !important;
+      width: 100%;
+      margin: 0 5% 4% !important;
     }
   }
   /*Компонент - "Контакты"*/
   #Contacts{
     /*блоки с контактной информацией*/
-    .flex-container > div {
-      width:50% !important;
-    }
+    .flex-container > div {width:50% !important;}
     /*svg контактной информации*/
     svg{
-      width: 50px;
-      height: 50px;
-      float: left;
-    }
-    /*абзац*/
-    p{
-      display: flex;
-      align-items: center;
-      height: 5rem;
-      padding: 5%;
+      width: 45px;
+      height: 45px;
     }
   }
 }
 @media screen and (min-width: 768px)and (max-width: 992px) {
   /*Компонент - "Главный"*/
   #Home{
-    height: 100%;
-    /*параметры сетки бутстрап (блок на информацию и картинку)*/
-    .row{
-      padding-top: 0;
-      flex-direction: column-reverse;
-      /*параметры сетки бутстрап (блок на информацию)*/
-      .col-7{
-        max-width: 100%;
-        padding-top: 0 !important;
-        margin-left: auto;
-        margin-right: auto;
-        width: 45%
-      }
-    }
     /*картинка*/
     img{
-      width: 40%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      width: 130px;
+      height: 130px;
     }
-    /*имя*/
-    .name{
-      font-size: 30px;
-      padding-top: 2%;
-    }
-    /*фраза-Junior Frontend-разработчик*/
-    .front{font-size: 25px;}
-    /*кнопка*/
-    button{display: none;}
-  }
-  /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Contacts{padding: 1.5rem 0 !important;}
-  /*заголовки для компонентов "Об мне", "Контакты"*/
-  #About h2, #Contacts h2{width: 4em;}
-  /*заголовки*/
-  h2{font-size: 1.5rem !important;}
-  h3{font-size: 1.3rem !important;}
-  h4{
-    font-size: 1.2rem !important;
-    font-weight: 600;
   }
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_works,.text,.nav-link,.navbar-brand{
-    font-size: 1.1rem;
-    line-height: 1.15rem;
-  }
-  /*Компонент - "Об мне"*/
-  #About{
-    /*svg пунктов*/
+  .text_works,.text,.nav-link,.navbar-brand{line-height: 1.4rem;}
+  /*Компонент - "Образование"*/
+  #Education{
+    /*svg*/
     svg{
-      width: 90px;
-      height: 90px;
+      margin-left: -40%;
+      height: 140px;
     }
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
-    /*параметры сетки бутстрап (часть ключевых навыков, текст)*/
-    .col{padding: 0 10px !important;}
+    /*блоки под svg и название*/
+    .flex-container  > div {width: 18%;}
     /*svg навыков (языков, фреймворков, ..)*/
     svg{
-      width: 85px;
-      height: 85px;
+      width: 60px;
+      height: 60px;
     }
   }
   /*Компонент - "Мои работы"*/
@@ -693,71 +553,30 @@ h4{
     /*блоки с работами*/
     .flex-container > div {
       width: 46%;
-      margin: 0 1.25% 2.3% 1.25% !important;
+      margin: 0 1.2% 2.3% !important;
     }
   }
   /*Компонент - "Контакты"*/
   #Contacts{
+    /*блоки с контактной информацией*/
+    .flex-container > div {width:50% !important;}
     /*svg контактной информации*/
     svg{
-      width: 55px;
-      height: 65px;
+      width: 50px;
+      height: 50px;
     }
   }
 }
 @media screen and (min-width: 992px)and (max-width: 1200px) {
-  /*Компонент - "Главный"*/
-  #Home{
-    height: 100%;
-    /*параметры сетки бутстрап (блок на информацию и картинку)*/
-    .row{
-      padding-top: 2%;
-      padding-bottom: 2%;
-    }
-    /*имя*/
-    .name{
-      font-size: 50px;
-      padding-top: 5%;
-    }
-    /*фраза-Junior Frontend-разработчик*/
-    .front{font-size: 40px;}
-    /*кнопка*/
-    button{display: none;}
-  }
-  /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Contacts{padding: 2rem 0 !important;}
-  /*заголовки для компонентов "Об мне", "Контакты"*/
-  #About h2, #Contacts h2{width: 4em;}
-  /*заголовки*/
-  h2{font-size: 1.7rem !important;}
-  h3{font-size: 1.5rem !important;}
-  h4{font-size: 1.3rem !important;}
   /*текст, пункты меню, фраза в логотипе по всей странице*/
-  .text,.nav-link,.navbar-brand{
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  /*текст для компонента "Мои работы"*/
-  .text_works{
-    font-size: 1.15rem !important;
-    line-height: 1.2rem;
-  }
+  .text,.nav-link,.navbar-brand{line-height: 1.5rem;}
   /*Компонент - "Ключевые навыки"*/
   #Skills{
-    /*параметры сетки бутстрап (часть ключевых навыков, текст)*/
-    .col{padding: 0 15px !important;}
     /*svg навыков (языков, фреймворков, ..)*/
     svg{
-      width: 85px;
-      height: 85px;
+      width: 70px;
+      height: 70px;
     }
-  }
-}
-@media screen and (min-width: 1200px)and (max-width: 1600px) {
-  /*Компонент - "Главный"*/
-  #Home{
-    /*кнопка*/
-    button{margin-top: 10%;}
   }
 }
 </style>
