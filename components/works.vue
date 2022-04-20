@@ -69,8 +69,6 @@
                 alt:'Промэлектронсервис',
                 name_company:'Сайт компании «Промэлектронсервис»',
                 tecnology:'HTML, CSS, Bootstrap, PHP.',
-                url:'http://promelektronservis.ru/',
-                website:'promelektronservis.ru',
               },
               {
                 main_src:'./gts.jpg',
@@ -92,7 +90,7 @@
                 src:'./home_avacont.jpg',
                 alt:'Аваконт',
                 name_company:'Сайт компании «Аваконт»',
-                tecnology:'Vue.js, JavaScript, HTML, SASS, Express.js.',
+                tecnology:'Vue.js, JavaScript, HTML, Sass, Express.js.',
 
               },
               {
@@ -154,14 +152,14 @@
                 main_src:'./main_TestTask.png',
                 src:'/TestTask.png',
                 alt:'TestTask',
-                name_company:'Тестовое задание от компании ida.lite - TestTask',
+                name_company:'Страничка с добавлением элементов',
                 tecnology:'Nuxt.js, Vuex, Sass.',
               },
               {
                 main_src:'./main_market.png',
                 src:'/market.png',
                 alt:'market',
-                name_company:'Тестовое задание от компании ida.lite - Market',
+                name_company:'Каталог с корзиной и сортировкой',
                 tecnology:'Nuxt.js, Vuex, Sass.',
               },
               {
@@ -183,9 +181,7 @@
     }
 </script>
 <style>
-  .nav-link{
-    color: black !important;
-  }
+
   /*стили которые переписаны с бутстрапа (переносить отсюда нельзя!!!!!)*/
   .modal-dialog img{ /*картинка в модальном окне*/
     width: 100% !important;
