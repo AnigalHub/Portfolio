@@ -144,8 +144,8 @@ h2, #Home .front{color: #de6a13;}
       &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
       /*заголовок*/
       h4{
-        background: rgba(248, 209, 179, 0.7);
-        border-bottom: 1px solid rgb(232, 195, 167);
+        background: rgba(193, 193, 191, 0.7);
+        border-bottom: rgb(177, 177, 175);
       }
     }
   }
@@ -348,7 +348,7 @@ h2, #Home .front{color: #de6a13;}
     }
     /*заголовок, параграф*/
     h4,p{
-      padding: 1% 2% !important;
+      padding: 1.25% 2% !important;
       cursor: default;
     }
   }
