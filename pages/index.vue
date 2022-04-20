@@ -104,7 +104,7 @@ h2, #Home .front{color: #de6a13;}
   margin-top: 1%;
 }
 /*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
-#About, #Education, #Skills, #Works, #Contacts{padding: 2% 0 2.5%;}
+#About, #Education, #Skills, #Works, #Contacts{padding: 3% 0 2.5%;}
 /*"Контакты"*/
 #Contacts{padding:1% 0 2%;}
 
@@ -377,8 +377,8 @@ h2, #Home .front{color: #de6a13;}
     height: 55px;
   }
 }
- /***********************АДАПТИВНОСТЬ******************/
 
+ /***********************АДАПТИВНОСТЬ******************/
 @media screen and (max-width: 350px) {
   /*Компонент - "Главный"*/
   #Home{
