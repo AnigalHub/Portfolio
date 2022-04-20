@@ -109,7 +109,7 @@ h2, #Home .front{color: #de6a13;}
 #Contacts{padding:1% 0 2%;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
-@media screen and (prefers-color-scheme: dark){
+@media screen and (prefers-color-scheme: light){
   /*пункты меню в tabs*/
   .nav-link{color: black !important;}
   /*фраза-Junior Frontend-разработчик*/
@@ -158,7 +158,7 @@ h2, #Home .front{color: #de6a13;}
   .express_svg,.svg_color{fill: #090c13;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
-@media screen and (prefers-color-scheme: light){
+@media screen and (prefers-color-scheme: dark){
   /*пункты меню в tabs*/
   .nav-link{color: #afadad !important;}
   /*tabs, активные пункты меню в tabs*/
