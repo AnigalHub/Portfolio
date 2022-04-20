@@ -1,9 +1,9 @@
 <template>
     <div id="Home">
       <div class="container">
-        <p class="front" >Junior Frontend-разработчик</p>
         <img src="../static/6.jpg">
         <p class="name" >Игнатова Анна</p>
+        <p class="front">Junior Frontend-разработчик</p>
       </div>
     </div>
 </template>
