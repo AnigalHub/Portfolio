@@ -337,7 +337,14 @@ h2, #Home .front{color: #de6a13;}
     display: block;
     margin: 0 .65% 2%!important;
     /*при наведении*/
-    &:hover{transform: scale(1.02);}
+    &:hover{
+      transform: scale(1.02);
+      /*svg*/
+      svg{
+        transform: scale(1.1);
+        .reference{stroke-width:4;}
+      }
+    }
     /*при наведении*/
     /*картинки*/
     img {
@@ -350,9 +357,10 @@ h2, #Home .front{color: #de6a13;}
       padding: 1.25% 2% !important;
       cursor: default;
     }
+    /*абзац*/
+    p{margin-bottom: 0.4rem !important;}
   }
-  /*абзац*/
-  p{margin-bottom: 0.4rem !important;}
+
 }
 /*Компонент - "Контакты"*/
 #Contacts{
