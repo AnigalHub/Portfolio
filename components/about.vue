@@ -2,13 +2,9 @@
     <div id="About">
       <b-container>
         <h2>Обо мне</h2>
-        <b-row>
-          <b-col>
-            <ul>
-              <li v-for="paragraph in AboutMeRow"  class="text">{{paragraph.description}}</li>
-            </ul>
-          </b-col>
-        </b-row>
+        <ul>
+          <li v-for="paragraph in AboutMeRow"  class="text">{{paragraph.description}}</li>
+        </ul>
       </b-container>
     </div>
 </template>
