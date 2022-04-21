@@ -167,7 +167,7 @@ h2, #Home .front{color: #de6a13;}
     border-color: #afadad #afadad #afadad;
   }
   /*активные пункты меню в tabs*/
-  .nav-link.active{background: rgba(0, 102, 255, 0.08) !important;}
+  .nav-link.active{background: #121a2a !important;}
   /*фраза-Junior Frontend-разработчик*/
   #Home .front{
     text-shadow:
@@ -177,7 +177,7 @@ h2, #Home .front{color: #de6a13;}
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
   #About, #Skills,#Contacts{
-    background: #0b0e17;
+    background: #0c111c;
     color: #afadad !important;
   }
   /*Компоненты -  "Мои работы","Образование"*/
@@ -322,6 +322,7 @@ h2, #Home .front{color: #de6a13;}
     width: 15%;
     margin: 0 .8% 1% !important;
     cursor: default;
+    /*при наведении*/
     &:hover{
       transition: 1s;
       transform: scale(1.09);
@@ -335,10 +336,8 @@ h2, #Home .front{color: #de6a13;}
     width:  32%;
     display: block;
     margin: 0 .65% 2%!important;
-    &:hover{
-      transition: 1s;
-      transform: scale(1.02);
-    }
+    /*при наведении*/
+    &:hover{transform: scale(1.02);}
     /*при наведении*/
     /*картинки*/
     img {
@@ -363,6 +362,7 @@ h2, #Home .front{color: #de6a13;}
   .flex-container > div {
     text-align: center;
     width: 25%;
+    /*при наведении*/
     &:hover{
       transition: 1s;
       transform: scale(1.09);
@@ -391,6 +391,14 @@ h2, #Home .front{color: #de6a13;}
   .text_works,.text,.nav-link,.navbar-brand{
     font-size: 1.1rem !important;
     line-height: 1.1rem !important;
+  }
+  /*Компонент - "Образование"*/
+  #Education {
+    /*сетка бутстрап*/
+    .row {
+      /*элемент сетки бутстрап*/
+      .col {padding-left: 4% !important;}
+    }
   }
 }
 @media screen and (max-width: 500px) {
@@ -427,7 +435,7 @@ h2, #Home .front{color: #de6a13;}
     .row {
       flex-direction: column-reverse;
       /*элемент сетки бутстрап*/
-      .col {padding-left: 5%;}
+      .col {padding-left: 7%;}
       /*svg*/
       svg {display: none;}
     }
@@ -444,6 +452,8 @@ h2, #Home .front{color: #de6a13;}
   }
   /*Компонент - "Мои работы"*/
   #Works {
+    /*пункты меню в tabs*/
+    .nav-tabs .nav-item {width: 100%;}
     /*блоки с работами*/
     .flex-container > div {
       width: 100%;
@@ -485,7 +495,7 @@ h2, #Home .front{color: #de6a13;}
     .row {
       flex-direction: column-reverse;
       /*элемент сетки бутстрап*/
-      .col{padding-left: 5%;}
+      .col{padding-left: 7%;}
       /*svg*/
       svg{display: none;}
     }
