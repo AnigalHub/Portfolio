@@ -10,7 +10,6 @@
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
                   <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
-                  <p class="text_works"><a :href="work.url" target="_blank"> {{work.website}}</a></p>
                 </div>
               </div>
             </b-tab>
@@ -20,7 +19,6 @@
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
                   <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
-                  <p class="text_works"><a :href="work.url" target="_blank"> {{work.website}}</a></p>
                 </div>
               </div>
             </b-tab>
@@ -30,7 +28,6 @@
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
                   <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
-                  <p class="text_works"><a :href="work.url" target="_blank"> {{work.website}}</a></p>
                 </div>
               </div>
             </b-tab>
@@ -40,7 +37,6 @@
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
                   <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
-                  <p class="text_works"><a :href="work.url" target="_blank"> {{work.website}}</a></p>
                 </div>
               </div>
             </b-tab>
@@ -162,12 +158,20 @@
                 name_company:'Каталог с корзиной и сортировкой',
                 tecnology:'Nuxt.js, Vuex, Sass.',
               },
-              {
+           /*   {
                 main_src:'',
-                src:'',
+                src:'/tgBot.png',
                 alt:'tgbot',
                 name_company:'Telegram-бот "Напоминалка"',
                 tecnology:'TypeScript, PostgreSQL. ',
+              },
+              */
+              {
+                main_src:'./main_TestBis.jpg',
+                src:'/TestBis.png',
+                alt:'TestBis',
+                name_company:'Прототип банковского приложения',
+                tecnology:'Vue.js (Vuex, VueRouter, BootstrapVue).',
               },
             ]
           }
