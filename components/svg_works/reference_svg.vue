@@ -29,8 +29,5 @@
 </script>
 
 <style scoped>
-  svg{
-    margin-left: -5px;
-  }
   .st1{fill:none;stroke:#000;stroke-width:2;stroke-miterlimit:10;}
 </style>
