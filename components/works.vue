@@ -25,7 +25,14 @@
                 <div v-for="(work,index) in WorksAPI" :key="index">
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
-                  <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                  <b-row>
+                    <b-col>
+                      <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                    </b-col>
+                    <b-col cols="2">
+                      <a :href="work.url" target="_blank"> <component :is="svg"></component></a>
+                    </b-col>
+                  </b-row>
                 </div>
               </div>
             </b-tab>
@@ -125,6 +132,7 @@
                 alt:'api',
                 name_company:'Проект “Аптечка”',
                 tecnology:'Node.js, Express.js, Vue.js, BootstrapVue.',
+                url:'https://github.com/AnigalHub/Pills_api'
               }
             ],
             WorksGames:[
