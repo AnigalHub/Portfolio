@@ -41,7 +41,14 @@
                 <div v-for="(work,index) in WorksGames" :key="index">
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
-                  <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                  <b-row>
+                    <b-col>
+                      <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                    </b-col>
+                    <b-col cols="2">
+                      <a :href="work.url" target="_blank"> <component :is="svg"></component></a>
+                    </b-col>
+                  </b-row>
                 </div>
               </div>
             </b-tab>
@@ -142,6 +149,7 @@
                 alt:'Математический тренажёр',
                 name_company:'Игра "Математический тренажёр"',
                 tecnology:'JavaScript, HTML, CSS, Webpack.',
+                url:'https://github.com/AnigalHub/MathTest'
               },
               {
                 main_src:'./main_snake.jpg',
@@ -149,6 +157,7 @@
                 alt:'Игра "Змейка"',
                 name_company:'Игра "Змейка"',
                 tecnology:'JavaScript, Canvas, Webpack.',
+                url:'https://github.com/AnigalHub/Snake'
               },
               {
                 main_src:'./main_svgGame.jpg',
@@ -156,6 +165,7 @@
                 alt:'alphabet',
                 name_company:'Игра "Изучение Алфавита"',
                 tecnology:'Vue.js, JavaScript, Drag and Drop, Sass. ',
+                url:'https://github.com/AnigalHub/SvgGames'
               },
             ],
             WorksOther:[
