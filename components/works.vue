@@ -9,7 +9,15 @@
                 <div v-for="(work,index) in WorksSites" :key="index">
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
-                  <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                  <b-row>
+                    <b-col>
+                      <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                    </b-col>
+                    <b-col cols="2">
+                      <component :is="svg"></component>
+                    </b-col>
+                  </b-row>
+
                 </div>
               </div>
             </b-tab>
@@ -50,10 +58,13 @@
 </template>
 
 <script>
+   import Reference_svg from "~/components/svg_works/reference_svg";
     export default {
         name: "works",
+      components: {Reference_svg},
         data(){
           return{
+            svg:Reference_svg,
             SelectedWorks:{
               src:'',
               alt:'',
