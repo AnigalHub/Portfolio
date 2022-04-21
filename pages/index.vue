@@ -517,6 +517,8 @@ h2, #Home .front{color: #de6a13;}
       width: 100%;
       margin: 0 5% 4% !important;
     }
+    /*svg*/
+    svg{ width: 70%}
   }
   /*Компонент - "Контакты"*/
   #Contacts{
