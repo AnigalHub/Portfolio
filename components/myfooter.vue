@@ -12,7 +12,7 @@
     import Logo_svg from "~/components/logo_svg";
     export default {
         name: "myfooter",
-      components: {Logo_svg}
+        components: {Logo_svg}
     }
 </script>
 
