@@ -57,7 +57,14 @@
                 <div v-for="(work,index) in WorksOther" :key="index">
                   <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
                   <h4>{{work.name_company}}</h4>
-                  <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                  <b-row>
+                    <b-col>
+                      <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
+                    </b-col>
+                    <b-col cols="2">
+                      <a :href="work.url" target="_blank"> <component :is="svg"></component></a>
+                    </b-col>
+                  </b-row>
                 </div>
               </div>
             </b-tab>
@@ -175,6 +182,7 @@
                 alt:'parser',
                 name_company:'Парсинг сайта ',
                 tecnology:'Node.js',
+                url:'https://github.com/AnigalHub/Parser'
               },
               {
                 main_src:'./main_TestTask.png',
@@ -182,6 +190,7 @@
                 alt:'TestTask',
                 name_company:'Страничка с добавлением элементов',
                 tecnology:'Nuxt.js, Vuex, Sass.',
+                url:'https://github.com/AnigalHub/TestTask'
               },
               {
                 main_src:'./main_market.png',
@@ -189,6 +198,7 @@
                 alt:'market',
                 name_company:'Каталог с корзиной и сортировкой',
                 tecnology:'Nuxt.js, Vuex, Sass.',
+                url:'https://github.com/AnigalHub/Market'
               },
            /*   {
                 main_src:'',
@@ -196,6 +206,7 @@
                 alt:'tgbot',
                 name_company:'Telegram-бот "Напоминалка"',
                 tecnology:'TypeScript, PostgreSQL. ',
+                 url:''
               },
               */
               {
@@ -204,6 +215,7 @@
                 alt:'TestBis',
                 name_company:'Прототип банковского приложения',
                 tecnology:'Vue.js (Vuex, VueRouter, BootstrapVue).',
+                url:'https://github.com/AnigalHub/TestBis'
               },
             ]
           }
