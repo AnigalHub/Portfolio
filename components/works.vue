@@ -14,10 +14,9 @@
                       <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
                     </b-col>
                     <b-col cols="2">
-                      <component :is="svg"></component>
+                      <a :href="work.url" target="_blank"> <component :is="svg"></component></a>
                     </b-col>
                   </b-row>
-
                 </div>
               </div>
             </b-tab>
@@ -76,6 +75,7 @@
                 alt:'Промэлектронсервис',
                 name_company:'Сайт компании «Промэлектронсервис»',
                 tecnology:'HTML, CSS, Bootstrap, PHP.',
+                url:'https://github.com/AnigalHub/Promelectronservice'
               },
               {
                 main_src:'./gts.jpg',
@@ -83,7 +83,7 @@
                 alt:'Гостехносервис',
                 name_company:'Сайт компании «Гостехносервис»',
                 tecnology:'Vue.js, BootstrapVue, Sass.',
-
+                url:"https://github.com/AnigalHub/Gts"
               },
               {
                 main_src:'./priamyeruki.jpg',
@@ -91,6 +91,7 @@
                 alt:'Прямые_руки',
                 name_company:'Сайт компании «Аваконт»',
                 tecnology:'Vue.js (BootstrapVue, VueRouter), Sass, Express.js.',
+                url:'https://github.com/AnigalHub/Priamyeruki'
               },
               {
                 main_src:'./avacont.jpg',
@@ -98,7 +99,7 @@
                 alt:'Аваконт',
                 name_company:'Сайт компании «Аваконт»',
                 tecnology:'Vue.js, JavaScript, HTML, Sass, Express.js.',
-
+                url:'https://github.com/AnigalHub/Avacont'
               },
               {
                 main_src:'./valencia.png',
@@ -106,6 +107,7 @@
                 alt:'Валенсия',
                 name_company:'Сайт компании «Валенсия»',
                 tecnology:'Nuxt.js, BootstrapVue, HTML, Sass.',
+                url: 'https://github.com/AnigalHub/Valencia'
               },
               {
                 main_src:'./pixelperfect.png',
@@ -113,6 +115,7 @@
                 alt:'pixelperfect',
                 name_company:'Сайт по Макету',
                 tecnology:'Vue.js, BootstrapVue, HTML, Sass.',
+                url:'https://github.com/AnigalHub/PixelPerfect'
               }
             ],
             WorksAPI:[
