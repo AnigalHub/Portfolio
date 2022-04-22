@@ -103,6 +103,14 @@
                     name_company:'Проект “Аптечка”',
                     tecnology:'Node.js, Express.js, Vue.js, BootstrapVue.',
                     url:'https://github.com/AnigalHub/Pills_api'
+                  },
+                  {
+                    main_src:'',
+                    src:'/wishlist.png',
+                    alt:'wishlist',
+                    name_company:'Проект “Список Желаний”',
+                    tecnology:'Node.js, Express.js, Vue.js, BootstrapVue.',
+                    url:''
                   }
                 ],
               },
