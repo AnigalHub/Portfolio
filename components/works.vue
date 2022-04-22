@@ -101,7 +101,7 @@
                     src:'/api.png',
                     alt:'api',
                     name_company:'Проект “Аптечка”',
-                    tecnology:'Node.js, Express.js, Vue.js, BootstrapVue.',
+                    tecnology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
                     url:'https://github.com/AnigalHub/Pills_api'
                   },
                   {
@@ -109,7 +109,7 @@
                     src:'/wishlist.png',
                     alt:'wishlist',
                     name_company:'Проект “Список Желаний”',
-                    tecnology:'Node.js, Express.js, Vue.js, BootstrapVue.',
+                    tecnology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
                     url:'https://github.com/AnigalHub/WishList'
                   }
                 ],
