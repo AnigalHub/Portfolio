@@ -4,13 +4,9 @@
       <h2>Профессиональные навыки</h2>
         <div class="flex-container">
           <div v-for="(skill,index) in SkillsRow" :key="index">
-            <div>
               <component :key="index" :is="skill.svg"/>
-              <div class="text">
-                {{skill.descr_skills}}
-              </div>
-            </div>
-        </div>
+              <div class="text">{{skill.descr_skills}}</div>
+          </div>
         </div>
       </b-container>
     </div>
