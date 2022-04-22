@@ -51,15 +51,13 @@ a{color: #2868ad !important;}
   text-align: center;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-h2,.text,.text_works,.nav-link,.navbar-brand{font-family: 'Piazzolla', serif;}
+.text,.text_works,.nav-link,.navbar-brand{font-family: 'Piazzolla', serif;}
 /*заголовки*/
 h2{
-  margin-left: auto;
+  margin: 0 auto;
   text-shadow: .45px .45px .45px #000;
-  font-family: 'El Messiri', sans-serif;
   font-weight: 500 !important;
   font-size: 1.6rem !important;
-  margin-right: auto;
   text-align: center;
   padding-bottom: 1%;
 }
@@ -69,7 +67,7 @@ h4{
   font-weight: 700;
 }
 /*заголовок h4, имя, фраза "Junior Frontend-разработчик*/
-h4, #Home .name, #Home .front{
+h2, h4, #Home .name, #Home .front{
   font-family: 'El Messiri', sans-serif;
 }
 /*заголовок h4, фраза "Junior Frontend-разработчик*/
