@@ -67,9 +67,7 @@ h4{
   font-weight: 700;
 }
 /*заголовок h4, имя, фраза "Junior Frontend-разработчик*/
-h2, h4, #Home .name, #Home .front{
-  font-family: 'El Messiri', sans-serif;
-}
+h2, h4, #Home .name, #Home .front{font-family: 'El Messiri', sans-serif;}
 /*заголовок h4, фраза "Junior Frontend-разработчик*/
 h2, #Home .front{color: #de6a13;}
 /*текст, пункты меню, фраза в логотипе*/
@@ -304,8 +302,7 @@ h2, #Home .front{color: #de6a13;}
     width: auto;
     height: 90%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
 /*Компонент - "Ключевые навыки"*/
@@ -336,7 +333,6 @@ h2, #Home .front{color: #de6a13;}
   /*блоки с работами*/
   .flex-container  > div {
     width:  32%;
-    display: block;
     margin: 0 .65% 2%!important;
     /*при наведении*/
     &:hover{
@@ -381,8 +377,7 @@ h2, #Home .front{color: #de6a13;}
   /*svg*/
   svg{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 55px;
     height: 55px;
   }
@@ -404,11 +399,8 @@ h2, #Home .front{color: #de6a13;}
   }
   /*Компонент - "Образование"*/
   #Education {
-    /*сетка бутстрап*/
-    .row {
       /*элемент сетки бутстрап*/
-      .col {padding-left: 4% !important;}
-    }
+     .row .col {padding-left: 4% !important;}
   }
 }
 @media screen and (max-width: 500px) {
@@ -428,16 +420,10 @@ h2, #Home .front{color: #de6a13;}
       width: 100px;
       height: 100px;
     }
-
     /*имя*/
-    .name {
-      font-size: 1.5rem;
-    }
-
+    .name {font-size: 1.5rem;}
     /*фраза-Junior Frontend-разработчик*/
-    .front {
-      font-size: 1.7rem;
-    }
+    .front {font-size: 1.7rem;}
   }
   /*Компонент - "Образование"*/
   #Education {
