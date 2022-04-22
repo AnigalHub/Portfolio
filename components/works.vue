@@ -110,7 +110,7 @@
                     alt:'wishlist',
                     name_company:'Проект “Список Желаний”',
                     tecnology:'Node.js, Express.js, Vue.js, BootstrapVue.',
-                    url:''
+                    url:'https://github.com/AnigalHub/WishList'
                   }
                 ],
               },
