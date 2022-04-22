@@ -27,5 +27,5 @@
 </script>
 
 <style scoped>
-  .reference{fill:none;stroke:#000;stroke-width:2;stroke-miterlimit:10;}
+  .reference{fill:none;stroke-width:2;stroke-miterlimit:10;}
 </style>
