@@ -105,7 +105,7 @@
                     url:'https://github.com/AnigalHub/Pills_api'
                   },
                   {
-                    main_src:'',
+                    main_src:'./main_wishlist.jpg',
                     src:'/wishlist.png',
                     alt:'wishlist',
                     name_company:'Проект “Список Желаний”',
