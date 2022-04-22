@@ -147,6 +147,8 @@ h2, #Home .front{color: #de6a13;}
         background: rgba(193, 193, 191, 0.7);
         border-bottom: rgb(177, 177, 175);
       }
+      /*ссылка на код - svg*/
+      .reference{stroke:#000;}
     }
   }
   /*Компонент - "Контакты"*/
@@ -208,6 +210,8 @@ h2, #Home .front{color: #de6a13;}
         background: #010f18;
         border-bottom: 1.5px solid black;
       }
+      /*ссылка на код - svg*/
+      .reference{stroke:#afadad;}
     }
   }
   /*Компонент - "Контакты"*/
@@ -338,10 +342,11 @@ h2, #Home .front{color: #de6a13;}
     margin: 0 .65% 2%!important;
     /*при наведении*/
     &:hover{
-      transform: scale(1.02);
+      transform: scale(1.03);
       /*svg*/
       svg{
         transform: scale(1.1);
+        /*ссылка на код - svg*/
         .reference{stroke-width:4;}
       }
     }
@@ -360,7 +365,6 @@ h2, #Home .front{color: #de6a13;}
     /*абзац*/
     p{margin-bottom: 0.4rem !important;}
   }
-
 }
 /*Компонент - "Контакты"*/
 #Contacts{
