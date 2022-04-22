@@ -27,7 +27,7 @@
     import Sass_svg from "~/components/svg_skills/sass_svg";
     import Node_svg from "~/components/svg_skills/node_svg";
     import Express_svg from "~/components/svg_skills/express_svg";
-    import PostgreSQL_svg from "~/components/svg_skills/postgre_sql";
+    import PostgreSQL_svg from "~/components/svg_skills/postgresql_svg";
     import Git_svg from "~/components/svg_skills/git_svg";
     export default {
         name: "skills",
