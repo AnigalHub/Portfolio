@@ -4,8 +4,8 @@
       <h2>Профессиональные навыки</h2>
         <div class="flex-container">
           <div v-for="(skill,index) in SkillsRow" :key="index">
-              <component :key="index" :is="skill.svg"/>
-              <div class="text">{{skill.descr_skills}}</div>
+            <component :key="index" :is="skill.svg"/>
+            <div class="text">{{skill.skills_name}}</div>
           </div>
         </div>
       </b-container>
@@ -32,18 +32,18 @@
         data(){
             return{
                 SkillsRow:[
-                    {svg:Vue_svg, descr_skills: 'Vue.js',},
-                    {svg:Javascript_svg, descr_skills: 'Javascript',},
-                    {svg:Typescript_svg, descr_skills: 'Typescript',},
-                    {svg:Nuxt_svg, descr_skills: 'Nuxt.js',},
-                    {svg:Html_svg, descr_skills:'HTML',},
-                    {svg:Css_svg, descr_skills:'CSS',},
-                    {svg:Bootstrap_svg, descr_skills:'Boostrap',},
-                    {svg:Sass_svg, descr_skills:'SASS/SCSS',},
-                    {svg:Node_svg, descr_skills: 'Node.js',},
-                    {svg:Express_svg, descr_skills: 'Express.js',},
-                    {svg:PostgreSQL_svg, descr_skills: 'PostgreSQL',},
-                    {svg:Git_svg, descr_skills: 'Git',},
+                    {svg:Vue_svg, skills_name: 'Vue.js',},
+                    {svg:Javascript_svg, skills_name: 'Javascript',},
+                    {svg:Typescript_svg, skills_name: 'Typescript',},
+                    {svg:Nuxt_svg, skills_name: 'Nuxt.js',},
+                    {svg:Html_svg, skills_name:'HTML',},
+                    {svg:Css_svg, skills_name:'CSS',},
+                    {svg:Bootstrap_svg, skills_name:'Boostrap',},
+                    {svg:Sass_svg, skills_name:'SASS/SCSS',},
+                    {svg:Node_svg, skills_name: 'Node.js',},
+                    {svg:Express_svg, skills_name: 'Express.js',},
+                    {svg:PostgreSQL_svg, skills_name: 'PostgreSQL',},
+                    {svg:Git_svg, skills_name: 'Git',},
                 ]
             }
         }
