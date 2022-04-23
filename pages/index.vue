@@ -42,9 +42,7 @@ a{color: #2868ad !important;}
   color: white;
 }
 /*Компонент меню*/
-#Nav{
-  box-shadow: 0 6px 6px -6px rgba(255, 255, 255, 0.63);
-}
+#Nav{box-shadow: 0 6px 6px -6px rgba(255, 255, 255, 0.63);}
 /*Компонент футера*/
 #Myfooter{
   padding: 0.5rem 0 !important;
@@ -71,15 +69,11 @@ h2, h4, #Home .name, #Home .front{font-family: 'El Messiri', sans-serif;}
 /*заголовок h4, фраза "Junior Frontend-разработчик*/
 h2, #Home .front{color: #de6a13;}
 /*текст, пункты меню, фраза в логотипе*/
-.text,.nav-link,.navbar-brand{
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-}
+.text,.nav-link,.navbar-brand{line-height: 1.8rem;}
+/*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
+.text,.nav-link,.navbar-brand,.text_works{font-size: 1.2rem;}
 /*текст для компонента "Мои работы"*/
-.text_works{
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-}
+.text_works{line-height: 1.4rem;}
 /*svg в логотипе*/
 #logo{
   width: 60px;
