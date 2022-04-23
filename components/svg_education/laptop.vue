@@ -1,6 +1,6 @@
 <template>
   <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 250 150" style="enable-background:new 0 0 250 150;" xml:space="preserve">
+       viewBox="0 0 250 150" xml:space="preserve">
     <g id="Laptop">
       <path class="st0" d="M208.4,132l-176.8,0c-3.1,0-5.6-2.5-5.6-5.6v-0.7c0,0,0,0,0,0l188,0c0,0,0,0,0,0v0.7C214,129.5,211.5,132,208.4,132z"/>
       <path class="st1" d="M211.2,125.8H28.8c-1.5,0-2.8-1.2-2.8-2.8v-0.7c0-1.5,1.3-2.8,2.8-2.8h182.4c1.5,0,2.8,1.2,2.8,2.8v0.7C214,124.5,212.8,125.8,211.2,125.8z"/>
