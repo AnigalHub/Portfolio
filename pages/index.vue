@@ -110,15 +110,11 @@ h2, #Home .front{color: #de6a13;}
       1.3px 1.25px 0 #321002;
   }
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты"*/
-  #About, #Skills,#Contacts{
-    background: rgba(255, 255, 255, 0.38);
-    color: #090c13 !important;
-  }
+  #About, #Skills, #Contacts{background: rgba(255, 255, 255, 0.38);}
   /*Компоненты - "Об мне", "Образование"*/
-  #Works, #Education{
-    background: rgba(220, 220, 220, 0.96);
-    color: #090c13 !important;
-  }
+  #Works, #Education{background: rgba(220, 220, 220, 0.96);}
+  /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
+  #About, #Skills, #Contacts, #Works, #Education{color: #090c13 !important;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
