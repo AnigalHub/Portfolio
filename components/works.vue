@@ -28,7 +28,7 @@
 </template>
 
 <script>
-   import Reference_svg from "~/components/svg_works/reference_svg";
+   import Reference_svg from "~/components/svg_works/reference_github_svg";
     export default {
         name: "works",
       components: {Reference_svg},
