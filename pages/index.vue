@@ -305,7 +305,7 @@ h2, #Home .front{color: #de6a13;}
   /*блоки под svg и название*/
   .flex-container  > div {
     width: 15%;
-    margin: 0 .8% 1% !important;
+    margin: 0 .8% 1%;
     cursor: default;
     /*при наведении*/
     &:hover{
@@ -319,7 +319,7 @@ h2, #Home .front{color: #de6a13;}
   /*блоки с работами*/
   .flex-container  > div {
     width:  32%;
-    margin: 0 .65% 2%!important;
+    margin: 0 .65% 2%;
     /*при наведении*/
     &:hover{
       transform: scale(1.03);
@@ -391,7 +391,7 @@ h2, #Home .front{color: #de6a13;}
 }
 @media screen and (max-width: 500px) {
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Contacts {padding: 1rem 0 !important;}
+  #About, #Skills, #Works, #Contacts {padding: 1rem 0;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_works, .text, .nav-link, .navbar-brand {
     font-size: 1.1rem;
@@ -505,7 +505,7 @@ h2, #Home .front{color: #de6a13;}
   /*Компонент - "Контакты"*/
   #Contacts{
     /*блоки с контактной информацией*/
-    .flex-container > div {width:50% !important;}
+    .flex-container > div {width:50%;}
     /*svg контактной информации*/
     svg{
       width: 45px;
@@ -547,13 +547,13 @@ h2, #Home .front{color: #de6a13;}
     /*блоки с работами*/
     .flex-container > div {
       width: 46%;
-      margin: 0 1.2% 2.3% !important;
+      margin: 0 1.2% 2.3%;
     }
   }
   /*Компонент - "Контакты"*/
   #Contacts{
     /*блоки с контактной информацией*/
-    .flex-container > div {width:50% !important;}
+    .flex-container > div {width:50%;}
     /*svg контактной информации*/
     svg{
       width: 50px;
