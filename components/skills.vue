@@ -1,15 +1,15 @@
 <template>
-    <div id="Skills">
-      <b-container>
+  <div id="Skills">
+    <b-container>
       <h2>Профессиональные навыки</h2>
-        <div class="flex-container">
-          <div v-for="(skill,index) in SkillsRow" :key="index">
-            <component :key="index" :is="skill.svg"/>
-            <div class="text">{{skill.skills_name}}</div>
-          </div>
+      <div class="flex-container">
+        <div v-for="(skill,index) in SkillsRow" :key="index">
+          <component :key="index" :is="skill.svg"/>
+          <div class="text">{{skill.skills_name}}</div>
         </div>
-      </b-container>
-    </div>
+      </div>
+    </b-container>
+  </div>
 </template>
 
 <script>

@@ -3,10 +3,10 @@
     <b-container>
       <div class="flex-container text">
         <div v-for="information in ContactsRow" :key="information.text">
-            <a :href="information.href" :target="information.target">
-              <component :is="information.svg"/>
-              <p class="text">{{information.text}}</p>
-            </a>
+          <a :href="information.href" :target="information.target">
+            <component :is="information.svg"/>
+            <p class="text">{{information.text}}</p>
+          </a>
         </div>
       </div>
     </b-container>

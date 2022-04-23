@@ -1,9 +1,9 @@
 <template>
-    <div id="Works">
-      <b-container>
-        <h2>Мои работы</h2>
-        <b-tabs fill>
-          <b-tab v-for="(works,index) in AllWorks" :key="index" :title="works.name" >
+  <div id="Works">
+    <b-container>
+      <h2>Мои работы</h2>
+      <b-tabs fill>
+        <b-tab v-for="(works,index) in AllWorks" :key="index" :title="works.name" >
             <div class="flex-container">
               <div v-for="(work,index) in works.Works" :key="index">
                 <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
@@ -19,12 +19,12 @@
               </div>
             </div>
           </b-tab>
-        </b-tabs>
-        <b-modal ref="my-modal" id="img" size="xl" :title="SelectedWorks.name_company" centered>
-          <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
-        </b-modal>
-      </b-container>
-    </div>
+      </b-tabs>
+      <b-modal ref="my-modal" id="img" size="xl" :title="SelectedWorks.name_company" centered>
+        <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
+      </b-modal>
+    </b-container>
+  </div>
 </template>
 
 <script>

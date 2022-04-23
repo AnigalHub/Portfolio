@@ -1,14 +1,14 @@
 <template>
-    <div>
-      <Home/>
-      <Navbar/>
-      <About/>
-      <Education/>
-      <Skills/>
-      <Works/>
-      <Contacts/>
-      <Myfooter/>
-    </div>
+  <div>
+    <Home/>
+    <Navbar/>
+    <About/>
+    <Education/>
+    <Skills/>
+    <Works/>
+    <Contacts/>
+    <Myfooter/>
+  </div>
 </template>
 
 <script>

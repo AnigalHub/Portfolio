@@ -1,11 +1,11 @@
 <template>
-    <div id="Myfooter">
-      <b-container class="text">
-        Copyright © 2022 <br>
-        <Logo_svg/>
-        Ignatova Anna
-      </b-container>
-    </div>
+  <div id="Myfooter">
+    <b-container class="text">
+      Copyright © 2022 <br>
+      <Logo_svg/>
+      Ignatova Anna
+    </b-container>
+  </div>
 </template>
 
 <script>

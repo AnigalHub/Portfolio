@@ -1,12 +1,12 @@
 <template>
-    <div id="About">
-      <b-container>
-        <h2>Обо мне</h2>
-        <ul>
-          <li v-for="paragraph in AboutMeRow"  class="text">{{paragraph.description}}</li>
-        </ul>
-      </b-container>
-    </div>
+  <div id="About">
+    <b-container>
+      <h2>Обо мне</h2>
+      <ul>
+        <li v-for="paragraph in AboutMeRow" class="text">{{paragraph.description}}</li>
+      </ul>
+    </b-container>
+  </div>
 </template>
 
 <script>
