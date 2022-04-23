@@ -20,7 +20,7 @@
             </div>
           </b-tab>
       </b-tabs>
-      <b-modal ref="my-modal" id="img" size="xl" :title="SelectedWorks.name_company" centered>
+      <b-modal ref="modalWork" id="img" size="xl" :title="SelectedWorks.name_company" centered>
         <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
       </b-modal>
     </b-container>
@@ -30,7 +30,7 @@
 <script>
    import Reference_svg from "~/components/svg_works/reference_github_svg";
     export default {
-        name: "works",
+      name: "works",
       components: {Reference_svg},
         data(){
           return{
@@ -195,7 +195,7 @@
       methods:{
           showModal(work){
             this.SelectedWorks = work;
-            this.$refs['my-modal'].show()
+            this.$refs['modalWork'].show()
           }
       }
     }
