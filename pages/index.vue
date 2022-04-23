@@ -207,7 +207,7 @@ h2, #Home .front{color: #de6a13;}
 
 /*Компонент - "Главный"*/
 #Home{
-  background: url("../static/background.jpg") 100% 100% no-repeat;
+  background: url("../static/background.jpg") no-repeat;
   background-size: 100% 100%;
   /*картинка*/
   img{
