@@ -164,15 +164,11 @@ h2, #Home .front{color: #de6a13;}
       1.3px 1.25px 0 #321002;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
-  #About, #Skills,#Contacts{
-    background: #0c111c;
-    color: #afadad !important;
-  }
+  #About, #Skills,#Contacts{background: #0c111c;}
   /*Компоненты -  "Мои работы","Образование"*/
-  #Works, #Education{
-    background: #090c13;
-    color: #afadad !important;
-  }
+  #Works, #Education{background: #090c13;}
+  /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
+  #About, #Skills, #Contacts, #Works, #Education{color: #afadad !important;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
