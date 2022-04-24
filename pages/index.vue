@@ -383,13 +383,23 @@ h2, #Home .front{color: #de6a13;}
   }
   /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
   .text_works,.text,.nav-link,.navbar-brand{
-    font-size: 1.1rem !important;
-    line-height: 1.1rem !important;
+    font-size: 1rem !important;
+    line-height: 1rem !important;
   }
   /*Компонент - "Образование"*/
   #Education {
       /*элемент сетки бутстрап*/
      .row .col {padding-left: 4% !important;}
+  }
+  /*Компонент - "Ключевые навыки"*/
+  #Skills {
+    /*блоки под svg и название*/
+    .flex-container > div {width: 30% !important;}
+  }
+  /*Компонент - "Контакты"*/
+  #Contacts {
+    /*блоки с контактной информацией*/
+    .flex-container > div {width: 100% !important;}
   }
 }
 @media screen and (max-width: 500px) {
@@ -448,7 +458,7 @@ h2, #Home .front{color: #de6a13;}
   /*Компонент - "Контакты"*/
   #Contacts {
     /*блоки с контактной информацией*/
-    .flex-container > div {width: 50% !important;}
+    .flex-container > div {width: 50%;}
     /*svg контактной информации*/
     svg {
       width: 40px;
