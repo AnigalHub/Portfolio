@@ -32,6 +32,8 @@ export default {
   .navbar-brand{padding-bottom: 0 !important;}
 </style>
 <style lang="scss">
+/*сетка бутстрап*/
+.row{margin: 0 auto !important;}
 /*контейнер на блоки посередине экрана*/
 .container {padding: 10px !important;}
 /*ссылки*/
