@@ -20,7 +20,7 @@
             </div>
           </b-tab>
       </b-tabs>
-      <b-modal ref="modalWork" id="img" size="xl" :title="SelectedWorks.name_company" centered>
+      <b-modal ref="modalWork" id="img" size="xl" :title="SelectedWorks.name_company" centered hide-footer>
         <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
       </b-modal>
     </b-container>
@@ -201,7 +201,6 @@
     }
 </script>
 <style>
-
   /*стили которые переписаны с бутстрапа (переносить отсюда нельзя!!!!!)*/
   .modal-dialog img{ /*картинка в модальном окне*/
     width: 100% !important;
@@ -220,9 +219,6 @@
   }
   .modal-body { /*тело модального окна*/
     padding:0 !important;
-  }
-  .modal-footer { /*footer-модального окна*/
-    display: none !important;
   }
   @media (min-width: 992px){
     .modal-lg, .modal-xl { /*ширина модального окна на разных экранах*/
