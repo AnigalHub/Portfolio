@@ -212,6 +212,7 @@ h2, #Home .front{color: #de6a13;}
   /*картинка*/
   img{
     border-radius: 100%;
+    filter: contrast(110%);
     width: 160px;
     height: 160px;
     display: block;
