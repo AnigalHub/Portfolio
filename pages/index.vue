@@ -3,10 +3,8 @@
     <Home/>
     <Navbar/>
     <About/>
-    <Education/>
     <Skills/>
     <Works/>
-    <Contacts/>
     <Myfooter/>
   </div>
 </template>
