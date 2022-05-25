@@ -1,25 +1,22 @@
 <template>
   <div id="Works">
     <b-container>
-      <h2>Мои работы</h2>
-      <b-tabs fill>
-        <b-tab v-for="(works,index) in AllWorks" :key="index" :title="works.name" >
+      <h1>Портфолио</h1>
+<!--      <b-tabs fill>-->
+<!--        <div v-for="(works,index) in Works" :key="index" :title="works.name" >-->
             <div class="flex-container">
-              <div v-for="(work,index) in works.Works" :key="index">
+              <div v-for="(work,index) in Works" :key="index">
                 <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
-                <h4>{{work.name_company}}</h4>
-                <b-row>
-                  <b-col>
-                    <p class="text_works"><b>Технологии:</b><br>{{work.tecnology}}</p>
-                  </b-col>
-                  <b-col cols="2">
-                    <a :href="work.url" target="_blank"> <component :is="svg"></component></a>
-                  </b-col>
-                </b-row>
+                <div class="work">
+                  <div class="name_works">
+                    <p class="name">{{work.name_company}}</p>
+                    <p class="text_works">{{work.tecnology}}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </b-tab>
-      </b-tabs>
+<!--          </div>-->
+<!--      </b-tabs>-->
       <b-modal ref="modalWork" id="img" size="xl" :title="SelectedWorks.name_company" centered hide-footer>
         <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
       </b-modal>
@@ -39,15 +36,12 @@
               src:'',
               alt:'',
             },
-            AllWorks:[
-              {
-                name:'Сайты',
                 Works:[
                   {
                     main_src:'./prom.jpg',
                     src:'./home_prom.jpg',
                     alt:'Промэлектронсервис',
-                    name_company:'Сайт компании «Промэлектронсервис»',
+                    name_company:'Сайт «Промэлектронсервис»',
                     tecnology:'HTML, CSS, Bootstrap, PHP.',
                     url:'https://github.com/AnigalHub/Promelectronservice'
                   },
@@ -55,7 +49,7 @@
                     main_src:'./gts.jpg',
                     src:'./home_gts.png',
                     alt:'Гостехносервис',
-                    name_company:'Сайт компании «Гостехносервис»',
+                    name_company:'Сайт «Гостехносервис»',
                     tecnology:'Vue.js, BootstrapVue, Sass.',
                     url:"https://github.com/AnigalHub/Gts"
                   },
@@ -63,15 +57,15 @@
                     main_src:'./priamyeruki.jpg',
                     src:'./home_priamyeruki.jpg',
                     alt:'Прямые_руки',
-                    name_company:'Сайт компании «Аваконт»',
-                    tecnology:'Vue.js (BootstrapVue, VueRouter), Sass, Express.js.',
+                    name_company:'Сайт «Аваконт»',
+                    tecnology:'Vue.js, Sass, Express.js.',
                     url:'https://github.com/AnigalHub/Priamyeruki'
                   },
                   {
                     main_src:'./avacont.jpg',
                     src:'./home_avacont.jpg',
                     alt:'Аваконт',
-                    name_company:'Сайт компании «Аваконт»',
+                    name_company:'Сайт «Аваконт»',
                     tecnology:'Vue.js, JavaScript, HTML, Sass, Express.js.',
                     url:'https://github.com/AnigalHub/Avacont'
                   },
@@ -79,7 +73,7 @@
                     main_src:'./valencia.png',
                     src:'./home_valencia.png',
                     alt:'Валенсия',
-                    name_company:'Сайт компании «Валенсия»',
+                    name_company:'Сайт «Валенсия»',
                     tecnology:'Nuxt.js, BootstrapVue, HTML, Sass.',
                     url: 'https://github.com/AnigalHub/Valencia'
                   },
@@ -90,12 +84,7 @@
                     name_company:'Сайт по Макету',
                     tecnology:'Vue.js, BootstrapVue, HTML, Sass.',
                     url:'https://github.com/AnigalHub/PixelPerfect'
-                  }
-                ],
-              },
-              {
-                name:'API',
-                Works:[
+                  },
                   {
                     main_src:'./main_api.png',
                     src:'/api.png',
@@ -111,12 +100,7 @@
                     name_company:'Проект “Список Желаний”',
                     tecnology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
                     url:'https://github.com/AnigalHub/WishList'
-                  }
-                ],
-              },
-              {
-                name:'Игры',
-                Works:[
+                  },
                   {
                     main_src:'./main_training.jpg',
                     src:'./training.png',
@@ -141,11 +125,6 @@
                     tecnology:'Vue.js, JavaScript, Drag and Drop, Sass. ',
                     url:'https://github.com/AnigalHub/SvgGames'
                   },
-                ],
-              },
-              {
-                name:'Другое',
-                Works:[
                   {
                     main_src:'./main.jpg',
                     src:'/parser.jpg',
@@ -158,7 +137,7 @@
                     main_src:'./main_TestTask.png',
                     src:'/TestTask.png',
                     alt:'TestTask',
-                    name_company:'Страничка с добавлением элементов',
+                    name_company:'Страница продажи товаров',
                     tecnology:'Nuxt.js, Vuex, Sass.',
                     url:'https://github.com/AnigalHub/TestTask'
                   },
@@ -187,8 +166,6 @@
                     tecnology:'Vue.js (Vuex, VueRouter, BootstrapVue).',
                     url:'https://github.com/AnigalHub/TestBis'
                   },
-                ]
-              },
             ],
           }
         },
@@ -227,5 +204,7 @@
   }
 </style>
 <style lang="scss" scoped>
-
+.text_works{
+  color: white;
+}
 </style>
