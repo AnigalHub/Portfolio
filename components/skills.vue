@@ -1,7 +1,7 @@
 <template>
   <div id="Skills">
     <b-container>
-      <h2>Профессиональные навыки</h2>
+      <h1>Ключевые навыки</h1>
       <div class="flex-container">
         <div v-for="(skill,index) in SkillsRow" :key="index">
           <component :key="index" :is="skill.svg"/>
