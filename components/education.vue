@@ -1,7 +1,7 @@
 <template>
   <div id="Education">
     <b-container>
-      <h2>Образование</h2>
+      <h1>Образование</h1>
       <b-row>
         <b-col cols="2">
           <component :is="Education_svg"></component>
