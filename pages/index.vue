@@ -51,29 +51,29 @@ a{color: #2868ad !important;}
   text-align: center;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-.text,.text_works,.nav-link,.navbar-brand{font-family: 'Piazzolla', serif;}
+.text,.text_works,.name,.nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
 /*заголовки*/
-h2{
+h1{
   margin: 0 auto;
   text-shadow: .45px .45px .45px #000;
-  font-weight: 500 !important;
+  //font-weight: 500 !important;
   font-size: 1.6rem !important;
   text-align: center;
-  padding-bottom: 1%;
+  padding-bottom: 2.5%;
 }
 h4{
   margin-bottom: 0 !important;
   font-size: 1.2rem !important;
-  font-weight: 700;
+  //font-weight: 700;
 }
 /*заголовок h4, имя, фраза "Junior Frontend-разработчик*/
-h2, h4, #Home .name, #Home .front{font-family: 'El Messiri', sans-serif;}
+h1, .name_works, #Home .name, #Home .front{font-family: 'Roboto', sans-serif;}
 /*заголовок h4, фраза "Junior Frontend-разработчик*/
-h2, #Home .front{color: #de6a13;}
+h1,.name, #Home .front{color: #ffc9a1;}
 /*текст, пункты меню, фраза в логотипе*/
 .text,.nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
-.text,.nav-link,.navbar-brand,.text_works{font-size: 1.2rem;}
+.text,.nav-link,.navbar-brand,.text_works,.name{font-size: 1.15rem;}
 /*текст для компонента "Мои работы"*/
 .text_works{line-height: 1.4rem;}
 /*svg в логотипе*/
@@ -88,12 +88,12 @@ h2, #Home .front{color: #de6a13;}
 /*все кнопки в меню,блок под логотип*/
 .navbar .nav-link,.navbar-brand{color: white !important;}
 /*все кнопки в меню*/
-.nav-link{padding: 0.5rem 1.5rem !important;}
+.nav-link{padding: 0.5rem 2rem !important;}
 /*контейнер, который включает в себя повтор блоков*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1%;
+  margin: 1% 12% 0 15%;
 }
 /*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
 #About, #Education, #Skills, #Works, #Contacts{padding: 3% 0 2.5%;}
@@ -112,9 +112,9 @@ h2, #Home .front{color: #de6a13;}
       1.3px 1.25px 0 #321002;
   }
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты"*/
-  #About, #Skills, #Contacts{background: rgba(255, 255, 255, 0.38);}
+  #Skills,#Contacts{background: #ffffff;}
   /*Компоненты - "Об мне", "Образование"*/
-  #Works, #Education{background: rgba(220, 220, 220, 0.96);}
+   #About,#Works{background: #f4f4f4;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
   #About, #Skills, #Contacts, #Works, #Education{color: #090c13 !important;}
   /*Компонент - "Об мне"*/
@@ -124,10 +124,13 @@ h2, #Home .front{color: #de6a13;}
   }
   /*Компонент - "Мои работы"*/
   #Works{
+    .flex-container{
+      margin: 1% 0;
+    }
     /*блоки под каждую работу*/
     .flex-container > div {
-      background: #eef4f8;
-      box-shadow: 2px 6px 15px rgba(0,0,0,.25);
+      //background: #eef4f8;
+      box-shadow: 0 4px 24px rgba(0,0,0,.12);
       /*при наведении*/
       &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
       /*заголовок*/
@@ -145,7 +148,7 @@ h2, #Home .front{color: #de6a13;}
     a{color: #090c13 !important;}
   }
   /*цвет svg*/
-  .express_svg,.svg_color{fill: #090c13;}
+  .express_svg,.svg_color{fill: #000;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
@@ -166,9 +169,9 @@ h2, #Home .front{color: #de6a13;}
       1.3px 1.25px 0 #321002;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
-  #About, #Skills,#Contacts{background: #0c111c;}
+  #Skills,#Contacts{background: #0c111c;}
   /*Компоненты -  "Мои работы","Образование"*/
-  #Works, #Education{background: #090c13;}
+  #Works, #About {background: #090c13;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
   #About, #Skills, #Contacts, #Works, #Education{color: #afadad !important;}
   /*Компонент - "Об мне"*/
@@ -211,39 +214,38 @@ h2, #Home .front{color: #de6a13;}
 #Home{
   background: url("../static/background.jpg") no-repeat;
   background-size: 100% 100%;
-  /*картинка*/
-  img{
-    border-radius: 100%;
-    filter: contrast(110%);
-    width: 160px;
-    height: 160px;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid white;
-  }
-  /*имя*/
-  .name{
-    padding: 1.5% 0 0;
-    font-size: 1.8rem;
-    color: #d5d3d3;
-    text-align: center;
-    text-shadow:
-      0 0 4px #000,
-      0 0 4.5px #9e9c9c,
-      0 0 350px #787777,
-      2px 2px 0 #262525;
-    margin-bottom: .5%;
-  }
   /*фраза-Junior Frontend-разработчик*/
   .front{
-    opacity: .98;
-    font-weight: 600 !important;
-    font-size: 2.25rem;
+    //opacity: .98;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+
     text-align: center;
+  }
+  span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
   }
 }
 /*Компонент - "Об мне"*/
 #About{
+  .flex-container {
+    margin: 1% 0 0 0;
+  }
+ .row{
+   margin: 0 5% 0 8%!important;
+ }
+  img{
+    width: 100%;
+  }
+  /*имя*/
+  .name{
+    font-size: 1.8rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: .5%;
+    font-family: 'Roboto', sans-serif;
+  }
   /*список ненумерованный*/
   ul{
     list-style: none;
@@ -296,20 +298,35 @@ h2, #Home .front{color: #de6a13;}
 }
 /*Компонент - "Ключевые навыки"*/
 #Skills{
+  img{ width: 70%}
   /*текст в компоненте "Ключевые навыки"*/
-  .text{text-align: center;}
+  .text{
+    text-align: center;
+  }
+  .svgd{
+    //background:
+    margin: 0 auto;
+   // width: 65px;
+   // height: 65px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 201, 161, 0.81);
+  }
   /*svg навыков (языков, фреймворков, ..)*/
   svg{
-    width: 75px;
-    height: 75px;
+    width: 64px;
+    height: 64px;
     display: block;
     margin: 0 auto;
   }
   /*блоки под svg и название*/
   .flex-container  > div {
-    width: 15%;
-    margin: 0 .8% 1%;
+    width: 20%;
+    margin: 0 2% 2%;
     cursor: default;
+    border-radius: 15px;
+    background: white;
+    padding: 1%;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
     /*при наведении*/
     &:hover{
       transition: 1s;
@@ -319,34 +336,56 @@ h2, #Home .front{color: #de6a13;}
 }
 /*Компонент - "Мои работы"*/
 #Works{
+  .flex-container{
+    margin: 1% 10%;
+  }
   /*блоки с работами*/
   .flex-container  > div {
-    width:  32%;
-    margin: 0 .65% 2%;
+    padding: 1%;
+    background: white;
+    width:  31%;
+    margin: 0 1% 3%;
+    position: relative;
     /*при наведении*/
     &:hover{
-      transform: scale(1.03);
-      /*svg*/
-      svg{
-        transform: scale(1.1);
-        /*ссылка на код - svg*/
-        .reference{stroke-width:4;}
+      .name_works{
+        bottom: 4%;
+        .text_works{
+          display: block;
+        }
       }
+    }
+    .text_works{
+      display: none;
+      color: #000;
+    }
+    .name{
+      color: #ffc9a1;
+      text-shadow: 0.4px 0.38px 0.4px #000;
     }
     /*при наведении*/
     /*картинки*/
     img {
       width: 100%;
-      height: auto;
+      height: 170px;
       cursor: pointer;
     }
     /*заголовок, параграф*/
     h4,p{
-      padding: 1.25% 2% !important;
-      cursor: default;
+      /*padding: 1.25% 2% !important;*/
+      /*cursor: default;*/
+    }
+    .name_works{
+      padding: 2%;
+      width: 96%;
+      background: white;
+      position: absolute;
+      bottom: .1%;
     }
     /*абзац*/
-    p{margin-bottom: 0.4rem !important;}
+    p{
+      margin-bottom: 0 !important;
+    }
   }
 }
 /*Компонент - "Контакты"*/
@@ -370,6 +409,32 @@ h2, #Home .front{color: #de6a13;}
     width: 55px;
     height: 55px;
   }
+}
+#Myfooter{
+  .flex-container{
+    margin: 0 37% 1%;
+  }
+  /*блоки с контактной информацией*/
+  .flex-container > div {
+    text-align: center;
+    width: 25%;
+    /*svg*/
+    svg{
+      display: block;
+      margin: 0 auto;
+      width: 36px;
+      height: 36px;
+    }
+    /*при наведении*/
+    &:hover{
+      transition: 1s;
+      transform: scale(1.09);
+    }
+    .text{
+      margin-bottom: 2%;
+    }
+  }
+
 }
 
  /***********************АДАПТИВНОСТЬ******************/
@@ -478,7 +543,7 @@ h2, #Home .front{color: #de6a13;}
     .front{ font-size: 2rem;}
   }
   /*заголовок*/
-  h2{font-size: 1.4rem !important;}
+  h1{font-size: 1.4rem !important;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_works, .text,.nav-link,.navbar-brand{
     font-size: 1.1rem;
