@@ -13,6 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icons.png' },
+      {href: 'https://fonts.googleapis.com/css2?family=Quicksand&family=Qwitcher+Grypen&family=Roboto:wght@100&display=swap' , rel:'stylesheet'},
       {href: 'https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap' , rel:'stylesheet'}
     ]
   },
