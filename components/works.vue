@@ -21,13 +21,10 @@
 </template>
 
 <script>
-   import Reference_svg from "~/components/svg_works/reference_github_svg";
     export default {
       name: "works",
-      components: {Reference_svg},
         data(){
           return{
-            svg:Reference_svg,
             SelectedWorks:{
               src:'',
               alt:'',
