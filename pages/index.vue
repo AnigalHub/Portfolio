@@ -44,7 +44,7 @@ a{color: #2868ad !important;}
 #Nav{box-shadow: 0 6px 6px -6px rgba(255, 255, 255, 0.63);}
 /*Компонент футера*/
 #Myfooter{
-  padding: 0.5rem 0 !important;
+  padding: 0.5rem 0;
   text-align: center;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
@@ -53,19 +53,12 @@ a{color: #2868ad !important;}
 h1{
   margin: 0 auto;
   text-shadow: .45px .45px .45px #000;
-  //font-weight: 500 !important;
-  font-size: 1.6rem !important;
   text-align: center;
   padding-bottom: 2.5%;
 }
-h4{
-  margin-bottom: 0 !important;
-  font-size: 1.2rem !important;
-  //font-weight: 700;
-}
-/*заголовок h4, имя, фраза "Junior Frontend-разработчик*/
+/*заголовок h1, имя, фраза "Junior Frontend-разработчик*/
 h1, .name_works, #Home .name, #Home .front{font-family: 'Roboto', sans-serif;}
-/*заголовок h4, фраза "Junior Frontend-разработчик*/
+/*заголовок h1, фраза "Junior Frontend-разработчик*/
 h1,.name, #Home .front{color: #ffc9a1;}
 /*текст, пункты меню, фраза в логотипе*/
 .text,.nav-link,.navbar-brand{line-height: 1.8rem;}
@@ -78,8 +71,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
   width: 60px;
   height: 50px;
 }
-/*контейнер на блоки посередине экрана (в меню)*/
-#Nav .container {padding: 0 !important;}
 /*меню*/
 .navbar{padding: 0 18%;}
 /*все кнопки в меню,блок под логотип*/
@@ -130,11 +121,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
       box-shadow: 0 4px 24px rgba(0,0,0,.12);
       /*при наведении*/
       &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
-      /*заголовок*/
-      h4{
-        background: rgba(193, 193, 191, 0.7);
-        border-bottom: rgb(177, 177, 175);
-      }
       /*ссылка на код - svg*/
       .reference{stroke:#000;}
     }
@@ -190,11 +176,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
       box-shadow: 2px 5px 6px rgba(80, 79, 79, 0.4);
       /*при наведении*/
       &:hover {box-shadow: 2px 5px 6px rgba(80, 79, 79);}
-      /*заголовок*/
-      h4{
-        background: #010f18;
-        border-bottom: 1.5px solid black;
-      }
       /*ссылка на код - svg*/
       .reference{stroke:#afadad;}
     }
@@ -366,11 +347,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
       height: 170px;
       cursor: pointer;
     }
-    /*заголовок, параграф*/
-    h4,p{
-      /*padding: 1.25% 2% !important;*/
-      /*cursor: default;*/
-    }
     .name_works{
       padding: 2%;
       width: 96%;
@@ -471,8 +447,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     font-size: 1.1rem;
     line-height: 1.15rem;
   }
-  /*заголовок*/
-  h4 {font-size: 1.15rem !important;}
   /*Компонент - "Главный"*/
   #Home {
     /*картинка*/
