@@ -31,8 +31,6 @@ export default {
 <style lang="scss">
 /*сетка бутстрап*/
 .row{margin: 0 auto !important;}
-/*контейнер на блоки посередине экрана*/
-.container {padding: 10px !important;}
 /*ссылки*/
 a{color: #2868ad !important;}
 /*Компоненты меню и футера*/
@@ -41,25 +39,41 @@ a{color: #2868ad !important;}
   color: white;
 }
 /*Компонент меню*/
-#Nav{box-shadow: 0 6px 6px -6px rgba(255, 255, 255, 0.63);}
+
 /*Компонент футера*/
 #Myfooter{
-  padding: 0.5rem 0;
-  text-align: center;
+  //padding: 0.5rem 0;
+  padding: 1.5% 18%;
+ // text-align: center;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
 .text,.text_works,.name,.nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
 /*заголовки*/
 h1{
+  color: #a1cbff;
+  font-weight: 200;
+  text-shadow: 1px 1px 0 #000;
+  padding: 3%;
+}
+
+h2{
+  padding-bottom: 3%;
+}
+h1,h2{
   margin: 0 auto;
-  text-shadow: .45px .45px .45px #000;
   text-align: center;
-  padding-bottom: 2.5%;
 }
 /*заголовок h1, имя, фраза "Junior Frontend-разработчик*/
-h1, .name_works, #Home .name, #Home .front{font-family: 'Roboto', sans-serif;}
+h1, #Home .name, #Home .front{font-family: 'Roboto', sans-serif;}
 /*заголовок h1, фраза "Junior Frontend-разработчик*/
-h1,.name, #Home .front{color: #ffc9a1;}
+h2,.name,span{
+  font-weight: 300;
+  color: #5584bf;
+}
+.text{
+  font-weight: 100;
+}
+
 /*текст, пункты меню, фраза в логотипе*/
 .text,.nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
@@ -74,7 +88,10 @@ h1,.name, #Home .front{color: #ffc9a1;}
 /*меню*/
 .navbar{padding: 0 18%;}
 /*все кнопки в меню,блок под логотип*/
-.navbar .nav-link,.navbar-brand{color: white !important;}
+.navbar .nav-link,.navbar-brand{
+  color: #dedede !important;
+  font-weight: 200;
+}
 /*все кнопки в меню*/
 .nav-link{padding: 0.5rem 1rem !important;}
 /*контейнер, который включает в себя повтор блоков*/
@@ -84,7 +101,7 @@ h1,.name, #Home .front{color: #ffc9a1;}
   margin: 1% 12% 0 15%;
 }
 /*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
-#About, #Education, #Skills, #Works{padding: 3% 0 2.5%;}
+#About, #Education, #Skills, #Works{padding: 3% 0;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
@@ -108,6 +125,11 @@ h1,.name, #Home .front{color: #ffc9a1;}
     /*список - черточки (полосочки)*/
     ul li:after {border-left: 1px dotted black;}
   }
+  #Skills{
+    .flex-container > div{
+    background: white;
+    }
+  }
   /*Компонент - "Мои работы"*/
   #Works{
     .flex-container{
@@ -115,16 +137,15 @@ h1,.name, #Home .front{color: #ffc9a1;}
     }
     /*блоки под каждую работу*/
     .flex-container > div {
-      //background: #eef4f8;
+      background: #fff;
       box-shadow: 0 4px 24px rgba(0,0,0,.12);
       /*при наведении*/
       &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
-      /*ссылка на код - svg*/
-      .reference{stroke:#000;}
+      .name_works{
+        background: #fff;
+      }
     }
   }
-  /*цвет svg*/
-  .svg_color{fill: #fff;}
   .express_svg{fill: #000;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
@@ -165,13 +186,18 @@ h1,.name, #Home .front{color: #ffc9a1;}
   #Works{
     /*блоки под каждую работу*/
     .flex-container > div {
-      background: #011624;
-      box-shadow: 2px 5px 6px rgba(80, 79, 79, 0.4);
+      background: #0f1522;
       /*при наведении*/
       &:hover {box-shadow: 2px 5px 6px rgba(80, 79, 79);}
-      /*ссылка на код - svg*/
-      .reference{stroke:#afadad;}
+      .name_works{
+        background: #0f1522;
+      }
     }
+  }
+  #Skills{
+    .flex-container > div{
+    background: #0f1522;
+  }
   }
 }
 
@@ -181,14 +207,11 @@ h1,.name, #Home .front{color: #ffc9a1;}
   background-size: 100% 100%;
   /*фраза-Junior Frontend-разработчик*/
   .front{
-    //opacity: .98;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
-
     text-align: center;
+    //padding: 1.8% 0;
   }
   span{
-    font-family: 'Quicksand', sans-serif;
+
     font-size: 2rem;
   }
 }
@@ -228,7 +251,7 @@ h1,.name, #Home .front{color: #ffc9a1;}
       border-radius: 50%;
       width: 12px;
       height: 12px;
-      background: #de6a13;
+      background: #77a3db;
       content: "";
       left: 0;
       transition: .3s ease-in-out;
@@ -256,11 +279,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
   .text{
     text-align: center;
   }
-  .svgd{
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 201, 161, 0.81);
-  }
   /*svg навыков (языков, фреймворков, ..)*/
   svg{
     width: 64px;
@@ -274,7 +292,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     margin: 0 2% 2%;
     cursor: default;
     border-radius: 15px;
-    background: white;
     padding: 1%;
     box-shadow: 0 4px 12px rgba(0,0,0,.12);
     /*при наведении*/
@@ -287,12 +304,12 @@ h1,.name, #Home .front{color: #ffc9a1;}
 /*Компонент - "Мои работы"*/
 #Works{
   .flex-container{
-    margin: 1% 10%;
+    margin: 1% 6%;
   }
   /*блоки с работами*/
   .flex-container  > div {
     padding: 1%;
-    background: white;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
     width:  31%;
     margin: 0 1% 3%;
     position: relative;
@@ -304,14 +321,21 @@ h1,.name, #Home .front{color: #ffc9a1;}
           display: block;
         }
       }
+      .name{
+        text-overflow: inherit;
+        white-space: normal;
+      }
     }
     .text_works{
       display: none;
       color: #000;
+      font-weight: 200;
     }
     .name{
-      color: #ffc9a1;
-      text-shadow: 0.4px 0.38px 0.4px #000;
+      text-overflow: ellipsis;
+
+      overflow: hidden;
+      white-space: nowrap;
     }
     /*при наведении*/
     /*картинки*/
@@ -323,7 +347,7 @@ h1,.name, #Home .front{color: #ffc9a1;}
     .name_works{
       padding: 2%;
       width: 96%;
-      background: white;
+      //background: white;
       position: absolute;
       bottom: .1%;
     }
@@ -334,19 +358,25 @@ h1,.name, #Home .front{color: #ffc9a1;}
   }
 }
 #Myfooter{
-  .flex-container{
-    margin: 0 37% 1%;
+  .svgFooter{
+    //margin: 0 27% 1%;
+    margin: 0 0 0 auto;
+    width: 40%;
   }
   /*блоки с контактной информацией*/
   .flex-container > div {
     text-align: center;
     width: 25%;
+    /*margin: 0 2%;*/
     /*svg*/
     svg{
       display: block;
       margin: 0 auto;
-      width: 36px;
-      height: 36px;
+      width: 30px;
+      border: 1px solid #dedede;
+      height: 30px;
+      border-radius: 50%;
+      padding: 8%;
     }
     /*при наведении*/
     &:hover{
@@ -355,8 +385,19 @@ h1,.name, #Home .front{color: #ffc9a1;}
     }
     .text{
       margin-bottom: 2%;
+      color: #dedede;
+    }
+    .fio{
+      float: right;
+    }
+    .col-6{
+      .text{
+        text-align: right ;
+      }
     }
   }
+  /*цвет svg*/
+  .svg_color{fill: #dedede;}
 
 }
 
