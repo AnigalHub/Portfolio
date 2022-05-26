@@ -3,7 +3,7 @@
     <b-container>
       <h1>Ключевые навыки</h1>
       <div class="flex-container">
-        <div v-for="(skill,index) in SkillsRow" :key="index">
+        <div v-for="(skill,index) in Skills" :key="index">
           <component :key="index" :is="skill.svg"/>
           <div class="text">{{skill.skills_name}}</div>
         </div>
@@ -30,22 +30,22 @@
         components: {Git_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_svg, Node_svg, PostgreSQL_svg,
         Typescript_svg, Bootstrap_svg, Express_svg},
         data(){
-            return{
-                SkillsRow:[
-                    {svg:Vue_svg, skills_name: 'Vue.js',},
-                    {svg:Javascript_svg, skills_name: 'Javascript',},
-                    {svg:Typescript_svg, skills_name: 'Typescript',},
-                    {svg:Nuxt_svg, skills_name: 'Nuxt.js',},
-                    {svg:Html_svg, skills_name:'HTML',},
-                    {svg:Css_svg, skills_name:'CSS',},
-                    {svg:Bootstrap_svg, skills_name:'Boostrap',},
-                    {svg:Sass_svg, skills_name:'SASS/SCSS',},
-                    {svg:Node_svg, skills_name: 'Node.js',},
-                    {svg:Express_svg, skills_name: 'Express.js',},
-                    {svg:PostgreSQL_svg, skills_name: 'PostgreSQL',},
-                    {svg:Git_svg, skills_name: 'Git',},
-                ]
-            }
+          return{
+            Skills:[
+              {svg:Vue_svg, skills_name: 'Vue.js',},
+              {svg:Javascript_svg, skills_name: 'Javascript',},
+              {svg:Typescript_svg, skills_name: 'Typescript',},
+              {svg:Nuxt_svg, skills_name: 'Nuxt.js',},
+              {svg:Html_svg, skills_name:'HTML',},
+              {svg:Css_svg, skills_name:'CSS',},
+              {svg:Bootstrap_svg, skills_name:'Boostrap',},
+              {svg:Sass_svg, skills_name:'SASS/SCSS',},
+              {svg:Node_svg, skills_name: 'Node.js',},
+              {svg:Express_svg, skills_name: 'Express.js',},
+              {svg:PostgreSQL_svg, skills_name: 'PostgreSQL',},
+              {svg:Git_svg, skills_name: 'Git',},
+            ]
+          }
         }
     }
 </script>
