@@ -1,7 +1,7 @@
 <template>
   <div id="Works">
     <b-container>
-      <h1>Портфолио</h1>
+      <h2>Портфолио</h2>
       <div class="flex-container">
         <div v-for="(work,index) in Works" :key="index">
           <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
