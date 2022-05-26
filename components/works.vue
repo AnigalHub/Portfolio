@@ -32,136 +32,136 @@
               src:'',
               alt:'',
             },
-                Works:[
-                  {
-                    main_src:'./prom.jpg',
-                    src:'./home_prom.jpg',
-                    alt:'Промэлектронсервис',
-                    name_company:'Сайт «Промэлектронсервис»',
-                    technology:'HTML, CSS, Bootstrap, PHP.',
-                    url:'https://github.com/AnigalHub/Promelectronservice'
-                  },
-                  {
-                    main_src:'./gts.jpg',
-                    src:'./home_gts.png',
-                    alt:'Гостехносервис',
-                    name_company:'Сайт «Гостехносервис»',
-                    technology:'Vue.js, BootstrapVue, Sass.',
-                    url:"https://github.com/AnigalHub/Gts"
-                  },
-                  {
-                    main_src:'./priamyeruki.jpg',
-                    src:'./home_priamyeruki.jpg',
-                    alt:'Прямые_руки',
-                    name_company:'Сайт «Аваконт»',
-                    technology:'Vue.js, Sass, Express.js.',
-                    url:'https://github.com/AnigalHub/Priamyeruki'
-                  },
-                  {
-                    main_src:'./avacont.jpg',
-                    src:'./home_avacont.jpg',
-                    alt:'Аваконт',
-                    name_company:'Сайт «Аваконт»',
-                    technology:'Vue.js, JavaScript, HTML, Sass, Express.js.',
-                    url:'https://github.com/AnigalHub/Avacont'
-                  },
-                  {
-                    main_src:'./valencia.png',
-                    src:'./home_valencia.png',
-                    alt:'Валенсия',
-                    name_company:'Сайт «Валенсия»',
-                    technology:'Nuxt.js, BootstrapVue, HTML, Sass.',
-                    url: 'https://github.com/AnigalHub/Valencia'
-                  },
-                  {
-                    main_src:'./pixelperfect.png',
-                    src:'/home_pixelperfect.png',
-                    alt:'pixelperfect',
-                    name_company:'Сайт по Макету',
-                    technology:'Vue.js, BootstrapVue, HTML, Sass.',
-                    url:'https://github.com/AnigalHub/PixelPerfect'
-                  },
-                  {
-                    main_src:'./main_api.png',
-                    src:'/api.png',
-                    alt:'api',
-                    name_company:'Проект “Аптечка”',
-                    technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
-                    url:'https://github.com/AnigalHub/Pills_api'
-                  },
-                  {
-                    main_src:'./main_wishlist.jpg',
-                    src:'/wishlist.png',
-                    alt:'wishlist',
-                    name_company:'Проект “Список Желаний”',
-                    technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
-                    url:'https://github.com/AnigalHub/WishList'
-                  },
-                  {
-                    main_src:'./main_training.jpg',
-                    src:'./training.png',
-                    alt:'Математический тренажёр',
-                    name_company:'Игра "Математический тренажёр"',
-                    technology:'JavaScript, HTML, CSS, Webpack.',
-                    url:'https://github.com/AnigalHub/MathTest'
-                  },
-                  {
-                    main_src:'./main_snake.jpg',
-                    src:'./snake.png',
-                    alt:'Игра "Змейка"',
-                    name_company:'Игра "Змейка"',
-                    technology:'JavaScript, Canvas, Webpack.',
-                    url:'https://github.com/AnigalHub/Snake'
-                  },
-                  {
-                    main_src:'./main_svgGame.jpg',
-                    src:'./home_svgGame.png',
-                    alt:'alphabet',
-                    name_company:'Игра "Изучение Алфавита"',
-                    technology:'Vue.js, JavaScript, Drag and Drop, Sass. ',
-                    url:'https://github.com/AnigalHub/SvgGames'
-                  },
-                  {
-                    main_src:'./main.jpg',
-                    src:'/parser.jpg',
-                    alt:'parser',
-                    name_company:'Парсинг сайта ',
-                    technology:'Node.js',
-                    url:'https://github.com/AnigalHub/Parser'
-                  },
-                  {
-                    main_src:'./main_TestTask.png',
-                    src:'/TestTask.png',
-                    alt:'TestTask',
-                    name_company:'Страница продажи товаров',
-                    technology:'Nuxt.js, Vuex, Sass.',
-                    url:'https://github.com/AnigalHub/TestTask'
-                  },
-                  {
-                    main_src:'./main_market.png',
-                    src:'/market.png',
-                    alt:'market',
-                    name_company:'Каталог с корзиной и сортировкой',
-                    technology:'Nuxt.js, Vuex, Sass.',
-                    url:'https://github.com/AnigalHub/Market'
-                  },
-                  /*   {
-                       main_src:'',
-                       src:'/tgBot.png',
-                       alt:'tgbot',
+            Works:[
+              {
+                main_src:'./prom.jpg',
+                src:'./home_prom.jpg',
+                alt:'Промэлектронсервис',
+                name_company:'Сайт «Промэлектронсервис»',
+                technology:'HTML, CSS, Bootstrap, PHP.',
+                url:'https://github.com/AnigalHub/Promelectronservice'
+              },
+              {
+                main_src:'./gts.jpg',
+                src:'./home_gts.png',
+                alt:'Гостехносервис',
+                name_company:'Сайт «Гостехносервис»',
+                technology:'Vue.js, BootstrapVue, Sass.',
+                url:"https://github.com/AnigalHub/Gts"
+              },
+              {
+                main_src:'./priamyeruki.jpg',
+                src:'./home_priamyeruki.jpg',
+                alt:'Прямые_руки',
+                name_company:'Сайт «Аваконт»',
+                technology:'Vue.js, Sass, Express.js.',
+                url:'https://github.com/AnigalHub/Priamyeruki'
+              },
+              {
+                main_src:'./avacont.jpg',
+                src:'./home_avacont.jpg',
+                alt:'Аваконт',
+                name_company:'Сайт «Аваконт»',
+                technology:'Vue.js, JavaScript, HTML, Sass, Express.js.',
+                url:'https://github.com/AnigalHub/Avacont'
+              },
+              {
+                main_src:'./valencia.png',
+                src:'./home_valencia.png',
+                alt:'Валенсия',
+                name_company:'Сайт «Валенсия»',
+                technology:'Nuxt.js, BootstrapVue, HTML, Sass.',
+                url: 'https://github.com/AnigalHub/Valencia'
+              },
+              {
+                main_src:'./pixelperfect.png',
+                src:'/home_pixelperfect.png',
+                alt:'pixelperfect',
+                name_company:'Сайт по Макету',
+                technology:'Vue.js, BootstrapVue, HTML, Sass.',
+                url:'https://github.com/AnigalHub/PixelPerfect'
+              },
+              {
+                main_src:'./main_api.png',
+                src:'/api.png',
+                alt:'api',
+                name_company:'Проект “Аптечка”',
+                technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
+                url:'https://github.com/AnigalHub/Pills_api'
+              },
+              {
+                main_src:'./main_wishlist.jpg',
+                src:'/wishlist.png',
+                alt:'wishlist',
+                name_company:'Проект “Список Желаний”',
+                technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
+                url:'https://github.com/AnigalHub/WishList'
+              },
+              {
+                main_src:'./main_training.jpg',
+                src:'./training.png',
+                alt:'Математический тренажёр',
+                name_company:'Игра "Математический тренажёр"',
+                technology:'JavaScript, HTML, CSS, Webpack.',
+                url:'https://github.com/AnigalHub/MathTest'
+              },
+              {
+                main_src:'./main_snake.jpg',
+                src:'./snake.png',
+                alt:'Игра "Змейка"',
+                name_company:'Игра "Змейка"',
+                technology:'JavaScript, Canvas, Webpack.',
+                url:'https://github.com/AnigalHub/Snake'
+              },
+              {
+                main_src:'./main_svgGame.jpg',
+                src:'./home_svgGame.png',
+                alt:'alphabet',
+                name_company:'Игра "Изучение Алфавита"',
+                technology:'Vue.js, JavaScript, Drag and Drop, Sass. ',
+                url:'https://github.com/AnigalHub/SvgGames'
+              },
+              {
+                main_src:'./main.jpg',
+                src:'/parser.jpg',
+                alt:'parser',
+                name_company:'Парсинг сайта ',
+                technology:'Node.js',
+                url:'https://github.com/AnigalHub/Parser'
+              },
+              {
+                main_src:'./main_TestTask.png',
+                src:'/TestTask.png',
+                alt:'TestTask',
+                name_company:'Страница продажи товаров',
+                technology:'Nuxt.js, Vuex, Sass.',
+                url:'https://github.com/AnigalHub/TestTask'
+              },
+              {
+                main_src:'./main_market.png',
+                src:'/market.png',
+                alt:'market',
+                name_company:'Каталог с корзиной и сортировкой',
+                technology:'Nuxt.js, Vuex, Sass.',
+                url:'https://github.com/AnigalHub/Market'
+              },
+              /*   {
+                      main_src:'',
+                      src:'/tgBot.png',
+                      alt:'tgbot',
                        name_company:'Telegram-бот "Напоминалка"',
                        tecnology:'TypeScript, PostgreSQL. ',
                         url:''
                      },
                      */
-                  {
-                    main_src:'./main_TestBis.jpg',
-                    src:'/TestBis.png',
-                    alt:'TestBis',
-                    name_company:'Прототип банковского приложения',
-                    technology:'Vue.js (Vuex, VueRouter, BootstrapVue).',
-                    url:'https://github.com/AnigalHub/TestBis'
-                  },
+              {
+                main_src:'./main_TestBis.jpg',
+                src:'/TestBis.png',
+                alt:'TestBis',
+                name_company:'Прототип банковского приложения',
+                technology:'Vue.js (Vuex, VueRouter, BootstrapVue).',
+                url:'https://github.com/AnigalHub/TestBis'
+              },
             ],
           }
         },
