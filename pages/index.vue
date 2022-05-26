@@ -15,11 +15,10 @@ import Navbar from "~/components/navbar";
 import About from "~/components/about";
 import Skills from "~/components/skills";
 import Works from "~/components/works";
-import Contacts from "~/components/contacts";
 import Myfooter from "~/components/myfooter";
 import Education from "~/components/education";
 export default {
-  components: {Education, Myfooter, Contacts, Works, Skills, About, Navbar, Home}
+  components: {Education, Myfooter, Works, Skills, About, Navbar, Home}
 }
 </script>
 
@@ -146,7 +145,8 @@ h1,.name, #Home .front{color: #ffc9a1;}
     a{color: #090c13 !important;}
   }
   /*цвет svg*/
-  .express_svg,.svg_color{fill: #000;}
+  .svg_color{fill: #fff;}
+  .express_svg{fill: #000;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
@@ -204,8 +204,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     /*ссылки (для данного компонента)*/
     a{color: #afadad !important;}
   }
-  /*цвет svg*/
-  .express_svg,.svg_color{fill:  #afadad;}
 }
 
 /*Компонент - "Главный"*/
