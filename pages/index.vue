@@ -16,9 +16,9 @@ import About from "~/components/about";
 import Skills from "~/components/skills";
 import Works from "~/components/works";
 import Myfooter from "~/components/myfooter";
-import Education from "~/components/education";
+
 export default {
-  components: {Education, Myfooter, Works, Skills, About, Navbar, Home}
+  components: { Myfooter, Works, Skills, About, Navbar, Home}
 }
 </script>
 
