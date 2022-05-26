@@ -208,10 +208,8 @@ h2,.name,span{
   /*фраза-Junior Frontend-разработчик*/
   .front{
     text-align: center;
-    //padding: 1.8% 0;
   }
   span{
-
     font-size: 2rem;
   }
 }
@@ -310,7 +308,7 @@ h2,.name,span{
   .flex-container  > div {
     padding: 1%;
     box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
-    width:  31%;
+    width: 31%;
     margin: 0 1% 3%;
     position: relative;
     /*при наведении*/
@@ -333,7 +331,6 @@ h2,.name,span{
     }
     .name{
       text-overflow: ellipsis;
-
       overflow: hidden;
       white-space: nowrap;
     }
@@ -347,7 +344,6 @@ h2,.name,span{
     .name_works{
       padding: 2%;
       width: 96%;
-      //background: white;
       position: absolute;
       bottom: .1%;
     }
@@ -359,7 +355,6 @@ h2,.name,span{
 }
 #Myfooter{
   .svgFooter{
-    //margin: 0 27% 1%;
     margin: 0 0 0 auto;
     width: 40%;
   }
