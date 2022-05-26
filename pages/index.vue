@@ -84,9 +84,7 @@ h1,.name, #Home .front{color: #ffc9a1;}
   margin: 1% 12% 0 15%;
 }
 /*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
-#About, #Education, #Skills, #Works, #Contacts{padding: 3% 0 2.5%;}
-/*"Контакты"*/
-#Contacts{padding:1% 0 2%;}
+#About, #Education, #Skills, #Works{padding: 3% 0 2.5%;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
@@ -100,11 +98,11 @@ h1,.name, #Home .front{color: #ffc9a1;}
       1.3px 1.25px 0 #321002;
   }
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты"*/
-  #Skills,#Contacts{background: #ffffff;}
+  #Skills{background: #ffffff;}
   /*Компоненты - "Об мне", "Образование"*/
    #About,#Works{background: #f4f4f4;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
-  #About, #Skills, #Contacts, #Works, #Education{color: #090c13 !important;}
+  #About, #Skills, #Works{color: #090c13 !important;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
@@ -124,11 +122,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
       /*ссылка на код - svg*/
       .reference{stroke:#000;}
     }
-  }
-  /*Компонент - "Контакты"*/
-  #Contacts{
-    /*ссылки (для данного компонента)*/
-    a{color: #090c13 !important;}
   }
   /*цвет svg*/
   .svg_color{fill: #fff;}
@@ -153,11 +146,11 @@ h1,.name, #Home .front{color: #ffc9a1;}
       1.3px 1.25px 0 #321002;
   }
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
-  #Skills,#Contacts{background: #0c111c;}
+  #Skills{background: #0c111c;}
   /*Компоненты -  "Мои работы","Образование"*/
   #Works, #About {background: #090c13;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
-  #About, #Skills, #Contacts, #Works, #Education{color: #afadad !important;}
+  #About, #Skills, #Works, #Education{color: #afadad !important;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
@@ -179,11 +172,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
       /*ссылка на код - svg*/
       .reference{stroke:#afadad;}
     }
-  }
-  /*Компонент - "Контакты"*/
-  #Contacts {
-    /*ссылки (для данного компонента)*/
-    a{color: #afadad !important;}
   }
 }
 
@@ -261,18 +249,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     &:last-child:after {content: none;}
   }
 }
-/*Компонент - "Образование"*/
-#Education{
-  /*сетка бутстрап*/
-  .col{padding-left: 12%;}
-  /*svg*/
-  svg{
-    width: auto;
-    height: 90%;
-    display: block;
-    margin: 0 auto;
-  }
-}
 /*Компонент - "Ключевые навыки"*/
 #Skills{
   img{ width: 70%}
@@ -281,10 +257,7 @@ h1,.name, #Home .front{color: #ffc9a1;}
     text-align: center;
   }
   .svgd{
-    //background:
     margin: 0 auto;
-   // width: 65px;
-   // height: 65px;
     border-radius: 50%;
     border: 2px solid rgba(255, 201, 161, 0.81);
   }
@@ -360,28 +333,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     }
   }
 }
-/*Компонент - "Контакты"*/
-#Contacts{
-  /*текст в компоненте "Контакты"*/
-  .text{text-align: center;}
-  /*блоки с контактной информацией*/
-  .flex-container > div {
-    text-align: center;
-    width: 25%;
-    /*при наведении*/
-    &:hover{
-      transition: 1s;
-      transform: scale(1.09);
-    }
-  }
-  /*svg*/
-  svg{
-    display: block;
-    margin: 0 auto;
-    width: 55px;
-    height: 55px;
-  }
-}
 #Myfooter{
   .flex-container{
     margin: 0 37% 1%;
@@ -423,25 +374,15 @@ h1,.name, #Home .front{color: #ffc9a1;}
     font-size: 1rem !important;
     line-height: 1rem !important;
   }
-  /*Компонент - "Образование"*/
-  #Education {
-      /*элемент сетки бутстрап*/
-     .row .col {padding-left: 4% !important;}
-  }
   /*Компонент - "Ключевые навыки"*/
   #Skills {
     /*блоки под svg и название*/
     .flex-container > div {width: 30% !important;}
   }
-  /*Компонент - "Контакты"*/
-  #Contacts {
-    /*блоки с контактной информацией*/
-    .flex-container > div {width: 100% !important;}
-  }
 }
 @media screen and (max-width: 500px) {
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
-  #About, #Skills, #Works, #Contacts {padding: 1rem 0;}
+  #About, #Skills, #Works{padding: 1rem 0;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_works, .text, .nav-link, .navbar-brand {
     font-size: 1.1rem;
@@ -458,17 +399,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     .name {font-size: 1.5rem;}
     /*фраза-Junior Frontend-разработчик*/
     .front {font-size: 1.7rem;}
-  }
-  /*Компонент - "Образование"*/
-  #Education {
-    /*сетка бутстрап*/
-    .row {
-      flex-direction: column-reverse;
-      /*элемент сетки бутстрап*/
-      .col {padding-left: 7%;}
-      /*svg*/
-      svg {display: none;}
-    }
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills {
@@ -490,16 +420,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
       margin: 0 5% 4% !important;
     }
   }
-  /*Компонент - "Контакты"*/
-  #Contacts {
-    /*блоки с контактной информацией*/
-    .flex-container > div {width: 50%;}
-    /*svg контактной информации*/
-    svg {
-      width: 40px;
-      height: 40px;
-    }
-  }
 }
 @media screen and (min-width: 500px)and (max-width: 768px) {
   /*Компонент - "Главный"*/
@@ -518,17 +438,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
   .text_works, .text,.nav-link,.navbar-brand{
     font-size: 1.1rem;
     line-height: 1.15rem;
-  }
-  /*Компонент - "Главный"*/
-  #Education{
-    /*сетка бутстрап*/
-    .row {
-      flex-direction: column-reverse;
-      /*элемент сетки бутстрап*/
-      .col{padding-left: 7%;}
-      /*svg*/
-      svg{display: none;}
-    }
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
@@ -550,16 +459,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     /*svg*/
     svg{ width: 70%}
   }
-  /*Компонент - "Контакты"*/
-  #Contacts{
-    /*блоки с контактной информацией*/
-    .flex-container > div {width:50%;}
-    /*svg контактной информации*/
-    svg{
-      width: 45px;
-      height: 45px;
-    }
-  }
 }
 @media screen and (min-width: 768px)and (max-width: 992px) {
   /*Компонент - "Главный"*/
@@ -572,14 +471,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
   }
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_works,.text,.nav-link,.navbar-brand{line-height: 1.4rem;}
-  /*Компонент - "Образование"*/
-  #Education{
-    /*svg*/
-    svg{
-      margin-left: -40%;
-      height: 140px;
-    }
-  }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
     /*блоки под svg и название*/
@@ -596,16 +487,6 @@ h1,.name, #Home .front{color: #ffc9a1;}
     .flex-container > div {
       width: 46%;
       margin: 0 1.2% 2.3%;
-    }
-  }
-  /*Компонент - "Контакты"*/
-  #Contacts{
-    /*блоки с контактной информацией*/
-    .flex-container > div {width:50%;}
-    /*svg контактной информации*/
-    svg{
-      width: 50px;
-      height: 50px;
     }
   }
 }
