@@ -1,7 +1,7 @@
 <template>
   <div id="About">
     <b-container>
-      <h1>Об мне</h1>
+      <h2>Об мне</h2>
       <b-row>
         <b-col cols="4">
           <img src="../static/me.jpg">
@@ -54,8 +54,5 @@
 </script>
 
 <style scoped>
-  span{
-  color: #ffc9a1;
-    text-shadow: 0.4px 0.38px 0.4px #000;
-  }
+
 </style>
