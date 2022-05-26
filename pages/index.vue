@@ -81,11 +81,11 @@ h1,.name, #Home .front{color: #ffc9a1;}
 /*контейнер на блоки посередине экрана (в меню)*/
 #Nav .container {padding: 0 !important;}
 /*меню*/
-.navbar{padding: 0 !important;}
+.navbar{padding: 0 18%;}
 /*все кнопки в меню,блок под логотип*/
 .navbar .nav-link,.navbar-brand{color: white !important;}
 /*все кнопки в меню*/
-.nav-link{padding: 0.5rem 2rem !important;}
+.nav-link{padding: 0.5rem 1rem !important;}
 /*контейнер, который включает в себя повтор блоков*/
 .flex-container {
   display: flex;
