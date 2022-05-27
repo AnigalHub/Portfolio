@@ -287,7 +287,7 @@ h2,.name,span{
     padding: 10%;
   }
   .flex-container{
-    margin: 0;
+    margin: 0 5%;
   }
   /*блоки под svg и название*/
   .flex-container  > div {
@@ -415,7 +415,7 @@ h2,.name,span{
 #Myfooter{
   .svgFooter{
     margin: 0 0 0 auto;
-    width: 40%;
+    width: 30%;
   }
   /*блоки с контактной информацией*/
   .flex-container > div {
@@ -439,14 +439,6 @@ h2,.name,span{
     .text{
       margin-bottom: 2%;
       color: #dedede;
-    }
-    .fio{
-      float: right;
-    }
-    .col-6{
-      .text{
-        text-align: right ;
-      }
     }
   }
   .svg_color{fill: #ffffff;}
