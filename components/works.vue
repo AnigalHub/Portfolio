@@ -4,7 +4,7 @@
       <h2>Портфолио</h2>
       <div class="flex-container">
         <div v-for="(work,index) in Works" :key="index">
-          <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
+          <img :src="work.src" :alt="work.alt"/>
           <div class="work">
             <div class="name_works">
 
@@ -15,9 +15,6 @@
           </div>
         </div>
       </div>
-      <b-modal ref="modalWork" id="img" size="xl" :title="SelectedWorks.name_company" centered hide-footer>
-        <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
-      </b-modal>
     </b-container>
   </div>
 </template>
@@ -27,10 +24,6 @@
       name: "works",
         data(){
           return{
-            SelectedWorks:{
-              src:'',
-              alt:'',
-            },
             Works:[
               {
                 main_src:'./prom.jpg',
