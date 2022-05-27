@@ -38,13 +38,10 @@ a{color: #000 !important;}
   background: #030407;
   color: white;
 }
-/*Компонент меню*/
 
 /*Компонент футера*/
 #Myfooter{
-  //padding: 0.5rem 0;
   padding: 1.5% 14%;
- // text-align: center;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
 .text,.text_works,.name,.nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
@@ -55,7 +52,6 @@ h1{
   text-shadow: 1px 1px 0 #000;
   padding: 3%;
 }
-
 h2{
   padding-bottom: 3%;
 }
@@ -73,7 +69,6 @@ h2,.name,span{
 .text{
   font-weight: 300;
 }
-
 /*текст, пункты меню, фраза в логотипе*/
 .text,.nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
@@ -301,8 +296,6 @@ h2,.name,span{
     cursor: default;
     border-radius: 15px;
     padding: 1%;
-    //box-shadow: 0 4px 12px rgba(0,0,0,.12);
-
     /*при наведении*/
     &:hover{
       transition: 1s;
@@ -352,11 +345,7 @@ h2,.name,span{
       font-weight: 500;
       width: 100%;
       padding: 5% 0 1%;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
     }
-    /*при наведении*/
     /*картинки*/
     img {
       width: 100%;filter: brightness(94%);
@@ -432,7 +421,6 @@ h2,.name,span{
   .flex-container > div {
     text-align: center;
     width: 25%;
-    /*margin: 0 2%;*/
     /*svg*/
     svg{
       display: block;
