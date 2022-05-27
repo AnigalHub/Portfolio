@@ -22,14 +22,13 @@
 </template>
 
 <script>
-    import Logo_svg from "~/components/logo_svg";
     import Github_svg from "~/components/svg_contacts/github_svg";
     import Telegram_svg from "~/components/svg_contacts/telegram_svg";
     import Telephone_svg from "~/components/svg_contacts/telephone_svg";
     import Email_svg from "~/components/svg_contacts/email_svg";
     export default {
       name: "myfooter",
-      components: {Logo_svg, Github_svg, Telegram_svg, Telephone_svg, Email_svg},
+      components: {Github_svg, Telegram_svg, Telephone_svg, Email_svg},
       data(){
         return{
           ContactsRow:[
