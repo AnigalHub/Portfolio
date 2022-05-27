@@ -5,6 +5,7 @@
     <About/>
     <Skills/>
     <Works/>
+    <Contact/>
     <Myfooter/>
   </div>
 </template>
@@ -16,9 +17,10 @@ import About from "~/components/about";
 import Skills from "~/components/skills";
 import Works from "~/components/works";
 import Myfooter from "~/components/myfooter";
+import Contact from "~/components/contact";
 
 export default {
-  components: { Myfooter, Works, Skills, About, Navbar, Home}
+  components: {Contact, Myfooter, Works, Skills, About, Navbar, Home}
 }
 </script>
 
@@ -29,10 +31,8 @@ export default {
   .navbar-brand{padding-bottom: 0 !important;}
 </style>
 <style lang="scss">
-/*сетка бутстрап*/
-.row{margin: 0 auto !important;}
 /*ссылки*/
-a{color: #2868ad !important;}
+a{color: #000 !important;}
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
   background: #030407;
@@ -43,7 +43,7 @@ a{color: #2868ad !important;}
 /*Компонент футера*/
 #Myfooter{
   //padding: 0.5rem 0;
-  padding: 1.5% 18%;
+  padding: 1.5% 14%;
  // text-align: center;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
@@ -71,13 +71,13 @@ h2,.name,span{
   color: #5584bf;
 }
 .text{
-  font-weight: 100;
+  font-weight: 300;
 }
 
 /*текст, пункты меню, фраза в логотипе*/
 .text,.nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
-.text,.nav-link,.navbar-brand,.text_works,.name{font-size: 1.15rem;}
+.text,.nav-link,.navbar-brand,.name{font-size: 1.15rem;}
 /*текст для компонента "Мои работы"*/
 .text_works{line-height: 1.4rem;}
 /*svg в логотипе*/
@@ -86,7 +86,7 @@ h2,.name,span{
   height: 50px;
 }
 /*меню*/
-.navbar{padding: 0 18%;}
+.navbar{padding: 0 14%;}
 /*все кнопки в меню,блок под логотип*/
 .navbar .nav-link,.navbar-brand{
   color: #dedede !important;
@@ -101,7 +101,7 @@ h2,.name,span{
   margin: 1% 12% 0 15%;
 }
 /*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
-#About, #Education, #Skills, #Works{padding: 3% 0;}
+#About, #Education, #Skills, #Works, #Contact{padding: 3% 0;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
@@ -222,7 +222,8 @@ h2,.name,span{
    margin: 0 5% 0 8%!important;
  }
   img{
-    width: 100%;
+    width: 90%;
+    border-radius: 50%;
   }
   /*имя*/
   .name{
@@ -276,22 +277,32 @@ h2,.name,span{
   /*текст в компоненте "Ключевые навыки"*/
   .text{
     text-align: center;
+    font-weight: 400;
   }
   /*svg навыков (языков, фреймворков, ..)*/
   svg{
-    width: 64px;
-    height: 64px;
+    width: 78px;
+    height: 78px;
     display: block;
     margin: 0 auto;
+    backdrop-filter: blur(5px);
+    background: hsla(0,0%,100%,.2);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    padding: 10%;
+  }
+  .flex-container{
+    margin: 0;
   }
   /*блоки под svg и название*/
   .flex-container  > div {
-    width: 20%;
+    width: 12%;
     margin: 0 2% 2%;
     cursor: default;
     border-radius: 15px;
     padding: 1%;
-    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    //box-shadow: 0 4px 12px rgba(0,0,0,.12);
+
     /*при наведении*/
     &:hover{
       transition: 1s;
@@ -302,14 +313,14 @@ h2,.name,span{
 /*Компонент - "Мои работы"*/
 #Works{
   .flex-container{
-    margin: 1% 6%;
+    margin: 1% 0;
   }
   /*блоки с работами*/
   .flex-container  > div {
-    padding: 1%;
     box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
     width: 31%;
-    margin: 0 1% 3%;
+    margin: 0 1% 2%;
+    padding: 1%;
     position: relative;
     /*при наведении*/
     &:hover{
@@ -325,11 +336,22 @@ h2,.name,span{
       }
     }
     .text_works{
-      display: none;
-      color: #000;
-      font-weight: 200;
+      color: black;
+      font-weight: 400;
+        font-size: 1rem;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 2% 5%;
+        position: absolute;
+        top: 157px;
     }
     .name{
+      background-color: #ffffff;
+      text-align: center;
+      color: #5584bf;
+      font-weight: 500;
+      width: 100%;
+      padding: 5% 0 1%;
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
@@ -337,21 +359,69 @@ h2,.name,span{
     /*при наведении*/
     /*картинки*/
     img {
-      width: 100%;
-      height: 170px;
+      width: 100%;filter: brightness(94%);
+      border-radius: 5px;
       cursor: pointer;
     }
+    .text_about{
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      text-align: center;
+    }
     .name_works{
-      padding: 2%;
-      width: 96%;
-      position: absolute;
-      bottom: .1%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center
     }
     /*абзац*/
     p{
       margin-bottom: 0 !important;
     }
   }
+}
+#Contact{
+  .flex-container{
+    margin: 0 10% 0;
+  }
+  /*блоки с контактной информацией*/
+  .flex-container > div {
+    text-align: center;
+    width: 46%;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+    margin: 2% 1% 0;
+    padding: 1% 4%;
+    /*svg*/
+    svg {
+      display: block;
+      float: left;
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      border: 2.5px solid #5584bf;
+      border-radius: 50%;
+    }
+    .name{
+      font-weight: 500;
+      float: left;
+      padding-right: 2%;
+    }
+    .col{
+      display: flex;
+      align-items: center
+    }
+    .inf{
+      margin: 0 ;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+  /*цвет svg*/
+  .svg_color{fill: #5584bf;}
+  .svg_color1{fill: #1a4376;}
 }
 #Myfooter{
   .svgFooter{
@@ -371,7 +441,7 @@ h2,.name,span{
       border: 1px solid #dedede;
       height: 30px;
       border-radius: 50%;
-      padding: 8%;
+      padding: 4%;
     }
     /*при наведении*/
     &:hover{
@@ -391,8 +461,8 @@ h2,.name,span{
       }
     }
   }
-  /*цвет svg*/
-  .svg_color{fill: #dedede;}
+  .svg_color{fill: #ffffff;}
+  .svg_color1{fill: #868080;}
 
 }
 
