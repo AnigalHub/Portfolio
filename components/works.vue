@@ -163,34 +163,7 @@
         },
     }
 </script>
-<style>
-  /*стили которые переписаны с бутстрапа (переносить отсюда нельзя!!!!!)*/
-  .modal-dialog img{ /*картинка в модальном окне*/
-    width: 100% !important;
-    box-shadow: none !important;
-  }
-  .close { /*"крестик" (размер) - кнопка закрытия модального окна*/
-    font-size: 2rem !important;
-    padding: 1rem .5rem !important;
-  }
-  .modal-header{ /*заголовок модального окна*/
-    padding: 0.5rem 1.5rem !important;
-    font-family:'EB Garamond', serif;
-  }
-  .modal-title{ /*фразы в заголовке модального меню*/
-    font-weight: 800;
-  }
-  .modal-body { /*тело модального окна*/
-    padding:0 !important;
-  }
-  @media (min-width: 992px){
-    .modal-lg, .modal-xl { /*ширина модального окна на разных экранах*/
-      max-width: 750px !important;
-    }
-  }
-</style>
+
 <style lang="scss" scoped>
-.text_works{
-  color: white;
-}
+
 </style>
