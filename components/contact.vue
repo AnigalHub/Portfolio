@@ -63,19 +63,6 @@
                 name:'Telegram:',
                 http:'@annaignatova97',
               },
-              // {
-              //   svg:Skype_svg,
-              //   href:'https://t.me/annaignatova97',
-              //   target:'_blank',
-              //   name:'Skype:',
-              // },
-              // {
-              //   svg:Web_svg,
-              //   href:'https://anigalhub.github.io/',
-              //   target:'_blank',
-              //   name:'Сайт:',
-              //   http:'anigalhub.github.io',
-              // },
             ]
           }
       }
