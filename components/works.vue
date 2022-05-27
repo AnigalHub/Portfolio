@@ -45,7 +45,7 @@
                 src:'./home_gts.png',
                 alt:'Гостехносервис',
                 name_company:'«Гостехносервис»',
-                technology:'Vue.js',
+                technology:'Vue',
                 about:'Сайт производителя и поставщика ИТ‒оборудования для государственных и бизнес-структур'
               },
               {
@@ -53,7 +53,7 @@
                 src:'./home_priamyeruki.jpg',
                 alt:'Прямые_руки',
                 name_company:'«Аваконт»',
-                technology:'Vue.js',
+                technology:'Vue',
                 about:'Сайт изготовления разнообразного декора, рекламных вывесок, сувенирной продукции, реставрации, брендирования'
               },
               {
@@ -61,7 +61,7 @@
                 src:'./home_avacont.jpg',
                 alt:'Аваконт',
                 name_company:'«Аваконт»',
-                technology:'Vue.js',
+                technology:'Vue',
                 about: 'Сайт изготовления накладок из дерева под розетки, выключатели, радиаторы, светильники и карнизы'
               },
               {
@@ -69,7 +69,7 @@
                 src:'./home_valencia.png',
                 alt:'Валенсия',
                 name_company:'«Валенсия»',
-                technology:'Nuxt.js',
+                technology:'Nuxt',
                 about:'Сайт частного охранного предприятия, обеспечивающего безопасность на всей территории во всех субъектах РФ.'
               },
               {
@@ -77,7 +77,7 @@
                 src:'/home_pixelperfect.png',
                 alt:'pixelperfect',
                 name_company:'Startup',
-                technology:'Vue.js',
+                technology:'Vue',
                 about: 'Шаблон с попиксельной точностью, выполненный с помощью подхода Pixel Perfect'
               },
               // {
@@ -115,7 +115,7 @@
                 src:'./home_svgGame.png',
                 alt:'alphabet',
                 name_company:'"Алфавит"',
-                technology:'Vue.js',
+                technology:'Vue',
                 about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов'
               },
               // {
@@ -130,7 +130,7 @@
                 src:'/TestTask.png',
                 alt:'TestTask',
                 name_company:'Продажа товаров',
-                technology:'Nuxt.js',
+                technology:'Nuxt',
                 about:'Целевая страница с формой на добавление товара в список и сортировкой товара в списке'
               },
               {
@@ -138,7 +138,7 @@
                 src:'/market.png',
                 alt:'market',
                 name_company:'Каталог товаров',
-                technology:'Nuxt.js',
+                technology:'Nuxt',
                 about:'Целевая страница с возможностью сортировки товаров, отправки заявки и удалении из корзины товара'
               },
               /*   {
@@ -155,7 +155,7 @@
                 src:'/TestBis.png',
                 alt:'TestBis',
                 name_company:'Банковское приложение',
-                technology:'Vue.js',
+                technology:'Vue',
                 about:'Прототип банковского приложения с возможностью отображения таблиц, изменения и удаления данных из них'
               },
             ],
