@@ -161,12 +161,6 @@
             ],
           }
         },
-      methods:{
-        showModal(work){
-          this.SelectedWorks = work;
-          this.$refs['modalWork'].show()
-        }
-      }
     }
 </script>
 <style>
