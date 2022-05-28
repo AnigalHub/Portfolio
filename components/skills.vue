@@ -39,7 +39,7 @@
               {svg:Html_svg, skills_name:'HTML',},
               {svg:Css_svg, skills_name:'CSS',},
               {svg:Bootstrap_svg, skills_name:'Boostrap',},
-              {svg:Sass_svg, skills_name:'SASS/SCSS',},
+              {svg:Sass_svg, skills_name:'SCSS',},
               {svg:Node_svg, skills_name: 'Node.js',},
               {svg:Express_svg, skills_name: 'Express.js',},
               {svg:PostgreSQL_svg, skills_name: 'PostgreSQL',},
