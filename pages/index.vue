@@ -211,19 +211,42 @@ h2,.name,span{
 /*Компонент - "Об мне"*/
 #About{
   .flex-container {
-    margin: 1% 0 0 0;
+    margin: 1% 18% 0;
+  }
+  /*блоки под svg и название*/
+  .flex-container  > div {
+    width: 100%;
+    margin: 12% auto 2%;
+    cursor: default;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 3%;
+
+    text-align: center;
+    .number{
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+    /*при наведении*/
+    &:hover{
+      transition: 1s;
+      transform: scale(1.09);
+    }
   }
  .row{
    margin: 0 5% 0 8%!important;
  }
   img{
-    width: 90%;
+    width: 75%;
+    margin: 0 15% 0;
     border-radius: 50%;
   }
   /*имя*/
   .name{
-    font-size: 1.8rem;
-    color: #000;
+    font-size: 1.5rem;
+    padding-top: 6%;
+    color: #5584bf;
+    font-weight: 400;
     text-align: center;
     margin-bottom: .5%;
     font-family: 'Roboto', sans-serif;
@@ -237,7 +260,7 @@ h2,.name,span{
   /*элементы списка*/
   ul li {
     position: relative;
-    padding: 15px 0 15px 40px;
+    padding: 5px 0 15px 40px;
     cursor: default;
     /*свой маркер - кружок*/
     &:before {
