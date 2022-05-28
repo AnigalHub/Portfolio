@@ -214,15 +214,15 @@ h2,.name,span{
     margin: 1% 18% 0;
   }
   /*блоки под svg и название*/
-  .flex-container  > div {
-    width: 100%;
+  .projects{
+    width: 60%;
     margin: 12% auto 2%;
     cursor: default;
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 3%;
-
     text-align: center;
+
     .number{
       font-weight: 400;
       font-size: 1.8rem;
