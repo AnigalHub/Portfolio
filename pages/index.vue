@@ -328,26 +328,31 @@ h2,.name,span{
     margin: 0 1% 2%;
     padding: 1%;
     position: relative;
+
     /*при наведении*/
     &:hover{
-      .name_works{
-        bottom: 4%;
-        .text_works{
-          display: block;
-        }
+      /*картинки*/
+      img {
+        filter: brightness(50%);
       }
-      .name{
-        text-overflow: inherit;
-        white-space: normal;
+      .link_work{
+        display: block;
+        position: absolute;
+        top: 65px;
+        margin: 0 30%;
+        width: 93.5%;
       }
     }
+    .link_work{
+      display: none;
+    }
     .text_works{
-        font-weight: 400;
-        font-size: 1rem;
-        border-radius: 10px;
-        padding: 2% 5%;
-        position: absolute;
-        top: 157px;
+      font-weight: 400;
+      font-size: 1rem;
+      border-radius: 10px;
+      padding: 2% 5%;
+      position: absolute;
+      top: 160px;
     }
     .name{
       text-align: center;
@@ -356,9 +361,20 @@ h2,.name,span{
       width: 100%;
       padding: 5% 0 1%;
     }
+    /*svg*/
+    svg {
+      width: 50px;
+      height: 50px;
+      margin: 2%;
+      background: rgba(222, 222, 222, 0.6);
+      padding: 3%;
+      border-radius: 50%;
+      cursor: pointer;
+    }
     /*картинки*/
     img {
-      width: 100%;filter: brightness(94%);
+      width: 100%;
+      filter: brightness(94%);
       border-radius: 5px;
       cursor: pointer;
     }
