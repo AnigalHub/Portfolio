@@ -335,6 +335,8 @@ h2,.name,span{
 
     /*при наведении*/
     &:hover{
+      transition: 1s;
+      transform: scale(1.01);
       /*картинки*/
       img {
         filter: brightness(50%);
@@ -415,6 +417,10 @@ h2,.name,span{
     width: 45%;
     margin: 3% 1.5% 0;
     padding: 1% 4%;
+    &:hover{
+      transition: 1s;
+      transform: scale(1.01);
+    }
     /*svg*/
     svg {
       display: block;
