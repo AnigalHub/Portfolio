@@ -31,14 +31,11 @@ export default {
   .navbar-brand{padding-bottom: 0 !important;}
 </style>
 <style lang="scss">
-/*ссылки*/
-a{color: #000 !important;}
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
   background: #030407;
   color: white;
 }
-
 /*Компонент футера*/
 #Myfooter{
   padding: 1.5% 14%;
@@ -93,22 +90,14 @@ h2,.name,span{
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 1% 12% 0 15%;
 }
 /*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
 #About, #Education, #Skills, #Works, #Contact{padding: 3% 0;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
-  /*пункты меню в tabs*/
-  .nav-link{color: black !important;}
-  /*фраза-Junior Frontend-разработчик*/
-  #Home .front{
-    text-shadow:
-      0 0 3px #000000,
-      0 0 70px #000000,
-      1.3px 1.25px 0 #321002;
-  }
+  /*ссылки*/
+  a{color: #000 !important;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты"*/
   #Skills,#Contact{background: #ffffff;}
   /*Компоненты - "Об мне", "Образование"*/
@@ -119,11 +108,15 @@ h2,.name,span{
   #About{
     /*список - черточки (полосочки)*/
     ul li:after {border-left: 1px dotted black;}
+    .projects{
+      background-color: #f9f9f9;
+    }
   }
   #Skills{
-    .flex-container > div{
-    background: white;
+    svg{
+      background: hsla(0,0%,100%,.2);
     }
+    .express_svg{fill: #000;}
   }
   /*Компонент - "Мои работы"*/
   #Works{
@@ -136,18 +129,16 @@ h2,.name,span{
       box-shadow: 0 4px 24px rgba(0,0,0,.12);
       /*при наведении*/
       &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
-      .name_works{
-        background: #fff;
-      }
-      .text_works{
+      .name_works, .text_works{
         background-color: #ffffff;
       }
     }
   }
-  .express_svg{fill: #000;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
+  /*ссылки*/
+  a{color: #afadad !important;}
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
   #Skills, #Contact {background: #0c111c;}
   /*Компоненты -  "Мои работы","Образование"*/
@@ -158,6 +149,9 @@ h2,.name,span{
   #About{
     /*список - черточки (полосочки)*/
     ul li:after {border-left: 1px dotted #afadad;}
+    .projects{
+      background: #09101d;
+    }
   }
   /*Компонент - "Мои работы"*/
   #Works{
@@ -175,9 +169,16 @@ h2,.name,span{
     }
   }
   #Skills{
-    .flex-container > div{
-    background: #0f1522;
+      svg{
+        background: #111623;
+      }
+    .express_svg{fill: #afadad;}
   }
+  #Contact{
+    /*блоки с контактной информацией*/
+    .flex-container > div {
+      background: #111623;
+    }
   }
 }
 
@@ -197,11 +198,9 @@ h2,.name,span{
     width: 60%;
     margin: 12% auto 2%;
     cursor: default;
-    background-color: #f9f9f9;
     border-radius: 10px;
     padding: 3%;
     text-align: center;
-
     .number{
       font-weight: 400;
       font-size: 1.8rem;
@@ -213,7 +212,7 @@ h2,.name,span{
     }
   }
  .row{
-   margin: 0 5% 0 8%!important;
+   margin: 0 5% 0 8%;
  }
   img{
     width: 75%;
@@ -283,7 +282,6 @@ h2,.name,span{
     display: block;
     margin: 0 auto;
     backdrop-filter: blur(5px);
-    background: hsla(0,0%,100%,.2);
     border-radius: 50%;
     box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
     padding: 10%;
