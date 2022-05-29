@@ -115,6 +115,7 @@ h2,.name,span{
   #Skills{
     svg{
       background: hsla(0,0%,100%,.2);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
     }
     .express_svg{fill: #000;}
   }
@@ -126,12 +127,21 @@ h2,.name,span{
     /*блоки под каждую работу*/
     .flex-container > div {
       background: #fff;
-      box-shadow: 0 4px 24px rgba(0,0,0,.12);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
       /*при наведении*/
       &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
       .name_works, .text_works{
         background-color: #ffffff;
       }
+    }
+  }
+  #Contact{
+    /*блоки с контактной информацией*/
+    .flex-container > div {
+      background: #fff;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+      /*при наведении*/
+      &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
     }
   }
 }
@@ -157,11 +167,12 @@ h2,.name,span{
   #Works{
     /*блоки под каждую работу*/
     .flex-container > div {
-      background: #0f1522;
+      background-color: initial;
+      box-shadow: 0 0 12px hsla(0,0%,100%,.15);
       /*при наведении*/
-      &:hover {box-shadow: 2px 5px 6px rgba(80, 79, 79);}
+      &:hover {box-shadow: 0 0 12px hsla(0,0%,100%,.4);}
       .name_works, .text_works{
-        background: #0f1522;
+        background: #090c13;
       }
       .text_works{
         color: #afadad;
@@ -171,6 +182,7 @@ h2,.name,span{
   #Skills{
       svg{
         background: #111623;
+        box-shadow: 0 0 12px hsla(0,0%,100%,.15);
       }
     .express_svg{fill: #afadad;}
   }
@@ -178,6 +190,9 @@ h2,.name,span{
     /*блоки с контактной информацией*/
     .flex-container > div {
       background: #111623;
+      box-shadow: 0 0 12px hsla(0,0%,100%,.1);
+      /*при наведении*/
+      &:hover {box-shadow: 0 0 12px hsla(0,0%,100%,.4);}
     }
   }
 }
@@ -283,7 +298,6 @@ h2,.name,span{
     margin: 0 auto;
     backdrop-filter: blur(5px);
     border-radius: 50%;
-    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
     padding: 10%;
   }
   .flex-container{
@@ -310,7 +324,6 @@ h2,.name,span{
   }
   /*блоки с работами*/
   .flex-container  > div {
-    box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
     width: 31%;
     margin: 0 1% 2%;
     padding: 1%;
@@ -374,9 +387,8 @@ h2,.name,span{
   /*блоки с контактной информацией*/
   .flex-container > div {
     text-align: center;
-    width: 46%;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
-    margin: 2% 1% 0;
+    width: 45%;
+    margin: 3% 1.5% 0;
     padding: 1% 4%;
     /*svg*/
     svg {
