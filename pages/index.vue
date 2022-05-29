@@ -139,43 +139,25 @@ h2,.name,span{
       .name_works{
         background: #fff;
       }
+      .text_works{
+        background-color: #ffffff;
+      }
     }
   }
   .express_svg{fill: #000;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
-  /*пункты меню в tabs*/
-  .nav-link{color: #afadad !important;}
-  /*tabs, активные пункты меню в tabs*/
-  .nav-tabs,.nav-link.active{
-    color: #afadad !important;
-    border-color: #afadad #afadad #afadad;
-  }
-  /*активные пункты меню в tabs*/
-  .nav-link.active{background: #121a2a !important;}
-  /*фраза-Junior Frontend-разработчик*/
-  #Home .front{
-    text-shadow:
-      0 0 3px #000000,
-      0 0 70px #000000,
-      1.3px 1.25px 0 #321002;
-  }
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
   #Skills, #Contact {background: #0c111c;}
   /*Компоненты -  "Мои работы","Образование"*/
   #Works, #About {background: #090c13;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
-  #About, #Skills, #Works, #Education{color: #afadad !important;}
+  #About, #Skills, #Works, #Contact {color: #afadad;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
     ul li:after {border-left: 1px dotted #afadad;}
-  }
-  /*контент модального окошка*/
-  .modal-content{
-    background: black !important;
-    color: #afadad;
   }
   /*Компонент - "Мои работы"*/
   #Works{
@@ -184,8 +166,11 @@ h2,.name,span{
       background: #0f1522;
       /*при наведении*/
       &:hover {box-shadow: 2px 5px 6px rgba(80, 79, 79);}
-      .name_works{
+      .name_works, .text_works{
         background: #0f1522;
+      }
+      .text_works{
+        color: #afadad;
       }
     }
   }
@@ -204,15 +189,9 @@ h2,.name,span{
   .front{
     text-align: center;
   }
-  span{
-    font-size: 2rem;
-  }
 }
 /*Компонент - "Об мне"*/
 #About{
-  .flex-container {
-    margin: 1% 18% 0;
-  }
   /*блоки под svg и название*/
   .projects{
     width: 60%;
@@ -352,17 +331,14 @@ h2,.name,span{
       }
     }
     .text_works{
-      color: black;
-      font-weight: 400;
+        font-weight: 400;
         font-size: 1rem;
-        background-color: #ffffff;
         border-radius: 10px;
         padding: 2% 5%;
         position: absolute;
         top: 157px;
     }
     .name{
-      background-color: #ffffff;
       text-align: center;
       color: #5584bf;
       font-weight: 500;
@@ -375,7 +351,7 @@ h2,.name,span{
       border-radius: 5px;
       cursor: pointer;
     }
-    .text_about{
+    .text{
       font-size: 1rem;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
