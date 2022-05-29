@@ -12,6 +12,14 @@
             <p class="name">{{work.name_company}}</p>
             <p class="text_about">{{work.about}}</p>
           </div>
+          <div class="link_work">
+            <a :href="work.git" target="_blank">
+              <component  :is="git"/>
+            </a>
+            <a :href="work.show" target="_blank">
+              <component  :is="show"/>
+            </a>
+          </div>
         </div>
       </div>
     </b-container>
@@ -19,16 +27,22 @@
 </template>
 
 <script>
+    import Github_svg from "~/components/svg_contacts/github_svg";
+    import Show_svg from "~/components/svg_works/show_svg";
     export default {
       name: "works",
         data(){
           return{
+            git:Github_svg,
+            show:Show_svg,
             Works:[
               {
                 src:'./home_prom.jpg',
                 alt:'Промэлектронсервис',
                 name_company:'«Промэлектронсервис»',
                 technology:'HTML & CSS & Bootstrap',
+                git:'https://github.com/AnigalHub/Promelectronservice',
+                show:'http://promelektronservis.ru/',
                 about:'Сайт сертификационных испытаний и комплексной поставки электронных компонентов'
               },
               {
