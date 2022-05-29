@@ -40,6 +40,10 @@ export default {
 #Myfooter{
   padding: 1.5% 14%;
 }
+a{
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
 .text,.text_works,.name,.nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
 /*заголовки*/
@@ -304,7 +308,7 @@ h2,.name,span{
     margin: 0 5%;
   }
   /*блоки под svg и название*/
-  .flex-container  > div {
+  .flex-container  > a {
     width: 12%;
     margin: 0 2% 2%;
     cursor: default;
@@ -370,6 +374,11 @@ h2,.name,span{
       padding: 3%;
       border-radius: 50%;
       cursor: pointer;
+      /*при наведении*/
+      &:hover{
+        width: 45px;
+        height: 45px;
+      }
     }
     /*картинки*/
     img {
