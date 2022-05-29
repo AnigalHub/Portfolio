@@ -26,9 +26,8 @@
     import PostgreSQL_svg from "~/components/svg_skills/postgresql_svg";
     import Git_svg from "~/components/svg_skills/git_svg";
     export default {
-        name: "skills",
-        components: {Git_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_svg, Node_svg, PostgreSQL_svg,
-        Typescript_svg, Bootstrap_svg, Express_svg},
+      name: "skills",
+      components: {Git_svg, Nuxt_svg, Sass_svg, Javascript_svg, Vue_svg, Html_svg, Node_svg, PostgreSQL_svg, Typescript_svg, Bootstrap_svg, Express_svg},
         data(){
           return{
             Skills:[
