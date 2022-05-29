@@ -7,7 +7,6 @@
           <img :src="work.src" :alt="work.alt"/>
           <div class="work">
             <div class="name_works">
-
               <p class="text_works">{{work.technology}}</p>
             </div>
             <p class="name">{{work.name_company}}</p>
@@ -111,13 +110,6 @@
                 technology:'Vue',
                 about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов'
               },
-              // {
-              //   main_src:'./main.jpg',
-              //   src:'/parser.jpg',
-              //   alt:'parser',
-              //   name_company:'Парсинг сайта ',
-              //   technology:'Node.js',
-              // },
               {
                 main_src:'./main_TestTask.png',
                 src:'/TestTask.png',
