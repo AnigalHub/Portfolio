@@ -3,10 +3,10 @@
     <b-container>
       <h2>Ключевые навыки</h2>
       <div class="flex-container">
-        <div v-for="(skill,index) in Skills" :key="index">
+        <a v-for="(skill,index) in Skills" :key="index" :href="skill.link" target="_blank">
           <component :key="index" :is="skill.svg"/>
           <div class="text">{{skill.skills_name}}</div>
-        </div>
+        </a>
       </div>
     </b-container>
   </div>
@@ -31,18 +31,18 @@
         data(){
           return{
             Skills:[
-              {svg:Vue_svg, skills_name: 'Vue.js',},
-              {svg:Javascript_svg, skills_name: 'Javascript',},
-              {svg:Typescript_svg, skills_name: 'Typescript',},
-              {svg:Bootstrap_svg, skills_name:'Boostrap',},
-              {svg:Html_svg, skills_name:'HTML',},
-              {svg:Css_svg, skills_name:'CSS',},
-              {svg:Nuxt_svg, skills_name: 'Nuxt.js',},
-              {svg:Sass_svg, skills_name:'SCSS',},
-              {svg:Node_svg, skills_name: 'Node.js',},
-              {svg:Express_svg, skills_name: 'Express.js',},
-              {svg:PostgreSQL_svg, skills_name: 'PostgreSQL',},
-              {svg:Git_svg, skills_name: 'Git',},
+              {svg:Vue_svg, skills_name: 'Vue.js',link:'https://vuejs.org/'},
+              {svg:Javascript_svg, skills_name: 'Javascript',link:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'},
+              {svg:Typescript_svg, skills_name: 'Typescript',link:'https://www.typescriptlang.org/'},
+              {svg:Bootstrap_svg, skills_name:'Boostrap',link:'https://getbootstrap.com/'},
+              {svg:Html_svg, skills_name:'HTML',link:'https://www.w3.org/html/'},
+              {svg:Css_svg, skills_name:'CSS',link:'https://www.w3schools.com/css/'},
+              {svg:Nuxt_svg, skills_name: 'Nuxt.js',link:'https://nuxtjs.org/'},
+              {svg:Sass_svg, skills_name:'SCSS',link:'https://sass-lang.com/'},
+              {svg:Node_svg, skills_name: 'Node.js',link:'https://nodejs.org/en/'},
+              {svg:Express_svg, skills_name: 'Express.js',link:'https://expressjs.com/'},
+              {svg:PostgreSQL_svg, skills_name: 'PostgreSQL',link:'https://www.postgresql.org/'},
+              {svg:Git_svg, skills_name: 'Git',link:'https://git-scm.com/'},
             ]
           }
         }
