@@ -33,38 +33,38 @@
     export default {
       name: "contact",
       data(){
-          return{
-            ContactsRow:[
-              {
-                svg:Telephone_svg,
-                href:'tel:' + '+7 (903) 151-39-31',
-                target:'_self',
-                name:'Телефон:',
-                http:'+7 (903) 151-39-31'
-              },
-              {
-                svg:Email_svg,
-                href:'mailto:' + 'annaignatova97@bk.ru',
-                target:'_self',
-                name:'Email:',
-                http:'annaignatova97@bk.ru'
-              },
-              {
-                svg:Github_svg,
-                href:'https://github.com/AnigalHub',
-                target:'_blank',
-                name:'Github:',
-                http:'github.com/AnigalHub'
-              },
-              {
-                svg:Telegram_svg,
-                href:'https://t.me/annaignatova97',
-                target:'_blank',
-                name:'Telegram:',
-                http:'@annaignatova97',
-              },
-            ]
-          }
+        return{
+          ContactsRow:[
+            {
+              svg:Telephone_svg,
+              href:'tel:' + '+7 (903) 151-39-31',
+              target:'_self',
+              name:'Телефон:',
+              http:'+7 (903) 151-39-31'
+            },
+            {
+              svg:Email_svg,
+              href:'mailto:' + 'annaignatova97@bk.ru',
+              target:'_self',
+              name:'Email:',
+              http:'annaignatova97@bk.ru'
+            },
+            {
+              svg:Github_svg,
+              href:'https://github.com/AnigalHub',
+              target:'_blank',
+              name:'Github:',
+              http:'github.com/AnigalHub'
+            },
+            {
+              svg:Telegram_svg,
+              href:'https://t.me/annaignatova97',
+              target:'_blank',
+              name:'Telegram:',
+              http:'@annaignatova97',
+            },
+          ]
+        }
       }
     }
 </script>
