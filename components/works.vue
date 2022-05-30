@@ -14,10 +14,10 @@
           </div>
           <div class="link_work">
             <a :href="work.git" target="_blank">
-              <component  :is="git"/>
+              <component :is="git"/>
             </a>
             <a :href="work.show" target="_blank">
-              <component  :is="show"/>
+              <component :is="show"/>
             </a>
           </div>
         </div>
@@ -43,7 +43,7 @@
                 technology:'HTML & CSS & Bootstrap',
                 git:'https://github.com/AnigalHub/Promelectronservice',
                 show:'http://promelektronservis.ru/',
-                about:'Сайт сертификационных испытаний и комплексной поставки электронных компонентов'
+                about:'Сайт сертификационных испытаний и комплексной поставки электронных компонентов.'
               },
               {
                 src:'./home_gts.png',
@@ -52,7 +52,7 @@
                 git:'https://github.com/AnigalHub/Gts',
                 show:'/gts',
                 technology:'Vue',
-                about:'Сайт производителя и поставщика ИТ‒оборудования для государственных и бизнес-структур'
+                about:'Сайт производителя и поставщика ИТ‒оборудования для государственных и бизнес-структур.'
               },
               {
                 src:'./home_priamyeruki.jpg',
@@ -61,7 +61,7 @@
                 git:'https://github.com/AnigalHub/Priamyeruki',
                 show:'/priamyeruki',
                 technology:'Vue',
-                about:'Сайт изготовления разнообразного декора, рекламных вывесок, сувенирной продукции, реставрации, брендирования'
+                about:'Сайт изготовления разнообразного декора, рекламных вывесок, сувенирной продукции, реставрации, брендирования.'
               },
               {
                 src:'./home_avacont.jpg',
@@ -70,7 +70,7 @@
                 git:'https://github.com/AnigalHub/Avacont',
                 show:'/avacont',
                 technology:'Vue',
-                about: 'Сайт изготовления накладок из дерева под розетки, выключатели, радиаторы, светильники и карнизы'
+                about: 'Сайт изготовления накладок из дерева под розетки, выключатели, радиаторы, светильники и карнизы.'
               },
               {
                 src:'./home_valencia.png',
@@ -88,7 +88,7 @@
                 git:'https://github.com/AnigalHub/PixelPerfect',
                 show:'/pixelperfect',
                 technology:'Vue',
-                about: 'Шаблон с попиксельной точностью, выполненный с помощью подхода Pixel Perfect'
+                about: 'Шаблон с попиксельной точностью, выполненный с помощью подхода Pixel Perfect.'
               },
               {
                 src:'./training.png',
@@ -97,7 +97,7 @@
                 git:'https://github.com/AnigalHub/MathTest',
                 show:'/mathtest',
                 technology:'JavaScript',
-                about: 'Игра для малышей на сложение, вычитание, деление и умножение с таймером'
+                about: 'Игра для малышей на сложение, вычитание, деление и умножение с таймером.'
               },
               {
                 src:'./snake.png',
@@ -106,7 +106,7 @@
                 git:'https://github.com/AnigalHub/Snake',
                 show:'/snake',
                 technology:'JavaScript',
-                about:'Классическая игра передвижения змейки за едой на игровом поле с помощью управления клавишами'
+                about:'Классическая игра передвижения змейки за едой на игровом поле с помощью управления клавишами.'
               },
               {
                 src:'./home_svgGame.png',
@@ -115,7 +115,7 @@
                 git:'https://github.com/AnigalHub/SvgGames',
                 show:'/svggames',
                 technology:'Vue',
-                about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов'
+                about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов.'
               },
               {
                 src:'/TestTask.png',
@@ -124,7 +124,7 @@
                 git:'https://github.com/AnigalHub/TestTask',
                 show:'/testtask',
                 technology:'Nuxt',
-                about:'Целевая страница с формой на добавление товара в список и сортировкой товара в списке'
+                about:'Целевая страница с формой на добавление товара и сортировки товара в списке.'
               },
               {
                 src:'/market.png',
@@ -133,7 +133,7 @@
                 git:'https://github.com/AnigalHub/Market',
                 show:'/market',
                 technology:'Nuxt',
-                about:'Целевая страница с возможностью сортировки товаров, отправки заявки и удалении из корзины товара'
+                about:'Целевая страница с возможностью сортировки товаров, отправки заявки и удалении из корзины товара.'
               },
               {
                 src:'/TestBis.png',
@@ -142,7 +142,7 @@
                 git:'https://github.com/AnigalHub/TestBis',
                 show:'/testbis',
                 technology:'Vue',
-                about:'Прототип банковского приложения с возможностью отображения таблиц, изменения и удаления данных из них'
+                about:'Прототип банковского приложения с возможностью отображения таблиц, изменения и удаления данных из них.'
               },
               // {
               //   src:'/api.png',
