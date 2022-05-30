@@ -6,8 +6,8 @@
         <div v-for="(work,index) in Works" :key="index">
           <img :src="work.src" :alt="work.alt"/>
           <div class="work">
-            <div class="name_works">
-              <p class="text_works">{{work.technology}}</p>
+            <div class="name_technology">
+              <p class="text_technology">{{work.technology}}</p>
             </div>
             <p class="name_company">{{work.name_company}}</p>
             <p class="text">{{work.about}}</p>

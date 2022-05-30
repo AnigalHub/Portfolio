@@ -45,7 +45,7 @@ a{
   cursor: pointer !important;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-h1, #Home .name_company, .text,.text_works,
+h1, #Home .name_company, .text,.text_technology,
 .name_company,.name, .nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
 /*заголовки*/
 h1{
@@ -72,7 +72,7 @@ h2,span,.name{
 /*текст, пункты меню, фраза в логотипе*/
 .nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
-.text,.nav-link,.navbar-brand,.name_company,.name,.text_works{font-size: 1.15rem;}
+.text,.nav-link,.navbar-brand,.name_company,.name,.text_technology{font-size: 1.15rem;}
 /*svg в логотипе*/
 #logo{
   width: 60px;
@@ -133,7 +133,7 @@ h2,span,.name{
       box-shadow: $box-shadow;
       /*при наведении*/
       &:hover {box-shadow: $box-shadow_hover;}
-      .name_works, .text_works{
+      .name_technology, .text_technology{
         background-color: $background_elements;
       }
     }
@@ -183,7 +183,7 @@ h2,span,.name{
       box-shadow: 0 0 12px hsla(0,0%,100%,.15);
       /*при наведении*/
       &:hover {box-shadow: $box-shadow_hover;}
-      .name_works, .text_works{
+      .name_technology, .text_technology{
         background: #090c13;
       }
     }
@@ -337,7 +337,7 @@ h2,span,.name{
         }
       }
     }
-    .link_work,.text_works{
+    .link_work,.text_technology{
       position: absolute;
     }
     .link_work{
@@ -346,7 +346,7 @@ h2,span,.name{
       margin: 0 30%;
       width: 93.5%;
     }
-    .text_works{
+    .text_technology{
       font-weight: 400;
       font-size: 1rem;
       border-radius: 10px;
@@ -383,7 +383,7 @@ h2,span,.name{
       border-radius: 5px;
       cursor: pointer;
     }
-    .name_works{
+    .name_technology{
       width: 100%;
       display: flex;
       align-items: center;
@@ -474,7 +474,7 @@ h2,span,.name{
     .front{ font-size: 1.4rem !important;}
   }
   /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_works,.text,.nav-link,.navbar-brand{
+  .text_technology,.text,.nav-link,.navbar-brand{
     font-size: 1rem !important;
     line-height: 1rem !important;
   }
@@ -488,7 +488,7 @@ h2,span,.name{
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
   #About, #Skills, #Works{padding: 1rem 0;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_works, .text, .nav-link, .navbar-brand {
+  .text_technology, .text, .nav-link, .navbar-brand {
     font-size: 1.1rem;
     line-height: 1.15rem;
   }
@@ -539,7 +539,7 @@ h2,span,.name{
   /*заголовок*/
   h1{font-size: 1.4rem !important;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_works, .text,.nav-link,.navbar-brand{
+  .text_technology, .text,.nav-link,.navbar-brand{
     font-size: 1.1rem;
     line-height: 1.15rem;
   }
@@ -574,7 +574,7 @@ h2,span,.name{
     }
   }
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_works,.text,.nav-link,.navbar-brand{line-height: 1.4rem;}
+  .text_technology,.text,.nav-link,.navbar-brand{line-height: 1.4rem;}
   /*Компонент - "Ключевые навыки"*/
   #Skills{
     /*блоки под svg и название*/
