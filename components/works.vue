@@ -10,7 +10,7 @@
               <p class="text_works">{{work.technology}}</p>
             </div>
             <p class="name_company">{{work.name_company}}</p>
-            <p class="text_about">{{work.about}}</p>
+            <p class="text">{{work.about}}</p>
           </div>
           <div class="link_work">
             <a :href="work.git" target="_blank">
