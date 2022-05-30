@@ -1,22 +1,16 @@
 <template>
   <div id="Myfooter">
     <b-container>
-      <b-row>
-        <b-col>
-          <div class="text">
-            CopyRight© 2022  Junior Frontend Developer
-          </div>
-        </b-col>
-        <b-col cols="6">
-          <div class="flex-container svgFooter">
-            <div v-for="information in ContactsRow" :key="information.text">
-              <a :href="information.href" :target="information.target">
-                <component :is="information.svg"/>
-              </a>
-            </div>
-          </div>
-        </b-col>
-      </b-row>
+      <div class="text">
+        CopyRight© 2022  Junior Frontend Developer
+      </div>
+      <div class="flex-container svgFooter">
+        <div v-for="information in ContactsRow" :key="information.text">
+          <a :href="information.href" :target="information.target">
+            <component :is="information.svg"/>
+          </a>
+        </div>
+      </div>
     </b-container>
   </div>
 </template>
