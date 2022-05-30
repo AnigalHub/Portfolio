@@ -70,7 +70,7 @@ h2,span,.name{
   font-weight: 300;
 }
 /*текст, пункты меню, фраза в логотипе*/
-.text,.nav-link,.navbar-brand{line-height: 1.8rem;}
+.nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
 .text,.nav-link,.navbar-brand,.name_company,.name,.text_works{font-size: 1.15rem;}
 /*svg в логотипе*/
@@ -388,6 +388,10 @@ h2,span,.name{
       display: flex;
       align-items: center;
       justify-content: center
+    }
+    .text{
+      font-size: 1.1rem;
+      margin: 0;
     }
   }
 }
