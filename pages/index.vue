@@ -34,7 +34,7 @@ export default {
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
   background: #030407;
-  color: white;
+  color: #dedede;
 }
 /*Компонент футера*/
 #Myfooter{
@@ -45,7 +45,8 @@ a{
   cursor: pointer !important;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-.text,.text_works,.name,.nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
+h1, #Home .name_company, .text,.text_works,
+.name_company,.name, .nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
 /*заголовки*/
 h1{
   color: #a1cbff;
@@ -60,10 +61,8 @@ h1,h2{
   margin: 0 auto;
   text-align: center;
 }
-/*заголовок h1, имя, фраза "Junior Frontend-разработчик*/
-h1, #Home .name, #Home .front{font-family: 'Roboto', sans-serif;}
 /*заголовок h1, фраза "Junior Frontend-разработчик*/
-h2,.name,span{
+h2,span,.name{
   font-weight: 300;
   color: #5584bf;
 }
@@ -73,9 +72,7 @@ h2,.name,span{
 /*текст, пункты меню, фраза в логотипе*/
 .text,.nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
-.text,.nav-link,.navbar-brand,.name{font-size: 1.15rem;}
-/*текст для компонента "Мои работы"*/
-.text_works{line-height: 1.4rem;}
+.text,.nav-link,.navbar-brand,.name_company,.name,.text_works{font-size: 1.15rem;}
 /*svg в логотипе*/
 #logo{
   width: 60px;
@@ -95,8 +92,8 @@ h2,.name,span{
   display: flex;
   flex-wrap: wrap;
 }
-/*Компоненты - "Об мне","Образование", "Ключевые навыки", "Мои работы"*/
-#About, #Education, #Skills, #Works, #Contact{padding: 3% 0;}
+/*Компоненты - "Об мне", "Ключевые навыки", "Мои работы"*/
+#About, #Skills, #Works, #Contact{padding: 3% 0;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
@@ -356,12 +353,13 @@ h2,.name,span{
       padding: 2% 5%;
       top: 160px;
     }
-    .name{
+    .name_company{
       text-align: center;
       color: #5584bf;
       font-weight: 500;
       width: 100%;
       padding: 5% 0 1%;
+      margin: 0;
     }
     /*svg*/
     svg {
@@ -394,44 +392,42 @@ h2,.name,span{
   }
 }
 #Contact{
+  /*блоки с контактной информацией*/
   .flex-container{
     margin: 0 10% 0;
-  }
-  /*блоки с контактной информацией*/
-  .flex-container > div {
-    text-align: center;
-    width: 45%;
-    margin: 3% 1.5% 0;
-    padding: 1% 4%;
-    &:hover{
-      transition: 1s;
-      transform: scale(1.01);
-    }
-    /*svg*/
-    svg {
-      display: block;
-      float: left;
-      margin: 0 auto;
-      width: 50px;
-      height: 50px;
-      border: 2.5px solid #5584bf;
-      border-radius: 50%;
-    }
-    .name{
-      font-weight: 500;
-      float: left;
-      padding-right: 2%;
-    }
-    .col{
-      display: flex;
-      align-items: center
-    }
-    .inf{
-      margin: 0 ;
-      font-size: 1rem;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
+    & > div {
       text-align: center;
+      width: 45%;
+      margin: 1.5%;
+      padding: 1% 4%;
+      &:hover{
+        transition: 1s;
+        transform: scale(1.01);
+      }
+      /*svg*/
+      svg {
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        border: 2.5px solid #5584bf;
+        border-radius: 50%;
+      }
+      .name{
+        font-weight: 500;
+        padding-right: 2%;
+      }
+      .col{
+        display: flex;
+        align-items: center
+      }
+      .inf{
+        margin: 0;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: center;
+      }
     }
   }
   /*цвет svg*/
@@ -445,12 +441,9 @@ h2,.name,span{
   }
   /*блоки с контактной информацией*/
   .flex-container > div {
-    text-align: center;
     width: 25%;
     /*svg*/
     svg{
-      display: block;
-      margin: 0 auto;
       width: 30px;
       border: 1px solid #dedede;
       height: 30px;
@@ -462,14 +455,9 @@ h2,.name,span{
       transition: 1s;
       transform: scale(1.09);
     }
-    .text{
-      margin-bottom: 2%;
-      color: #dedede;
-    }
   }
   .svg_color{fill: #ffffff;}
   .svg_color1{fill: #868080;}
-
 }
 
  /***********************АДАПТИВНОСТЬ******************/
