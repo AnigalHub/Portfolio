@@ -14,7 +14,7 @@
         <b-col>
           <ul>
             <li class="text" v-for="(education,index) in About" :key="index">
-              <p><b>{{education.name}}<span> {{education.year}}</span></b></p>
+              <p><b>{{education.name}}<span>{{education.year}}</span></b></p>
               <p>{{education.direction}}</p>
               <p>{{education.department}}</p>
             </li>
@@ -34,8 +34,8 @@
             {
               name: "Московский Авиационный Институт (МАИ)",
               year: "(2015-2019)",
-              direction:"Направление: Информатика и вычислительная техника",
-              department:"Кафедра: Информационные сети и технологии"
+              direction:"Направление: Информатика и вычислительная техника.",
+              department:"Кафедра: Информационные сети и технологии."
             },
             {
               name: "Самообразование",
