@@ -40,9 +40,7 @@
   color: #dedede;
 }
 /*Компонент футера*/
-#Myfooter{
-  padding: 1.5% 14%;
-}
+#Myfooter{padding: 1.5% 14%;}
 a{
   text-decoration: none !important;
   cursor: $cursor_pointer !important;
@@ -56,21 +54,15 @@ h1{
   text-shadow: 1px 1px 0 #000;
   padding: 3%;
 }
-h2{
-  padding-bottom: 3%;
-}
+h2{padding-bottom: 3%;}
 h1,h2{
   margin: 0 auto;
   text-align: center;
 }
 /*заголовок h2,даты в #About, название*/
-h2,span,.name{
-  color: $color_highlight;
-}
+h2,span,.name{color: $color_highlight;}
  /*текст, заголовок h2, даты в #About, название*/
-.text,h2,span,.name{
-  font-weight: 300;
-}
+.text,h2,span,.name{font-weight: 300;}
 /*текст, пункты меню, фраза в логотипе*/
 .nav-link,.navbar-brand{line-height: 1.8rem;}
 /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
@@ -115,8 +107,8 @@ h2,span,.name{
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
-    ul li:after {border-left: 1px dotted $color_text;}
-    /*блок с проектом*/
+    ul li:after{border-left: 1px dotted $color_text;}
+    /*блок с количеством проектов*/
     .projects{background-color: #f9f9f9;}
   }
   /*Компонент - "Ключевые навыки"*/
@@ -144,11 +136,11 @@ h2,span,.name{
   /*Компонент - "Контакты"*/
   #Contact{
     /*блоки с контактной информацией*/
-    .flex-container > div {
+    .flex-container > div{
       background: $background_elements;
       box-shadow: $box-shadow;
       /*при наведении*/
-      &:hover {box-shadow: $box-shadow_hover;}
+      &:hover{box-shadow: $box-shadow_hover;}
     }
   }
 }
@@ -160,16 +152,16 @@ h2,span,.name{
   /*ссылки*/
   a{color: $color_text !important;}
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
-  #Skills, #Contact {background: #0c111c;}
+  #Skills, #Contact{background: #0c111c;}
   /*Компоненты -  "Портфолио","Образование"*/
-  #Works, #About {background: #090c13;}
+  #Works, #About{background: #090c13;}
   /*Компоненты - "Об мне","Ключевые навыки", "Портфолио", "Контакты"*/
-  #About, #Skills, #Works, #Contact {color: $color_text;}
+  #About, #Skills, #Works, #Contact{color: $color_text;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
-    ul li:after {border-left: 1px dotted $color_text;}
-    /*блок с проектом*/
+    ul li:after{border-left: 1px dotted $color_text;}
+    /*блок с количеством проектов*/
     .projects{background: #080a11;}
   }
   /*Компонент - "Ключевые навыки"*/
@@ -185,21 +177,21 @@ h2,span,.name{
   /*Компонент - "Мои работы"*/
   #Works{
     /*блоки под каждую работу*/
-    .flex-container > div {
+    .flex-container > div{
       box-shadow: 0 0 12px hsla(0,0%,100%,.15);
       /*при наведении*/
-      &:hover {box-shadow: $box-shadow_hover;}
+      &:hover{box-shadow: $box-shadow_hover;}
       /*название технологии, текст технологии*/
       .name_technology, .text_technology{background: #090c13;}
     }
   }
   #Contact{
     /*блоки с контактной информацией*/
-    .flex-container > div {
+    .flex-container > div{
       background: #111623;
       box-shadow: 0 0 12px hsla(0,0%,100%,.1);
       /*при наведении*/
-      &:hover {box-shadow: $box-shadow_hover;}
+      &:hover{box-shadow: $box-shadow_hover;}
     }
   }
 }
@@ -211,7 +203,7 @@ h2,span,.name{
 }
 /*Компонент - "Об мне"*/
 #About{
-  /*блоки под svg и название*/
+  /*блок с количеством проектов*/
   .projects{
     width: 60%;
     margin: 7% auto 2%;
@@ -219,19 +211,21 @@ h2,span,.name{
     border-radius: 10px;
     padding: 3%;
     text-align: center;
+    /*блок под число проектов*/
     .number{
       font-weight: 400;
       font-size: 1.8rem;
     }
+
     /*при наведении*/
-    &:hover{
+    &:hover {
       transition: 1s;
       transform: scale(1.09);
     }
   }
- .row{
-   margin: 0 5% 0 8%;
- }
+  /*бутстрап сетка*/
+  .row{margin: 0 5% 0 8%;}
+  /*картинка*/
   img{
     width: 75%;
     margin: -5% 15% 0;
@@ -254,12 +248,12 @@ h2,span,.name{
     margin-left: -2.2rem !important;
   }
   /*элементы списка*/
-  ul li {
+  ul li{
     position: relative;
     padding: 5px 0 10px 40px;
     cursor: default;
     /*свой маркер - кружок*/
-    &:before {
+    &:before{
       position: absolute;
       border-radius: 50%;
       width: 12px;
@@ -271,7 +265,7 @@ h2,span,.name{
       top: 27px;
     }
     /*черточки (полосочки)*/
-    &:after {
+    &:after{
       position: absolute;
       width: 1px;
       bottom: -12px;
@@ -282,7 +276,7 @@ h2,span,.name{
     /*при наведении*/
     &:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
     /*последний элемент*/
-    &:last-child:after {content: none;}
+    &:last-child:after{content: none;}
   }
 }
 /*Компонент - "Ключевые навыки"*/
@@ -305,6 +299,7 @@ h2,span,.name{
   /*блоки под svg и название*/
   .flex-container{
     margin: 0 5%;
+    /*блок под svg и название*/
     & > div {
       width: 12.5%;
       margin: 0 2% 2%;
@@ -319,38 +314,36 @@ h2,span,.name{
     }
   }
 }
-/*Компонент - "Мои работы"*/
+/*Компонент - "Портфолио"*/
 #Works{
   /*блоки с работами*/
   .flex-container{
-    & > div {
+    /*блоки с работой*/
+    & > div{
       width: 31%;
       margin: 0 1% 2%;
       padding: 1%;
       position: relative;
-
       /*при наведении*/
       &:hover{
         transition: 1s;
         transform: scale(1.01);
         /*картинки*/
-        img {
-          filter: brightness(50%);
-        }
-        .link_work{
-          display: block;
-        }
+        img{filter: brightness(50%);}
+        /*блок с ссылками на проект*/
+        .link_work{display: block;}
       }
     }
-    .link_work,.text_technology{
-      position: absolute;
-    }
+    /*блок с ссылками на проект, текст технологии*/
+    .link_work,.text_technology{position: absolute;}
+    /*блок с ссылками на проект*/
     .link_work{
       display: none;
       top: 65px;
       margin: 0 30%;
       width: 93.5%;
     }
+    /*текст технологии*/
     .text_technology{
       font-weight: 400;
       font-size: 1rem;
@@ -358,6 +351,7 @@ h2,span,.name{
       padding: 2% 5%;
       top: 160px;
     }
+    /*название компании*/
     .name_company{
       text-align: center;
       color: $color_highlight;
@@ -367,7 +361,7 @@ h2,span,.name{
       margin: 0;
     }
     /*svg*/
-    svg {
+    svg{
       width: 50px;
       height: 50px;
       margin: 2%;
@@ -382,33 +376,38 @@ h2,span,.name{
       }
     }
     /*картинки*/
-    img {
+    img{
       width: 100%;
       filter: brightness(94%);
       border-radius: 5px;
       cursor: $cursor_pointer;
     }
-    .name_technology {
+    /*название технологии*/
+    .name_technology{
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center
     }
+    /*текст*/
     .text{
       font-size: 1.1rem;
       margin: 0;
     }
   }
 }
+ /*Компонент - "Контакты"*/
 #Contact{
   /*блоки с контактной информацией*/
   .flex-container{
     margin: 0 10% 0;
-    & > div {
+    /*блок с контактной информацией*/
+    & > div{
       text-align: center;
       width: 45%;
       margin: 1.5%;
       padding: 1% 4%;
+      /*при наведении*/
       &:hover{
         transition: 1s;
         transform: scale(1.01);
@@ -422,17 +421,18 @@ h2,span,.name{
         border: 2.5px solid $color_highlight;
         border-radius: 50%;
       }
+      /*название контактной информации*/
       .name{
         font-weight: 500;
         padding-right: 2%;
       }
+      /*сетка бутстрап*/
       .col{
         display: flex;
         align-items: center
       }
-      .text{
-        margin: 0;
-      }
+      /*текст*/
+      .text{margin: 0;}
     }
   }
   /*цвет svg*/
@@ -440,16 +440,18 @@ h2,span,.name{
   .svg_color1{fill: #1a4376;}
 }
 #Myfooter{
+  /*блок с svg*/
   .svgFooter{
     margin: 0 0 0 auto;
     width: 15%;
   }
+  /*текст*/
   .text{
     float: left;
     padding-top: .25%;
   }
   /*блоки с контактной информацией*/
-  .flex-container > div {
+  .flex-container > div{
     width: 25%;
     /*svg*/
     svg{
