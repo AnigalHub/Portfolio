@@ -27,147 +27,146 @@
 </template>
 
 <script>
-    import Github_svg from "~/components/svg_contacts/github_svg";
-    import Show_svg from "~/components/svg_works/show_svg";
-    export default {
-      name: "works",
-        data(){
-          return{
-            git:Github_svg,
-            show:Show_svg,
-            Works:[
-              {
-                src:'./home_prom.jpg',
-                alt:'Промэлектронсервис',
-                name_company:'«Промэлектронсервис»',
-                technology:'HTML & CSS & Bootstrap',
-                git:'https://github.com/AnigalHub/Promelectronservice',
-                show:'http://promelektronservis.ru/',
-                about:'Сайт сертификационных испытаний и комплексной поставки электронных компонентов.'
-              },
-              {
-                src:'./home_gts.png',
-                alt:'Гостехносервис',
-                name_company:'«Гостехносервис»',
-                git:'https://github.com/AnigalHub/Gts',
-                show:'/gts',
-                technology:'Vue',
-                about:'Сайт производителя и поставщика ИТ‒оборудования для государственных и бизнес-структур.'
-              },
-              {
-                src:'./home_priamyeruki.jpg',
-                alt:'Прямые_руки',
-                name_company:'«Аваконт»',
-                git:'https://github.com/AnigalHub/Priamyeruki',
-                show:'/priamyeruki',
-                technology:'Vue',
-                about:'Сайт изготовления разнообразного декора, рекламных вывесок, сувенирной продукции, реставрации, брендирования.'
-              },
-              {
-                src:'./home_avacont.jpg',
-                alt:'Аваконт',
-                name_company:'«Аваконт»',
-                git:'https://github.com/AnigalHub/Avacont',
-                show:'/avacont',
-                technology:'Vue',
-                about: 'Сайт изготовления накладок из дерева под розетки, выключатели, радиаторы, светильники и карнизы.'
-              },
-              {
-                src:'./home_valencia.png',
-                alt:'Валенсия',
-                name_company:'«Валенсия»',
-                git:'https://github.com/AnigalHub/Valencia',
-                show:'/valencia',
-                technology:'Nuxt',
-                about:'Сайт частного охранного предприятия, обеспечивающего безопасность на всей территории во всех субъектах РФ.'
-              },
-              {
-                src:'/home_pixelperfect.png',
-                alt:'pixelperfect',
-                name_company:'Startup',
-                git:'https://github.com/AnigalHub/PixelPerfect',
-                show:'/pixelperfect',
-                technology:'Vue',
-                about: 'Шаблон с попиксельной точностью, выполненный с помощью подхода Pixel Perfect.'
-              },
-              {
-                src:'./training.png',
-                alt:'Математический тренажёр',
-                name_company:'«Математический тренажёр»',
-                git:'https://github.com/AnigalHub/MathTest',
-                show:'/mathtest',
-                technology:'JavaScript',
-                about: 'Игра для малышей на сложение, вычитание, деление и умножение с таймером.'
-              },
-              {
-                src:'./snake.png',
-                alt:'Игра "Змейка"',
-                name_company:'«Змейка»',
-                git:'https://github.com/AnigalHub/Snake',
-                show:'/snake',
-                technology:'JavaScript',
-                about:'Классическая игра передвижения змейки за едой на игровом поле с помощью управления клавишами.'
-              },
-              {
-                src:'./home_svgGame.png',
-                alt:'alphabet',
-                name_company:'"Алфавит"',
-                git:'https://github.com/AnigalHub/SvgGames',
-                show:'/svggames',
-                technology:'Vue',
-                about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов.'
-              },
-              {
-                src:'/TestTask.png',
-                alt:'TestTask',
-                name_company:'Продажа товаров',
-                git:'https://github.com/AnigalHub/TestTask',
-                show:'/testtask',
-                technology:'Nuxt',
-                about:'Целевая страница с формой на добавление товара и сортировки товара в списке.'
-              },
-              {
-                src:'/market.png',
-                alt:'market',
-                name_company:'Каталог товаров',
-                git:'https://github.com/AnigalHub/Market',
-                show:'/market',
-                technology:'Nuxt',
-                about:'Целевая страница с возможностью сортировки товаров, отправки заявки и удалении из корзины товара.'
-              },
-              {
-                src:'/TestBis.png',
-                alt:'TestBis',
-                name_company:'Банковское приложение',
-                git:'https://github.com/AnigalHub/TestBis',
-                show:'/testbis',
-                technology:'Vue',
-                about:'Прототип банковского приложения с возможностью отображения таблиц, изменения и удаления данных из них.'
-              },
-              // {
-              //   src:'/api.png',
-              //   alt:'api',
-              //   name_company:'Проект “Аптечка”',
-              //   technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
-              // },
-              // {
-              //   src:'/wishlist.png',
-              //   alt:'wishlist',
-              //   name_company:'Проект “Список Желаний”',
-              //   technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
-              // },
-              /*   {
-                   src:'/tgBot.png',
-                   alt:'tgbot',
-                    name_company:'Telegram-бот "Напоминалка"',
-                    tecnology:'TypeScript, PostgreSQL. ',
-                     url:''
-                  },
-              */
-            ],
-          }
-        },
-    }
+  import Github_svg from "~/components/svg_contacts/github_svg";
+  import Show_svg from "~/components/svg_works/show_svg";
+  export default {
+    name: "works",
+    data(){
+      return{
+        git:Github_svg,
+        show:Show_svg,
+        Works:[
+          {
+            src:'./home_prom.jpg',
+            alt:'Промэлектронсервис',
+            name_company:'«Промэлектронсервис»',
+            technology:'HTML & CSS & Bootstrap',
+            git:'https://github.com/AnigalHub/Promelectronservice',
+            show:'http://promelektronservis.ru/',
+            about:'Сайт сертификационных испытаний и комплексной поставки электронных компонентов.'
+          },
+          {
+            src:'./home_gts.png',
+            alt:'Гостехносервис',
+            name_company:'«Гостехносервис»',
+            git:'https://github.com/AnigalHub/Gts',
+            show:'/gts',
+            technology:'Vue',
+            about:'Сайт производителя и поставщика ИТ‒оборудования для государственных и бизнес-структур.'
+          },
+          {
+            src:'./home_priamyeruki.jpg',
+            alt:'Прямые_руки',
+            name_company:'«Аваконт»',
+            git:'https://github.com/AnigalHub/Priamyeruki',
+            show:'/priamyeruki',
+            technology:'Vue',
+            about:'Сайт изготовления разнообразного декора, рекламных вывесок, сувенирной продукции, реставрации, брендирования.'
+          },
+          {
+            src:'./home_avacont.jpg',
+            alt:'Аваконт',
+            name_company:'«Аваконт»',
+            git:'https://github.com/AnigalHub/Avacont',
+            show:'/avacont',
+            technology:'Vue',
+            about: 'Сайт изготовления накладок из дерева под розетки, выключатели, радиаторы, светильники и карнизы.'
+          },
+          {
+            src:'./home_valencia.png',
+            alt:'Валенсия',
+            name_company:'«Валенсия»',
+            git:'https://github.com/AnigalHub/Valencia',
+            show:'/valencia',
+            technology:'Nuxt',
+            about:'Сайт частного охранного предприятия, обеспечивающего безопасность на всей территории во всех субъектах РФ.'
+          },
+          {
+            src:'/home_pixelperfect.png',
+            alt:'pixelperfect',
+            name_company:'Startup',
+            git:'https://github.com/AnigalHub/PixelPerfect',
+            show:'/pixelperfect',
+            technology:'Vue',
+            about: 'Шаблон с попиксельной точностью, выполненный с помощью подхода Pixel Perfect.'
+          },
+          {
+            src:'./training.png',
+            alt:'Математический тренажёр',
+            name_company:'«Математический тренажёр»',
+            git:'https://github.com/AnigalHub/MathTest',
+            show:'/mathtest',
+            technology:'JavaScript',
+            about: 'Игра для малышей на сложение, вычитание, деление и умножение с таймером.'
+          },
+          {
+            src:'./snake.png',
+            alt:'Игра "Змейка"',
+            name_company:'«Змейка»',
+            git:'https://github.com/AnigalHub/Snake',
+            show:'/snake',
+            technology:'JavaScript',
+            about:'Классическая игра передвижения змейки за едой на игровом поле с помощью управления клавишами.'
+          },
+          {
+            src:'./home_svgGame.png',
+            alt:'alphabet',
+            name_company:'"Алфавит"',
+            git:'https://github.com/AnigalHub/SvgGames',
+            show:'/svggames',
+            technology:'Vue',
+            about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов.'
+          },
+          {
+            src:'/TestTask.png',
+            alt:'TestTask',
+            name_company:'Продажа товаров',
+            git:'https://github.com/AnigalHub/TestTask',
+            show:'/testtask',
+            technology:'Nuxt',
+            about:'Целевая страница с формой на добавление товара и сортировки товара в списке.'
+          },
+          {
+            src:'/market.png',
+            alt:'market',
+            name_company:'Каталог товаров',
+            git:'https://github.com/AnigalHub/Market',
+            show:'/market',
+            technology:'Nuxt',
+            about:'Целевая страница с возможностью сортировки товаров, отправки заявки и удалении из корзины товара.'
+          },
+          {
+            src:'/TestBis.png',
+            alt:'TestBis',
+            name_company:'Банковское приложение',
+            git:'https://github.com/AnigalHub/TestBis',
+            show:'/testbis',
+            technology:'Vue',
+            about:'Прототип банковского приложения с возможностью отображения таблиц, изменения и удаления данных из них.'
+          },
+          // {
+          //   src:'/api.png',
+          //   alt:'api',
+          //   name_company:'Проект “Аптечка”',
+          //   technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
+          // },
+          // {
+          //   src:'/wishlist.png',
+          //   alt:'wishlist',
+          //   name_company:'Проект “Список Желаний”',
+          //   technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
+          // },
+          // {
+          //    src:'/tgBot.png',
+          //    alt:'tgbot',
+          //    name_company:'Telegram-бот "Напоминалка"',
+          //    tecnology:'TypeScript, PostgreSQL. ',
+          //    url:''
+          // },
+        ],
+      }
+    },
+  }
 </script>
 
 <style lang="scss" scoped>
