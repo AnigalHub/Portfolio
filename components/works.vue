@@ -9,7 +9,7 @@
             <div class="name_works">
               <p class="text_works">{{work.technology}}</p>
             </div>
-            <p class="name">{{work.name_company}}</p>
+            <p class="name_company">{{work.name_company}}</p>
             <p class="text_about">{{work.about}}</p>
           </div>
           <div class="link_work">
