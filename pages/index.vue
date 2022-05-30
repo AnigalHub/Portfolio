@@ -439,7 +439,11 @@ h2,span,.name{
 #Myfooter{
   .svgFooter{
     margin: 0 0 0 auto;
-    width: 30%;
+    width: 15%;
+  }
+  .text{
+    float: left;
+    padding-top: .25%;
   }
   /*блоки с контактной информацией*/
   .flex-container > div {
@@ -563,20 +567,36 @@ h2,span,.name{
   }
 }
 @media screen and (min-width: 768px)and (max-width: 992px) {
-  /*Компонент - "Главный"*/
-  #Home{
-    /*картинка*/
-    img{
-      width: 130px;
-      height: 130px;
-    }
+  .navbar {
+    padding: 0 5%;
   }
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_technology,.text,.nav-link,.navbar-brand{line-height: 1.4rem;}
+  .text_technology,.text,.nav-link,.navbar-brand{line-height: 1.25rem;}
+  #About{
+    .row{
+      flex-direction: column;
+      .col-4{
+        max-width: 100%;
+        img {
+          width: 40%;
+          margin: 0 30% 0;
+        }
+        .name{
+          padding: 2% 0 4%;
+        }
+        .projects {
+          display: none;
+        }
+      }
+    }
+  }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
+    .flex-container  {
+      margin: 0 .5%;
+    }
     /*блоки под svg и название*/
-    .flex-container  > div {width: 18%;}
+    .flex-container  > div {width: 12.5%;}
     /*svg навыков (языков, фреймворков, ..)*/
     svg{
       width: 60px;
@@ -587,8 +607,28 @@ h2,span,.name{
   #Works{
     /*блоки с работами*/
     .flex-container > div {
-      width: 46%;
+      width: 47.5%;
       margin: 0 1.2% 2.3%;
+      .text_technology {
+        top: 150px;
+      }
+    }
+  }
+  #Contact .flex-container {
+    margin: 0;
+    & > div{
+      width: 46.5%;
+      padding: 1%;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  #Myfooter {
+    padding: 1.5% 5%;
+    .svgFooter{
+      width: 25%;
     }
   }
 }
@@ -617,6 +657,12 @@ h2,span,.name{
     & > div svg {
       width: 40px;
       height: 40px;
+    }
+  }
+  #Myfooter {
+    padding: 1.5% 7%;
+    .svgFooter{
+      width: 20%;
     }
   }
 }
