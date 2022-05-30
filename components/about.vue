@@ -6,10 +6,10 @@
         <b-col cols="4">
           <img src="../static/me.jpg">
           <p class="name">Игнатова Анна</p>
-            <div class="projects">
-              <div class="text number">20+</div>
-              <div class="text">Завершенных проектов</div>
-            </div>
+          <div class="projects">
+            <div class="text number">20+</div>
+            <div class="text">Завершенных проектов</div>
+          </div>
         </b-col>
         <b-col>
           <ul>
