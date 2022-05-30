@@ -211,7 +211,7 @@ h2,span,.name{
   /*блоки под svg и название*/
   .projects{
     width: 60%;
-    margin: 12% auto 2%;
+    margin: 7% auto 2%;
     cursor: $cursor_pointer;
     border-radius: 10px;
     padding: 3%;
@@ -231,7 +231,7 @@ h2,span,.name{
  }
   img{
     width: 75%;
-    margin: 0 15% 0;
+    margin: -5% 15% 0;
     border-radius: 50%;
   }
   /*имя*/
@@ -253,7 +253,7 @@ h2,span,.name{
   /*элементы списка*/
   ul li {
     position: relative;
-    padding: 5px 0 15px 40px;
+    padding: 5px 0 10px 40px;
     cursor: default;
     /*свой маркер - кружок*/
     &:before {
@@ -468,13 +468,6 @@ h2,span,.name{
 
  /***********************АДАПТИВНОСТЬ******************/
 @media screen and (max-width: 350px) {
-  /*Компонент - "Главный"*/
-  #Home{
-    /*имя*/
-    .name{font-size: 1.3rem !important;}
-    /*фраза-Junior Frontend-разработчик*/
-    .front{ font-size: 1.4rem !important;}
-  }
   /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
   .text_technology,.text,.nav-link,.navbar-brand{
     font-size: 1rem !important;
@@ -483,18 +476,28 @@ h2,span,.name{
   /*Компонент - "Ключевые навыки"*/
   #Skills {
     /*блоки под svg и название*/
-    .flex-container > div {width: 30% !important;}
+    .flex-container > div {width: 35% !important;}
+  }
+  #Contact{
+      .row{
+        padding: 0 !important;
+      }
+
   }
 }
 @media screen and (max-width: 500px) {
+  /*Компоненты - "Об мне", "Ключевые навыки", "Мои работы"*/
+  #About, #Skills, #Works, #Contact{padding: 6% 3%;}
   .navbar {
     padding: 0 2%;
   }
+  /*заголовок*/
+  h1,h2{font-size: 1.4rem !important;}
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
   #About, #Skills, #Works{padding: 1rem 0;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
-  .text_technology, .text, .nav-link, .navbar-brand {
-    font-size: 1.1rem;
+  .text_technology,.name, .text, .nav-link, .navbar-brand,#Works .flex-container .text, #About .name {
+    font-size: 1rem;
     line-height: 1.25rem;
   }
   /*Компонент - "Главный"*/
@@ -503,6 +506,9 @@ h2,span,.name{
     .front {font-size: 1.7rem;}
   }
   #About{
+    ul {
+      margin-left: -4.2rem !important;
+    }
     ul li {
       padding: 5px 0 5px 40px;
     }
@@ -529,7 +535,7 @@ h2,span,.name{
       margin: 0 .5%;
     }
     /*блоки под svg и название*/
-    .flex-container  > div {width: 16%;}
+    .flex-container  > div {width: 28%;}
     /*svg навыков (языков, фреймворков, ..)*/
     svg{
       width: 55px;
@@ -538,12 +544,47 @@ h2,span,.name{
   }
   /*Компонент - "Мои работы"*/
   #Works {
-    /*пункты меню в tabs*/
-    .nav-tabs .nav-item {width: 100%;}
     /*блоки с работами*/
     .flex-container > div {
       width: 100%;
-      margin: 0 5% 4% !important;
+      padding: 2.5%;
+      margin: 0 2% 4%;
+      .text_technology {
+        top: 170px;
+      }
+      /*картинки*/
+      img {
+        width: 100%;
+       height: 180px;
+      }
+    }
+  }
+  #Contact{
+    .flex-container {
+      margin: 0;
+      & > div{
+        width: 100%;
+        padding: 1%;
+        svg {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      .row{
+        padding: 0 5%;
+      }
+    }
+  }
+  #Myfooter {
+    padding: 5%;
+    .text{
+      float: inherit;
+      text-align: center;
+      padding-bottom: 3%;
+    }
+    .svgFooter{
+      margin: 0 auto 2%;
+      width: 45%;
     }
   }
 }
@@ -694,7 +735,7 @@ h2,span,.name{
     }
   }
 }
-@media screen and (min-width: 992px)and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .navbar {
     padding: 0 7%;
   }
