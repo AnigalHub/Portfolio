@@ -31,6 +31,9 @@ export default {
   .navbar-brand{padding-bottom: 0 !important;}
 </style>
 <style lang="scss">
+ $color_highlight:#5584bf;
+ $cursor_pointer:pointer;
+
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
   background: #030407;
@@ -42,7 +45,7 @@ export default {
 }
 a{
   text-decoration: none !important;
-  cursor: pointer !important;
+  cursor: $cursor_pointer !important;
 }
 /*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
 h1, #Home .name_company, .text,.text_technology,
@@ -63,10 +66,9 @@ h1,h2{
 }
 /*заголовок h1, фраза "Junior Frontend-разработчик*/
 h2,span,.name{
-  font-weight: 300;
-  color: #5584bf;
+  color: $color_highlight;
 }
-.text{
+.text,h2,span,.name{
   font-weight: 300;
 }
 /*текст, пункты меню, фраза в логотипе*/
@@ -210,7 +212,7 @@ h2,span,.name{
   .projects{
     width: 60%;
     margin: 12% auto 2%;
-    cursor: pointer;
+    cursor: $cursor_pointer;
     border-radius: 10px;
     padding: 3%;
     text-align: center;
@@ -236,7 +238,7 @@ h2,span,.name{
   .name{
     font-size: 1.5rem;
     padding-top: 6%;
-    color: #5584bf;
+    color: $color_highlight;
     font-weight: 400;
     text-align: center;
     margin-bottom: .5%;
@@ -355,7 +357,7 @@ h2,span,.name{
     }
     .name_company{
       text-align: center;
-      color: #5584bf;
+      color: $color_highlight;
       font-weight: 500;
       width: 100%;
       padding: 5% 0 1%;
@@ -369,7 +371,7 @@ h2,span,.name{
       background: rgba(222, 222, 222, 0.6);
       padding: 3%;
       border-radius: 50%;
-      cursor: pointer;
+      cursor: $cursor_pointer;
       /*при наведении*/
       &:hover{
         width: 45px;
@@ -381,7 +383,7 @@ h2,span,.name{
       width: 100%;
       filter: brightness(94%);
       border-radius: 5px;
-      cursor: pointer;
+      cursor: $cursor_pointer;
     }
     .name_technology {
       width: 100%;
@@ -414,7 +416,7 @@ h2,span,.name{
         margin: 0 auto;
         width: 50px;
         height: 50px;
-        border: 2.5px solid #5584bf;
+        border: 2.5px solid $color_highlight;
         border-radius: 50%;
       }
       .name{
@@ -428,7 +430,7 @@ h2,span,.name{
     }
   }
   /*цвет svg*/
-  .svg_color{fill: #5584bf;}
+  .svg_color{fill: $color_highlight;}
   .svg_color1{fill: #1a4376;}
 }
 #Myfooter{
