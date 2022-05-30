@@ -13,7 +13,7 @@
           <b-nav-item href="#About">Об мне</b-nav-item>
           <b-nav-item href="#Skills">Ключевые навыки</b-nav-item>
           <b-nav-item href="#Works">Портфолио</b-nav-item>
-          <b-nav-item href="#Contacts">Контакты</b-nav-item>
+          <b-nav-item href="#Contact">Контакты</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
