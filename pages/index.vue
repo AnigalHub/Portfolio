@@ -26,7 +26,7 @@
 
 <style>
   /*меню*/
-  .navbar-light .navbar-toggler {border-color: white !important;}
+  .navbar-light .navbar-toggler{border-color: white !important;}
   /*фраза в логотипе*/
   .navbar-brand{padding-bottom: 0 !important;}
 </style>
@@ -47,9 +47,8 @@ a{
   text-decoration: none !important;
   cursor: $cursor_pointer !important;
 }
-/*заголовки, текст, пункты меню, фраза в логотипе по всей странице*/
-h1, #Home .name_company, .text,.text_technology,
-.name_company,.name, .nav-link,.navbar-brand{font-family: 'Roboto', sans-serif;}
+/*заголовки,, текст, текст про технологии, название компании, пункты меню, название, пункты меню*/
+h1, .text, .text_technology, .name_company, .name, .nav-link, .navbar-brand{font-family: 'Roboto', sans-serif;}
 /*заголовки*/
 h1{
   color: #a1cbff;
@@ -64,10 +63,11 @@ h1,h2{
   margin: 0 auto;
   text-align: center;
 }
-/*заголовок h1, фраза "Junior Frontend-разработчик*/
+/*заголовок h2,даты в #About, название*/
 h2,span,.name{
   color: $color_highlight;
 }
+ /*текст, заголовок h2, даты в #About, название*/
 .text,h2,span,.name{
   font-weight: 300;
 }
@@ -94,7 +94,7 @@ h2,span,.name{
   display: flex;
   flex-wrap: wrap;
 }
-/*Компоненты - "Об мне", "Ключевые навыки", "Мои работы"*/
+/*Компоненты - "Об мне", "Ключевые навыки", "Портфолио", "Контакты"*/
 #About, #Skills, #Works, #Contact{padding: 3%;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
@@ -106,40 +106,42 @@ h2,span,.name{
 
   /*ссылки*/
   a{color: $color_text !important;}
-  /*Компоненты - "Об мне","Ключевые навыки", "Контакты"*/
+  /*Компоненты - "Ключевые навыки", "Контакты"*/
   #Skills,#Contact{background: $background_elements;}
-  /*Компоненты - "Об мне", "Образование"*/
-   #About,#Works{background: #f4f4f4;}
-  /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
-  #About, #Skills, #Works{color: #090c13 !important;}
+  /*Компоненты - "Об мне", "Портфолио"*/
+  #About,#Works{background: #f4f4f4;}
+  /*Компоненты - "Об мне","Ключевые навыки", "Портфолио", "Контакты"*/
+  #About, #Skills, #Works, #Contact{color: #090c13 !important;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
     ul li:after {border-left: 1px dotted $color_text;}
-    .projects{
-      background-color: #f9f9f9;
-    }
+    /*блок с проектом*/
+    .projects{background-color: #f9f9f9;}
   }
+  /*Компонент - "Ключевые навыки"*/
   #Skills{
+    /*svg*/
     svg{
       background: hsla(0,0%,100%,.2);
       box-shadow: $box-shadow;
     }
+    /*svg - express.js*/
     .express_svg{fill: #000;}
   }
-  /*Компонент - "Мои работы"*/
+  /*Компонент - "Портфолио"*/
   #Works{
     /*блоки под каждую работу*/
-    .flex-container > div {
+    .flex-container > div{
       background: $background_elements;
       box-shadow: $box-shadow;
       /*при наведении*/
-      &:hover {box-shadow: $box-shadow_hover;}
-      .name_technology, .text_technology{
-        background-color: $background_elements;
-      }
+      &:hover{box-shadow: $box-shadow_hover;}
+      /*название технологии, текст технологии*/
+      .name_technology, .text_technology{background-color: $background_elements;}
     }
   }
+  /*Компонент - "Контакты"*/
   #Contact{
     /*блоки с контактной информацией*/
     .flex-container > div {
@@ -159,23 +161,25 @@ h2,span,.name{
   a{color: $color_text !important;}
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
   #Skills, #Contact {background: #0c111c;}
-  /*Компоненты -  "Мои работы","Образование"*/
+  /*Компоненты -  "Портфолио","Образование"*/
   #Works, #About {background: #090c13;}
-  /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
+  /*Компоненты - "Об мне","Ключевые навыки", "Портфолио", "Контакты"*/
   #About, #Skills, #Works, #Contact {color: $color_text;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
     ul li:after {border-left: 1px dotted $color_text;}
-    .projects{
-      background: #080a11;
-    }
+    /*блок с проектом*/
+    .projects{background: #080a11;}
   }
+  /*Компонент - "Ключевые навыки"*/
   #Skills{
-      svg{
-        background: #111623;
-        box-shadow: 0 0 12px hsla(0,0%,100%,.15);
-      }
+    /*svg*/
+    svg{
+      background: #111623;
+      box-shadow: 0 0 12px hsla(0,0%,100%,.15);
+    }
+    /*svg - express.js*/
     .express_svg{fill: #afadad;}
   }
   /*Компонент - "Мои работы"*/
@@ -185,9 +189,8 @@ h2,span,.name{
       box-shadow: 0 0 12px hsla(0,0%,100%,.15);
       /*при наведении*/
       &:hover {box-shadow: $box-shadow_hover;}
-      .name_technology, .text_technology{
-        background: #090c13;
-      }
+      /*название технологии, текст технологии*/
+      .name_technology, .text_technology{background: #090c13;}
     }
   }
   #Contact{
