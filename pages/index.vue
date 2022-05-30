@@ -95,7 +95,7 @@ h2,span,.name{
   flex-wrap: wrap;
 }
 /*Компоненты - "Об мне", "Ключевые навыки", "Мои работы"*/
-#About, #Skills, #Works, #Contact{padding: 3% 0;}
+#About, #Skills, #Works, #Contact{padding: 3%;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
@@ -303,7 +303,7 @@ h2,span,.name{
   .flex-container{
     margin: 0 5%;
     & > div {
-      width: 12%;
+      width: 12.5%;
       margin: 0 2% 2%;
       cursor: default;
       border-radius: 15px;
@@ -426,6 +426,9 @@ h2,span,.name{
       .col{
         display: flex;
         align-items: center
+      }
+      .text{
+        margin: 0;
       }
     }
   }
@@ -590,14 +593,30 @@ h2,span,.name{
   }
 }
 @media screen and (min-width: 992px)and (max-width: 1200px) {
+  .navbar {
+    padding: 0 7%;
+  }
   /*текст, пункты меню, фраза в логотипе по всей странице*/
-  .text,.nav-link,.navbar-brand{line-height: 1.5rem;}
+  .text,.nav-link,.navbar-brand{line-height: 1.4rem;}
+  .text, .nav-link, .navbar-brand, .name_company, .name, .text_technology {
+    font-size: 1.1rem;
+  }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
     /*svg навыков (языков, фреймворков, ..)*/
     svg{
       width: 70px;
       height: 70px;
+    }
+  }
+  #Works .flex-container .text_technology {
+    top: 130px;
+  }
+  #Contact .flex-container {
+    margin: 0 5% 0;
+    & > div svg {
+      width: 40px;
+      height: 40px;
     }
   }
 }
