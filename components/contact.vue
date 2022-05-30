@@ -15,7 +15,7 @@
             </b-col>
             <b-col>
               <div class="text name">{{information.name}}</div>
-              <p class="text inf">{{information.http}}</p>
+              <p class="text">{{information.http}}</p>
             </b-col>
           </b-row>
         </a>

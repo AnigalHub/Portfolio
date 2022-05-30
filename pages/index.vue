@@ -383,7 +383,7 @@ h2,span,.name{
       border-radius: 5px;
       cursor: pointer;
     }
-    .name_technology{
+    .name_technology {
       width: 100%;
       display: flex;
       align-items: center;
@@ -424,13 +424,6 @@ h2,span,.name{
       .col{
         display: flex;
         align-items: center
-      }
-      .inf{
-        margin: 0;
-        font-size: 1rem;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        text-align: center;
       }
     }
   }
