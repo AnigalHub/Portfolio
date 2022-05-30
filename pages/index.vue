@@ -100,10 +100,15 @@ h2,.name,span{
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
+  $background_elements: white;
+  $color_text: black;
+  $box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+  $box-shadow_hover: 2px 6px 15px rgba(0,0,0,.4);
+
   /*ссылки*/
-  a{color: #000 !important;}
+  a{color: $color_text !important;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты"*/
-  #Skills,#Contact{background: #ffffff;}
+  #Skills,#Contact{background: $background_elements;}
   /*Компоненты - "Об мне", "Образование"*/
    #About,#Works{background: #f4f4f4;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
@@ -111,7 +116,7 @@ h2,.name,span{
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
-    ul li:after {border-left: 1px dotted black;}
+    ul li:after {border-left: 1px dotted $color_text;}
     .projects{
       background-color: #f9f9f9;
     }
@@ -119,68 +124,52 @@ h2,.name,span{
   #Skills{
     svg{
       background: hsla(0,0%,100%,.2);
-      box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+      box-shadow: $box-shadow;
     }
     .express_svg{fill: #000;}
   }
   /*Компонент - "Мои работы"*/
   #Works{
-    .flex-container{
-      margin: 1% 0;
-    }
     /*блоки под каждую работу*/
     .flex-container > div {
-      background: #fff;
-      box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+      background: $background_elements;
+      box-shadow: $box-shadow;
       /*при наведении*/
-      &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
+      &:hover {box-shadow: $box-shadow_hover;}
       .name_works, .text_works{
-        background-color: #ffffff;
+        background-color: $background_elements;
       }
     }
   }
   #Contact{
     /*блоки с контактной информацией*/
     .flex-container > div {
-      background: #fff;
-      box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+      background: $background_elements;
+      box-shadow: $box-shadow;
       /*при наведении*/
-      &:hover {box-shadow: 2px 6px 15px rgba(0,0,0,.4);}
+      &:hover {box-shadow: $box-shadow_hover;}
     }
   }
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
+  $color_text:#afadad;
+  $box-shadow_hover: 0 0 12px hsla(0,0%,100%,.4);
+
   /*ссылки*/
-  a{color: #afadad !important;}
+  a{color: $color_text !important;}
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
   #Skills, #Contact {background: #0c111c;}
   /*Компоненты -  "Мои работы","Образование"*/
   #Works, #About {background: #090c13;}
   /*Компоненты - "Об мне","Ключевые навыки", "Контакты", "Об мне", "Образование"*/
-  #About, #Skills, #Works, #Contact {color: #afadad;}
+  #About, #Skills, #Works, #Contact {color: $color_text;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
-    ul li:after {border-left: 1px dotted #afadad;}
+    ul li:after {border-left: 1px dotted $color_text;}
     .projects{
-      background: #09101d;
-    }
-  }
-  /*Компонент - "Мои работы"*/
-  #Works{
-    /*блоки под каждую работу*/
-    .flex-container > div {
-      background-color: initial;
-      box-shadow: 0 0 12px hsla(0,0%,100%,.15);
-      /*при наведении*/
-      &:hover {box-shadow: 0 0 12px hsla(0,0%,100%,.4);}
-      .name_works, .text_works{
-        background: #090c13;
-      }
-      .text_works{
-        color: #afadad;
-      }
+      background: #080a11;
     }
   }
   #Skills{
@@ -190,13 +179,25 @@ h2,.name,span{
       }
     .express_svg{fill: #afadad;}
   }
+  /*Компонент - "Мои работы"*/
+  #Works{
+    /*блоки под каждую работу*/
+    .flex-container > div {
+      box-shadow: 0 0 12px hsla(0,0%,100%,.15);
+      /*при наведении*/
+      &:hover {box-shadow: $box-shadow_hover;}
+      .name_works, .text_works{
+        background: #090c13;
+      }
+    }
+  }
   #Contact{
     /*блоки с контактной информацией*/
     .flex-container > div {
       background: #111623;
       box-shadow: 0 0 12px hsla(0,0%,100%,.1);
       /*при наведении*/
-      &:hover {box-shadow: 0 0 12px hsla(0,0%,100%,.4);}
+      &:hover {box-shadow: $box-shadow_hover;}
     }
   }
 }
@@ -205,10 +206,6 @@ h2,.name,span{
 #Home{
   background: url("../static/background.jpg") no-repeat;
   background-size: 100% 100%;
-  /*фраза-Junior Frontend-разработчик*/
-  .front{
-    text-align: center;
-  }
 }
 /*Компонент - "Об мне"*/
 #About{
@@ -216,7 +213,7 @@ h2,.name,span{
   .projects{
     width: 60%;
     margin: 12% auto 2%;
-    cursor: default;
+    cursor: pointer;
     border-radius: 10px;
     padding: 3%;
     text-align: center;
@@ -288,7 +285,6 @@ h2,.name,span{
 }
 /*Компонент - "Ключевые навыки"*/
 #Skills{
-  img{ width: 70%}
   /*текст в компоненте "Ключевые навыки"*/
   .text{
     text-align: center;
@@ -299,65 +295,65 @@ h2,.name,span{
     width: 78px;
     height: 78px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 2%;
     backdrop-filter: blur(5px);
     border-radius: 50%;
     padding: 10%;
   }
+  /*блоки под svg и название*/
   .flex-container{
     margin: 0 5%;
-  }
-  /*блоки под svg и название*/
-  .flex-container  > a {
-    width: 12%;
-    margin: 0 2% 2%;
-    cursor: default;
-    border-radius: 15px;
-    padding: 1%;
-    /*при наведении*/
-    &:hover{
-      transition: 1s;
-      transform: scale(1.09);
+    & > div {
+      width: 12%;
+      margin: 0 2% 2%;
+      cursor: default;
+      border-radius: 15px;
+      padding: 1%;
+      /*при наведении*/
+      &:hover{
+        transition: 1s;
+        transform: scale(1.09);
+      }
     }
   }
 }
 /*Компонент - "Мои работы"*/
 #Works{
-  .flex-container{
-    margin: 1% 0;
-  }
   /*блоки с работами*/
-  .flex-container  > div {
-    width: 31%;
-    margin: 0 1% 2%;
-    padding: 1%;
-    position: relative;
+  .flex-container{
+    & > div {
+      width: 31%;
+      margin: 0 1% 2%;
+      padding: 1%;
+      position: relative;
 
-    /*при наведении*/
-    &:hover{
-      transition: 1s;
-      transform: scale(1.01);
-      /*картинки*/
-      img {
-        filter: brightness(50%);
+      /*при наведении*/
+      &:hover{
+        transition: 1s;
+        transform: scale(1.01);
+        /*картинки*/
+        img {
+          filter: brightness(50%);
+        }
+        .link_work{
+          display: block;
+        }
       }
-      .link_work{
-        display: block;
-        position: absolute;
-        top: 65px;
-        margin: 0 30%;
-        width: 93.5%;
-      }
+    }
+    .link_work,.text_works{
+      position: absolute;
     }
     .link_work{
       display: none;
+      top: 65px;
+      margin: 0 30%;
+      width: 93.5%;
     }
     .text_works{
       font-weight: 400;
       font-size: 1rem;
       border-radius: 10px;
       padding: 2% 5%;
-      position: absolute;
       top: 160px;
     }
     .name{
@@ -389,21 +385,11 @@ h2,.name,span{
       border-radius: 5px;
       cursor: pointer;
     }
-    .text{
-      font-size: 1rem;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
-      text-align: center;
-    }
     .name_works{
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center
-    }
-    /*абзац*/
-    p{
-      margin-bottom: 0 !important;
     }
   }
 }
