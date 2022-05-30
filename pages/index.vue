@@ -487,33 +487,53 @@ h2,span,.name{
   }
 }
 @media screen and (max-width: 500px) {
+  .navbar {
+    padding: 0 2%;
+  }
   /*Компоненты - "Об мне", "Ключевые навыки","Мои работы","Отзывы","Контакты"*/
   #About, #Skills, #Works{padding: 1rem 0;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_technology, .text, .nav-link, .navbar-brand {
     font-size: 1.1rem;
-    line-height: 1.15rem;
+    line-height: 1.25rem;
   }
   /*Компонент - "Главный"*/
   #Home {
-    /*картинка*/
-    img {
-      width: 100px;
-      height: 100px;
-    }
-    /*имя*/
-    .name {font-size: 1.5rem;}
     /*фраза-Junior Frontend-разработчик*/
     .front {font-size: 1.7rem;}
   }
+  #About{
+    ul li {
+      padding: 5px 0 5px 40px;
+    }
+    .row{
+      flex-direction: column;
+      .col-4{
+        max-width: 100%;
+        img {
+          width: 40%;
+          margin: 0 30% 0;
+        }
+        .name{
+          padding: 2% 0 6%;
+        }
+        .projects {
+          display: none;
+        }
+      }
+    }
+  }
   /*Компонент - "Ключевые навыки"*/
-  #Skills {
+  #Skills{
+    .flex-container  {
+      margin: 0 .5%;
+    }
     /*блоки под svg и название*/
-    .flex-container > div {width: 23%;}
+    .flex-container  > div {width: 16%;}
     /*svg навыков (языков, фреймворков, ..)*/
-    svg {
-      width: 45px;
-      height: 45px;
+    svg{
+      width: 55px;
+      height: 55px;
     }
   }
   /*Компонент - "Мои работы"*/
@@ -528,27 +548,44 @@ h2,span,.name{
   }
 }
 @media screen and (min-width: 500px)and (max-width: 768px) {
-  /*Компонент - "Главный"*/
-  #Home{
-    /*картинка*/
-    img{
-      width: 100px;
-      height: 100px;
-    }
-    /*фраза-Junior Frontend-разработчик*/
-    .front{ font-size: 2rem;}
+  .navbar {
+    padding: 0 2%;
   }
   /*заголовок*/
   h1{font-size: 1.4rem !important;}
   /*текст для компонента "Мои работы", текст, пункты меню, фраза в логотипе по всей странице*/
   .text_technology, .text,.nav-link,.navbar-brand{
     font-size: 1.1rem;
-    line-height: 1.15rem;
+    line-height: 1.25rem;
+  }
+  #About{
+    ul li {
+      padding: 5px 0 5px 40px;
+    }
+    .row{
+      flex-direction: column;
+      .col-4{
+        max-width: 100%;
+        img {
+          width: 40%;
+          margin: 0 30% 0;
+        }
+        .name{
+          padding: 2% 0 6%;
+        }
+        .projects {
+          display: none;
+        }
+      }
+    }
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
+    .flex-container  {
+      margin: 0 .5%;
+    }
     /*блоки под svg и название*/
-    .flex-container  > div {width: 23%;}
+    .flex-container  > div {width: 16%;}
     /*svg навыков (языков, фреймворков, ..)*/
     svg{
       width: 55px;
@@ -560,10 +597,35 @@ h2,span,.name{
     /*блоки с работами*/
     .flex-container > div {
       width: 100%;
-      margin: 0 5% 4% !important;
+      padding: 2%;
+      margin: 0 2% 4%;
+      .text_technology {
+        top: 210px;
+      }
     }
-    /*svg*/
-    svg{ width: 70%}
+  }
+  #Contact .flex-container {
+    margin: 0 14%;
+    & > div{
+      width: 100%;
+      padding: 1%;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  #Myfooter {
+    padding: 2% 5%;
+    .text{
+      float: inherit;
+      text-align: center;
+      padding-bottom: 3%;
+    }
+    .svgFooter{
+      margin: 0 auto;
+      width: 40%;
+    }
   }
 }
 @media screen and (min-width: 768px)and (max-width: 992px) {
