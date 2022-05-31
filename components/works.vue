@@ -77,7 +77,7 @@
             alt:'Пересвет',
             name_company:'«Пересвет»',
             git:'https://github.com/AnigalHub/Valencia',
-            show:'/valencia',
+            show:'/security',
             technology:'Nuxt',
             about:'Сайт частного охранного предприятия, обеспечивающего безопасность на всей территории РФ.'
           },
