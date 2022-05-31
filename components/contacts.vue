@@ -1,5 +1,5 @@
 <template>
-  <div id="Contact">
+  <div id="Contacts">
     <b-container>
       <h2>Контакты</h2>
       <p class="text">
@@ -30,7 +30,7 @@
   import Github_svg from "~/components/svg_contacts/github_svg";
   import Telegram_svg from "~/components/svg_contacts/telegram_svg";
   export default {
-    name: "contact",
+    name: "contacts",
     data(){
       return{
         ContactsRow:[

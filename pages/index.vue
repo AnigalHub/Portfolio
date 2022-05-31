@@ -5,22 +5,22 @@
     <About/>
     <Skills/>
     <Works/>
-    <Contact/>
+    <Contacts/>
     <Myfooter/>
   </div>
 </template>
 
 <script>
-  import Home from "~/components/home";
   import Navbar from "~/components/navbar";
+  import Home from "~/components/home";
   import About from "~/components/about";
   import Skills from "~/components/skills";
   import Works from "~/components/works";
+  import Contacts from "~/components/contacts";
   import Myfooter from "~/components/myfooter";
-  import Contact from "~/components/contacts";
 
   export default {
-    components: {Contact, Myfooter, Works, Skills, About, Navbar, Home}
+    components: {Myfooter, Contacts, Works, Skills, About, Home, Navbar,}
   }
 </script>
 
@@ -87,7 +87,7 @@ h2,span,.name{color: $color_highlight;}
   flex-wrap: wrap;
 }
 /*Компоненты - "Об мне", "Ключевые навыки", "Портфолио", "Контакты"*/
-#About, #Skills, #Works, #Contact{padding: 3%;}
+#About, #Skills, #Works, #Contacts{padding: 3%;}
 
 /************ СВЕТЛАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: light){
@@ -99,11 +99,11 @@ h2,span,.name{color: $color_highlight;}
   /*ссылки*/
   a{color: $color_text !important;}
   /*Компоненты - "Ключевые навыки", "Контакты"*/
-  #Skills,#Contact{background: $background_elements;}
+  #Skills,#Contacts{background: $background_elements;}
   /*Компоненты - "Об мне", "Портфолио"*/
   #About,#Works{background: #f4f4f4;}
   /*Компоненты - "Об мне","Ключевые навыки", "Портфолио", "Контакты"*/
-  #About, #Skills, #Works, #Contact{color: #090c13 !important;}
+  #About, #Skills, #Works, #Contacts{color: #090c13 !important;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
@@ -134,7 +134,7 @@ h2,span,.name{color: $color_highlight;}
     }
   }
   /*Компонент - "Контакты"*/
-  #Contact{
+  #Contacts{
     /*блоки с контактной информацией*/
     .flex-container > div{
       background: $background_elements;
@@ -152,11 +152,11 @@ h2,span,.name{color: $color_highlight;}
   /*ссылки*/
   a{color: $color_text !important;}
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
-  #Skills, #Contact{background: #0c111c;}
+  #Skills, #Contacts{background: #0c111c;}
   /*Компоненты -  "Портфолио","Образование"*/
   #Works, #About{background: #090c13;}
   /*Компоненты - "Об мне","Ключевые навыки", "Портфолио", "Контакты"*/
-  #About, #Skills, #Works, #Contact{color: $color_text;}
+  #About, #Skills, #Works, #Contacts{color: $color_text;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
@@ -185,7 +185,7 @@ h2,span,.name{color: $color_highlight;}
       .name_technology, .text_technology{background: #090c13;}
     }
   }
-  #Contact{
+  #Contacts{
     /*блоки с контактной информацией*/
     .flex-container > div{
       background: #111623;
@@ -397,7 +397,7 @@ h2,span,.name{color: $color_highlight;}
   }
 }
 /*Компонент - "Контакты"*/
-#Contact{
+#Contacts{
   /*блоки с контактной информацией*/
   .flex-container{
     margin: 0 10% 0;
@@ -485,20 +485,20 @@ h2,span,.name{color: $color_highlight;}
     .flex-container > div{width: 35% !important;}
   }
   /*Компонент - "Контакты"*/
-  #Contact{
+  #Contacts{
     /*сетка бутстрап*/
     .row{padding: 0 !important;}
   }
 }
 @media screen and (max-width: 500px){
   /*Компоненты - "Об мне", "Ключевые навыки", "Портфолио", "Контакты"*/
-  #About, #Skills, #Works, #Contact{padding: 6% 3%;}
+  #About, #Skills, #Works, #Contacts{padding: 6% 3%;}
   /*меню*/
   .navbar{padding: 0 2%;}
   /*заголовок*/
   h1,h2{font-size: 1.4rem !important;}
   /*Компоненты - "Об мне", "Ключевые навыки","Портфолио","Контакты"*/
-  #About, #Skills, #Works, #Contact{padding: 1rem 0;}
+  #About, #Skills, #Works, #Contacts{padding: 1rem 0;}
   /*текст технологии, текст, пункты меню, название*/
   .text_technology, .name, .text, .nav-link, .navbar-brand, #Works .flex-container .text, #About .name{
     font-size: 1rem;
@@ -562,7 +562,7 @@ h2,span,.name{color: $color_highlight;}
     }
   }
   /*Компонент - "Контакты"*/
-  #Contact{
+  #Contacts{
     /*блоки с контактной информацией*/
     .flex-container{
       margin: 0;
@@ -652,7 +652,7 @@ h2,span,.name{color: $color_highlight;}
     }
   }
   /*Компонент - "Контакты"*/
-  #Contact{
+  #Contacts{
     /*блоки с контактной информацией*/
     .flex-container{
       margin: 0 14%;
@@ -731,7 +731,7 @@ h2,span,.name{color: $color_highlight;}
     }
   }
   /*Компонент - "Контакты"*/
-  #Contact{
+  #Contacts{
     /*блоки с контактной информацией*/
     .flex-container{
       margin: 0;
@@ -774,7 +774,7 @@ h2,span,.name{color: $color_highlight;}
     .flex-container .text_technology{top: 130px;}
   }
   /*Компонент - "Контакты"*/
-  #Contact{
+  #Contacts{
     /*блоки с контактной информацией*/
     .flex-container{
       margin: 0 5% 0;
