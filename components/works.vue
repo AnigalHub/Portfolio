@@ -74,7 +74,7 @@
           },
           {
             src:'./home_valencia.png',
-            alt:'Валенсия',
+            alt:'Пересвет',
             name_company:'«Пересвет»',
             git:'https://github.com/AnigalHub/Valencia',
             show:'/valencia',
