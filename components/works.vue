@@ -73,7 +73,7 @@
             about: 'Сайт изготовления накладок из дерева под розетки, выключатели, радиаторы, светильники и карнизы.'
           },
           {
-            src:'./home_security.png',
+            src:'./home_security.jpg',
             alt:'Пересвет',
             name_company:'«Пересвет»',
             git:'https://github.com/AnigalHub/Valencia',
