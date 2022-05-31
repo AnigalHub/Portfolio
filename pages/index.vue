@@ -17,7 +17,7 @@
   import Skills from "~/components/skills";
   import Works from "~/components/works";
   import Myfooter from "~/components/myfooter";
-  import Contact from "~/components/contact";
+  import Contact from "~/components/contacts";
 
   export default {
     components: {Contact, Myfooter, Works, Skills, About, Navbar, Home}
