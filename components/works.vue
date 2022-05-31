@@ -75,11 +75,11 @@
           {
             src:'./home_valencia.png',
             alt:'Валенсия',
-            name_company:'«Валенсия»',
+            name_company:'«Пересвет»',
             git:'https://github.com/AnigalHub/Valencia',
             show:'/valencia',
             technology:'Nuxt',
-            about:'Сайт частного охранного предприятия, обеспечивающего безопасность на всей территории во всех субъектах РФ.'
+            about:'Сайт частного охранного предприятия, обеспечивающего безопасность на всей территории РФ.'
           },
           {
             src:'/home_pixelperfect.png',
