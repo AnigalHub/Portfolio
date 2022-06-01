@@ -31,8 +31,8 @@
   .navbar-brand{padding-bottom: 0 !important;}
 </style>
 <style lang="scss">
- $color_highlight:#5584bf;
- $cursor_pointer:pointer;
+ $color_highlight: #5584bf;
+ $cursor_pointer: pointer;
 
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
@@ -103,7 +103,7 @@ h2,span,.name{color: $color_highlight;}
   /*Компоненты - "Об мне", "Портфолио"*/
   #About,#Works{background: #f4f4f4;}
   /*Компоненты - "Об мне","Ключевые навыки", "Портфолио", "Контакты"*/
-  #About, #Skills, #Works, #Contacts{color: #090c13 !important;}
+  #About, #Skills, #Works, #Contacts{color: #090c13;}
   /*Компонент - "Об мне"*/
   #About{
     /*список - черточки (полосочки)*/
@@ -146,7 +146,7 @@ h2,span,.name{color: $color_highlight;}
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
-  $color_text:#afadad;
+  $color_text: #afadad;
   $box-shadow_hover: 0 0 12px hsla(0,0%,100%,.4);
 
   /*ссылки*/
@@ -216,7 +216,6 @@ h2,span,.name{color: $color_highlight;}
       font-weight: 400;
       font-size: 1.8rem;
     }
-
     /*при наведении*/
     &:hover{
       transition: 1s;
@@ -239,7 +238,6 @@ h2,span,.name{color: $color_highlight;}
     font-weight: 400;
     text-align: center;
     margin-bottom: .5%;
-    font-family: 'Roboto', sans-serif;
   }
   /*список ненумерованный*/
   ul{
