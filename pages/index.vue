@@ -20,7 +20,7 @@
   import Myfooter from "~/components/myfooter";
 
   export default {
-    components: {Myfooter, Contacts, Works, Skills, About, Home, Navbar,}
+    components: {Myfooter, Contacts, Works, Skills, About, Home, Navbar}
   }
 </script>
 
@@ -33,6 +33,10 @@
 <style lang="scss">
  $color_highlight: #5584bf;
  $cursor_pointer: pointer;
+ $circle: 50%;
+ $center_block: 0 auto;
+ $center_text: center;
+ $time: 1s;
 
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
@@ -56,8 +60,8 @@ h1{
 }
 h2{padding-bottom: 3%;}
 h1,h2{
-  margin: 0 auto;
-  text-align: center;
+  margin: $center_block;
+  text-align: $center_text;
 }
 /*заголовок h2,даты в #About, название*/
 h2,span,.name{color: $color_highlight;}
@@ -210,7 +214,7 @@ h2,span,.name{color: $color_highlight;}
     cursor: $cursor_pointer;
     border-radius: 10px;
     padding: 3%;
-    text-align: center;
+    text-align: $center_text;
     /*блок под число проектов*/
     .number{
       font-weight: 400;
@@ -218,7 +222,7 @@ h2,span,.name{color: $color_highlight;}
     }
     /*при наведении*/
     &:hover{
-      transition: 1s;
+      transition: $time;
       transform: scale(1.09);
     }
   }
@@ -228,7 +232,7 @@ h2,span,.name{color: $color_highlight;}
   img{
     width: 75%;
     margin: -5% 15% 0;
-    border-radius: 50%;
+    border-radius: $circle;
   }
   /*имя*/
   .name{
@@ -236,7 +240,7 @@ h2,span,.name{color: $color_highlight;}
     padding-top: 6%;
     color: $color_highlight;
     font-weight: 400;
-    text-align: center;
+    text-align: $center_text;
     margin-bottom: .5%;
   }
   /*список ненумерованный*/
@@ -252,8 +256,7 @@ h2,span,.name{color: $color_highlight;}
     cursor: default;
     /*свой маркер - кружок*/
     &:before{
-      position: absolute;
-      border-radius: 50%;
+      border-radius: $circle;
       width: 12px;
       height: 12px;
       background: #77a3db;
@@ -264,12 +267,15 @@ h2,span,.name{color: $color_highlight;}
     }
     /*черточки (полосочки)*/
     &:after{
-      position: absolute;
       width: 1px;
       bottom: -12px;
       content: "";
       left: 6px;
       top: 48px;
+    }
+    /*свой маркер - кружок, черточки (полосочки)*/
+    &:before, &:after{
+      position: absolute;
     }
     /*при наведении*/
     &:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
@@ -281,7 +287,7 @@ h2,span,.name{color: $color_highlight;}
 #Skills{
   /*текст в компоненте "Ключевые навыки"*/
   .text{
-    text-align: center;
+    text-align: $center_text;
     font-weight: 400;
   }
   /*svg навыков (языков, фреймворков, ..)*/
@@ -289,9 +295,9 @@ h2,span,.name{color: $color_highlight;}
     width: 78px;
     height: 78px;
     display: block;
-    margin: 0 auto 2%;
+    margin: $center_block 2%;
     backdrop-filter: blur(5px);
-    border-radius: 50%;
+    border-radius: $circle;
     padding: 10%;
   }
   /*блоки под svg и название*/
@@ -306,7 +312,7 @@ h2,span,.name{color: $color_highlight;}
       padding: 1%;
       /*при наведении*/
       &:hover{
-        transition: 1s;
+        transition: $time;
         transform: scale(1.09);
       }
     }
@@ -324,7 +330,7 @@ h2,span,.name{color: $color_highlight;}
       position: relative;
       /*при наведении*/
       &:hover{
-        transition: 1s;
+        transition: $time;
         transform: scale(1.01);
         /*картинки*/
         img{filter: brightness(50%);}
@@ -351,7 +357,7 @@ h2,span,.name{color: $color_highlight;}
     }
     /*название компании*/
     .name_company{
-      text-align: center;
+      text-align: $center_text;
       color: $color_highlight;
       font-weight: 500;
       width: 100%;
@@ -366,7 +372,7 @@ h2,span,.name{color: $color_highlight;}
       margin: 2%;
       background: rgba(222, 222, 222, 0.6);
       padding: 3%;
-      border-radius: 50%;
+      border-radius: $circle;
       cursor: $cursor_pointer;
       /*при наведении*/
       &:hover{
@@ -403,23 +409,23 @@ h2,span,.name{color: $color_highlight;}
     margin: 0 10% 0;
     /*блок с контактной информацией*/
     & > div{
-      text-align: center;
+      text-align: $center_text;
       width: 45%;
       margin: 1.5%;
       padding: 1% 4%;
       /*при наведении*/
       &:hover{
-        transition: 1s;
+        transition: $time;
         transform: scale(1.01);
       }
       /*svg*/
       svg{
         display: block;
-        margin: 0 auto;
+        margin: $center_block;
         width: 50px;
         height: 50px;
         border: 2.5px solid $color_highlight;
-        border-radius: 50%;
+        border-radius: $circle;
       }
       /*название контактной информации*/
       .name{
@@ -459,12 +465,12 @@ h2,span,.name{color: $color_highlight;}
       width: 30px;
       border: 1px solid #dedede;
       height: 30px;
-      border-radius: 50%;
+      border-radius: $circle;
       padding: 4%;
     }
     /*при наведении*/
     &:hover{
-      transition: 1s;
+      transition: $time;
       transform: scale(1.09);
     }
   }
@@ -586,12 +592,12 @@ h2,span,.name{color: $color_highlight;}
     /*текст*/
     .text{
       float: inherit;
-      text-align: center;
+      text-align: $center_text;
       padding-bottom: 3%;
     }
     /*блок с svg*/
     .svgFooter{
-      margin: 0 auto 2%;
+      margin: $center_block 2%;
       width: 45%;
     }
   }
@@ -674,12 +680,12 @@ h2,span,.name{color: $color_highlight;}
     /*текст*/
     .text{
       float: inherit;
-      text-align: center;
+      text-align: $center_text;
       padding-bottom: 3%;
     }
     /*блок с svg*/
     .svgFooter{
-      margin: 0 auto;
+      margin: $center_block;
       width: 40%;
     }
   }
