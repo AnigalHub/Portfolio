@@ -359,6 +359,7 @@ h2,span,.name{color: $color_highlight;}
       width: 100%;
       padding: 5% 0 1%;
       margin: 0;
+      cursor: default;
     }
     /*svg*/
     svg{
@@ -380,19 +381,20 @@ h2,span,.name{color: $color_highlight;}
       width: 100%;
       filter: brightness(94%);
       border-radius: 5px;
-      cursor: $cursor_pointer;
     }
     /*название технологии*/
     .name_technology{
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: center
+      justify-content: center;
+      cursor: default;
     }
     /*текст*/
     .text{
       font-size: 1.1rem;
       margin: 0;
+      cursor: default;
     }
   }
 }
