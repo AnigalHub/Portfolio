@@ -33,10 +33,15 @@
 <style lang="scss">
  $color_highlight: #5584bf;
  $cursor_pointer: pointer;
+ $cursor_default: default;
  $circle: 50%;
  $center_block: 0 auto;
  $center_text: center;
  $time: 1s;
+ $percent100: 100%;
+ $font-weight400: 400;
+ $font-weight500: 500;
+ $none:none;
 
 /*Компоненты меню и футера*/
 #Nav,#Myfooter{
@@ -46,7 +51,7 @@
 /*Компонент футера*/
 #Myfooter{padding: 1.5% 14%;}
 a{
-  text-decoration: none !important;
+  text-decoration: $none !important;
   cursor: $cursor_pointer !important;
 }
 /*заголовки,, текст, текст про технологии, название компании, пункты меню, название, пункты меню*/
@@ -54,7 +59,6 @@ h1, .text, .text_technology, .name_company, .name, .nav-link, .navbar-brand{font
 /*заголовки*/
 h1{
   color: #a1cbff;
-  font-weight: 200;
   text-shadow: 1px 1px 0 #000;
   padding: 3%;
 }
@@ -63,6 +67,8 @@ h1,h2{
   margin: $center_block;
   text-align: $center_text;
 }
+/*заголовок, все кнопки в меню,блок под логотип*/
+h1,.navbar .nav-link,.navbar-brand{font-weight: 200;}
 /*заголовок h2,даты в #About, название*/
 h2,span,.name{color: $color_highlight;}
  /*текст, заголовок h2, даты в #About, название*/
@@ -81,7 +87,6 @@ h2,span,.name{color: $color_highlight;}
 /*все кнопки в меню,блок под логотип*/
 .navbar .nav-link,.navbar-brand{
   color: #dedede !important;
-  font-weight: 200;
 }
 /*все кнопки в меню*/
 .nav-link{padding: 0.5rem 1rem !important;}
@@ -119,7 +124,7 @@ h2,span,.name{color: $color_highlight;}
   #Skills{
     /*svg*/
     svg{
-      background: hsla(0,0%,100%,.2);
+      background: hsla(0,0%,$percent100,.2);
       box-shadow: $box-shadow;
     }
     /*svg - express.js*/
@@ -151,7 +156,8 @@ h2,span,.name{color: $color_highlight;}
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
   $color_text: #afadad;
-  $box-shadow_hover: 0 0 12px hsla(0,0%,100%,.4);
+  $box-shadow: 0 0 12px hsla(0,0%,$percent100,.15);
+  $box-shadow_hover: 0 0 12px hsla(0,0%,$percent100,.4);
 
   /*ссылки*/
   a{color: $color_text !important;}
@@ -173,7 +179,7 @@ h2,span,.name{color: $color_highlight;}
     /*svg*/
     svg{
       background: #111623;
-      box-shadow: 0 0 12px hsla(0,0%,100%,.15);
+      box-shadow: $box-shadow;
     }
     /*svg - express.js*/
     .express_svg{fill: #afadad;}
@@ -182,7 +188,7 @@ h2,span,.name{color: $color_highlight;}
   #Works{
     /*блоки под каждую работу*/
     .flex-container > div{
-      box-shadow: 0 0 12px hsla(0,0%,100%,.15);
+      box-shadow: $box-shadow;
       /*при наведении*/
       &:hover{box-shadow: $box-shadow_hover;}
       /*название технологии, текст технологии*/
@@ -193,7 +199,7 @@ h2,span,.name{color: $color_highlight;}
     /*блоки с контактной информацией*/
     .flex-container > div{
       background: #111623;
-      box-shadow: 0 0 12px hsla(0,0%,100%,.1);
+      box-shadow: 0 0 12px hsla(0,0%,$percent100,.1);
       /*при наведении*/
       &:hover{box-shadow: $box-shadow_hover;}
     }
@@ -203,7 +209,7 @@ h2,span,.name{color: $color_highlight;}
 /*Компонент - "Главный"*/
 #Home{
   background: url("../static/background.jpg") no-repeat;
-  background-size: 100% 100%;
+  background-size: $percent100 $percent100;
 }
 /*Компонент - "Об мне"*/
 #About{
@@ -217,7 +223,7 @@ h2,span,.name{color: $color_highlight;}
     text-align: $center_text;
     /*блок под число проектов*/
     .number{
-      font-weight: 400;
+      font-weight: $font-weight400;
       font-size: 1.8rem;
     }
     /*при наведении*/
@@ -239,13 +245,13 @@ h2,span,.name{color: $color_highlight;}
     font-size: 1.5rem;
     padding-top: 6%;
     color: $color_highlight;
-    font-weight: 400;
+    font-weight: $font-weight400;
     text-align: $center_text;
     margin-bottom: .5%;
   }
   /*список ненумерованный*/
   ul{
-    list-style: none;
+    list-style: $none;
     margin-top: -1em !important;
     margin-left: -2.2rem !important;
   }
@@ -253,7 +259,7 @@ h2,span,.name{color: $color_highlight;}
   ul li{
     position: relative;
     padding: 5px 0 10px 40px;
-    cursor: default;
+    cursor: $cursor_default;
     /*свой маркер - кружок*/
     &:before{
       border-radius: $circle;
@@ -274,13 +280,11 @@ h2,span,.name{color: $color_highlight;}
       top: 48px;
     }
     /*свой маркер - кружок, черточки (полосочки)*/
-    &:before, &:after{
-      position: absolute;
-    }
+    &:before, &:after{position: absolute;}
     /*при наведении*/
     &:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
     /*последний элемент*/
-    &:last-child:after{content: none;}
+    &:last-child:after{content: $none;}
   }
 }
 /*Компонент - "Ключевые навыки"*/
@@ -288,7 +292,7 @@ h2,span,.name{color: $color_highlight;}
   /*текст в компоненте "Ключевые навыки"*/
   .text{
     text-align: $center_text;
-    font-weight: 400;
+    font-weight: $font-weight400;
   }
   /*svg навыков (языков, фреймворков, ..)*/
   svg{
@@ -307,7 +311,7 @@ h2,span,.name{color: $color_highlight;}
     & > div{
       width: 12.5%;
       margin: 0 2% 2%;
-      cursor: default;
+      cursor: $cursor_default;
       border-radius: 15px;
       padding: 1%;
       /*при наведении*/
@@ -342,14 +346,14 @@ h2,span,.name{color: $color_highlight;}
     .link_work,.text_technology{position: absolute;}
     /*блок с ссылками на проект*/
     .link_work{
-      display: none;
+      display: $none;
       top: 65px;
       margin: 0 30%;
       width: 93.5%;
     }
     /*текст технологии*/
     .text_technology{
-      font-weight: 400;
+      font-weight: $font-weight400;
       font-size: 1rem;
       border-radius: 10px;
       padding: 2% 5%;
@@ -359,11 +363,11 @@ h2,span,.name{color: $color_highlight;}
     .name_company{
       text-align: $center_text;
       color: $color_highlight;
-      font-weight: 500;
-      width: 100%;
+      font-weight: $font-weight500;
+      width: $percent100;
       padding: 5% 0 1%;
       margin: 0;
-      cursor: default;
+      cursor: $cursor_default;
     }
     /*svg*/
     svg{
@@ -382,24 +386,24 @@ h2,span,.name{color: $color_highlight;}
     }
     /*картинки*/
     img{
-      width: 100%;
+      width: $percent100;
       filter: brightness(94%);
       border-radius: 5px;
     }
     /*название технологии*/
     .name_technology{
-      width: 100%;
+      width: $percent100;
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: default;
     }
     /*текст*/
     .text{
       font-size: 1.1rem;
       margin: 0;
-      cursor: default;
     }
+    /*название технологии, текст*/
+    .name_technology, .text{cursor: $cursor_default;}
   }
 }
 /*Компонент - "Контакты"*/
@@ -429,13 +433,13 @@ h2,span,.name{color: $color_highlight;}
       }
       /*название контактной информации*/
       .name{
-        font-weight: 500;
+        font-weight: $font-weight500;
         padding-right: 2%;
       }
       /*сетка бутстрап*/
       .col{
         display: flex;
-        align-items: center
+        align-items: center;
       }
       /*текст*/
       .text{margin: 0;}
@@ -526,7 +530,7 @@ h2,span,.name{color: $color_highlight;}
       flex-direction: column;
       /*сетка бутстрап*/
       .col-4{
-         max-width: 100%;
+         max-width: $percent100;
         /*картинка*/
         img{
           width: 40%;
@@ -535,7 +539,7 @@ h2,span,.name{color: $color_highlight;}
         /*имя*/
         .name{padding: 2% 0 6%;}
         /*блок с количеством проектов*/
-        .projects{display: none;}
+        .projects{display: $none;}
       }
     }
   }
@@ -555,15 +559,15 @@ h2,span,.name{color: $color_highlight;}
   #Works{
     /*блоки с работами*/
     .flex-container > div{
-      width: 100%;
+      width: $percent100;
       padding: 2.5%;
       margin: 0 2% 4%;
       /*текст технологии*/
       .text_technology{top: 170px;}
       /*картинки*/
       img{
-        width: 100%;
-       height: 180px;
+        width: $percent100;
+        height: 180px;
       }
     }
   }
@@ -574,7 +578,7 @@ h2,span,.name{color: $color_highlight;}
       margin: 0;
       /*блок с контактной информацией*/
       & > div{
-        width: 100%;
+        width: $percent100;
         padding: 1%;
         /*svg*/
         svg{
@@ -621,7 +625,7 @@ h2,span,.name{color: $color_highlight;}
       flex-direction: column;
       /*сетка бутстрап*/
       .col-4{
-        max-width: 100%;
+        max-width: $percent100;
         /*картинки*/
         img{
           width: 40%;
@@ -630,7 +634,7 @@ h2,span,.name{color: $color_highlight;}
         /*имя*/
         .name{padding: 2% 0 6%;}
         /*блок с количеством проектов*/
-        .projects{display: none;}
+        .projects{display: $none;}
       }
     }
   }
@@ -650,7 +654,7 @@ h2,span,.name{color: $color_highlight;}
   #Works{
     /*блоки с работами*/
     .flex-container > div{
-      width: 100%;
+      width: $percent100;
       padding: 2%;
       margin: 0 2% 4%;
       /*текст технологии*/
@@ -664,7 +668,7 @@ h2,span,.name{color: $color_highlight;}
       margin: 0 14%;
       /*блок с контактной информацией*/
       & > div{
-        width: 100%;
+        width: $percent100;
         padding: 1%;
         /*svg*/
         svg{
@@ -701,7 +705,7 @@ h2,span,.name{color: $color_highlight;}
       flex-direction: column;
       /*сетка бутстрап*/
       .col-4{
-        max-width: 100%;
+        max-width: $percent100;
         /*картинки*/
         img{
           width: 40%;
@@ -710,7 +714,7 @@ h2,span,.name{color: $color_highlight;}
         /*имя*/
         .name{padding: 2% 0 4%;}
         /*блок с количеством проектов*/
-        .projects{display: none;}
+        .projects{display: $none;}
       }
     }
   }
