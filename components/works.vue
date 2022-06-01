@@ -118,7 +118,7 @@
             about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов.'
           },
           {
-            src:'/TestTask.png',
+            src:'/home_testtask.png',
             alt:'TestTask',
             name_company:'Продажа товаров',
             git:'https://github.com/AnigalHub/TestTask',
@@ -127,7 +127,7 @@
             about:'Целевая страница с формой на добавление товара и сортировки товара в списке.'
           },
           {
-            src:'/market.png',
+            src:'/home_market.png',
             alt:'market',
             name_company:'Каталог товаров',
             git:'https://github.com/AnigalHub/Market',
@@ -136,7 +136,7 @@
             about:'Целевая страница с возможностью сортировки товаров, отправки заявки и удалении из корзины товара.'
           },
           {
-            src:'/TestBis.png',
+            src:'/home_testbis.png',
             alt:'TestBis',
             name_company:'Банковское приложение',
             git:'https://github.com/AnigalHub/TestBis',
