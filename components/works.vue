@@ -91,7 +91,7 @@
             about: 'Шаблон с попиксельной точностью, выполненный с помощью подхода Pixel Perfect.'
           },
           {
-            src:'./training.png',
+            src:'./home_training.jpg',
             alt:'Математический тренажёр',
             name_company:'«Математический тренажёр»',
             git:'https://github.com/AnigalHub/MathTest',
@@ -100,7 +100,7 @@
             about: 'Игра для малышей на сложение, вычитание, деление и умножение с таймером.'
           },
           {
-            src:'./snake.png',
+            src:'./home_snake.jpg',
             alt:'Игра "Змейка"',
             name_company:'«Змейка»',
             git:'https://github.com/AnigalHub/Snake',
@@ -109,7 +109,7 @@
             about:'Классическая игра передвижения змейки за едой на игровом поле с помощью управления клавишами.'
           },
           {
-            src:'./home_svgGame.png',
+            src:'./home_svgGame.jpg',
             alt:'alphabet',
             name_company:'"Алфавит"',
             git:'https://github.com/AnigalHub/SvgGames',
