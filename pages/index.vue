@@ -212,7 +212,7 @@ h2,span,.name{color: $color_highlight;}
   /*картинка*/
   img{
     width: 78%;
-    margin: 5% 15% 0;
+    margin: 5% 12% 0;
     border-radius: $circle;
   }
   /*имя*/
