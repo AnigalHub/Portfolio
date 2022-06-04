@@ -35,7 +35,6 @@
  $circle: 50%;
  $center_block: 0 auto;
  $center_text: center;
- $time: 1s;
  $percent100: 100%;
  $font-weight400: 400;
  $font-weight500: 500;
@@ -100,8 +99,8 @@ h2,span,.name{color: $color_highlight;}
 @media screen and (prefers-color-scheme: light){
   $background_elements: white;
   $color_text: black;
-  $box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
-  $box-shadow_hover: 2px 6px 15px rgba(0,0,0,.4);
+  $border_color: 1px solid rgba(0, 0, 0, 0.18);
+  $border_color_hover: 1px solid rgba(0, 0, 0, 0.4);
 
   /*ссылки*/
   a{color: $color_text !important;}
@@ -121,8 +120,10 @@ h2,span,.name{color: $color_highlight;}
     /*svg*/
     svg{
       background: hsla(0,0%,$percent100,.2);
-      box-shadow: $box-shadow;
+      border: $border_color;
     }
+    /*svg при наведении на блоки*/
+    .flex-container > div:hover{svg{border: $border_color_hover;}}
     /*svg - express.js*/
     .express_svg{fill: #000;}
   }
@@ -131,9 +132,11 @@ h2,span,.name{color: $color_highlight;}
     /*блоки под каждую работу*/
     .flex-container > div{
       background: $background_elements;
-      box-shadow: $box-shadow;
+      border: $border_color;
+      /*картинки*/
+      img{filter: brightness(94%);}
       /*при наведении*/
-      &:hover{box-shadow: $box-shadow_hover;}
+      &:hover{border: $border_color_hover;}
       /*название технологии, текст технологии*/
       .name_technology, .text_technology{background-color: $background_elements;}
     }
@@ -143,17 +146,17 @@ h2,span,.name{color: $color_highlight;}
     /*блоки с контактной информацией*/
     .flex-container > div{
       background: $background_elements;
-      box-shadow: $box-shadow;
+      border: $border_color;
       /*при наведении*/
-      &:hover{box-shadow: $box-shadow_hover;}
+      &:hover{border: $border_color_hover;}
     }
   }
 }
 /************ ТЕМНАЯ ТЕМА ***********************/
 @media screen and (prefers-color-scheme: dark){
   $color_text: #afadad;
-  $box-shadow: 0 0 12px hsla(0,0%,$percent100,.15);
-  $box-shadow_hover: 0 0 12px hsla(0,0%,$percent100,.4);
+  $border_color: 1px solid rgba(255, 255, 255, 0.12);
+  $border_color_hover: 1px solid rgba(255, 255, 255, 0.45);
 
   /*ссылки*/
   a{color: $color_text !important;}
@@ -173,8 +176,10 @@ h2,span,.name{color: $color_highlight;}
     /*svg*/
     svg{
       background: #111623;
-      box-shadow: $box-shadow;
+      border: $border_color;
     }
+    /*svg при наведении на блоки*/
+    .flex-container > div:hover{svg{border: $border_color_hover;}}
     /*svg - express.js*/
     .express_svg{fill: #afadad;}
   }
@@ -182,9 +187,12 @@ h2,span,.name{color: $color_highlight;}
   #Works{
     /*блоки под каждую работу*/
     .flex-container > div{
-      box-shadow: $box-shadow;
+      border: $border_color;
+      background: #080a11;
+      /*картинки*/
+      img{filter: brightness(65%);}
       /*при наведении*/
-      &:hover{box-shadow: $box-shadow_hover;}
+      &:hover{border: $border_color_hover;}
       /*название технологии, текст технологии*/
       .name_technology, .text_technology{background: #090c13;}
     }
@@ -193,9 +201,9 @@ h2,span,.name{color: $color_highlight;}
     /*блоки с контактной информацией*/
     .flex-container > div{
       background: #111623;
-      box-shadow: 0 0 12px hsla(0,0%,$percent100,.1);
+      border: $border_color;
       /*при наведении*/
-      &:hover{box-shadow: $box-shadow_hover;}
+      &:hover{border: $border_color_hover;}
     }
   }
 }
@@ -244,7 +252,7 @@ h2,span,.name{color: $color_highlight;}
       content: "";
       left: 0;
       transition: .3s ease-in-out;
-      top: 27px;
+      top: 16px;
     }
     /*черточки (полосочки)*/
     &:after{
@@ -275,7 +283,6 @@ h2,span,.name{color: $color_highlight;}
     height: 78px;
     display: block;
     margin: $center_block 2%;
-    backdrop-filter: blur(5px);
     border-radius: $circle;
     padding: 10%;
   }
@@ -291,7 +298,6 @@ h2,span,.name{color: $color_highlight;}
       padding: 1%;
       /*при наведении*/
       &:hover{
-        transition: $time;
         transform: scale(1.09);
       }
     }
@@ -307,9 +313,9 @@ h2,span,.name{color: $color_highlight;}
       margin: 0 1% 2%;
       padding: 1%;
       position: relative;
+      border-radius: 7px;
       /*при наведении*/
       &:hover{
-        transition: $time;
         transform: scale(1.01);
         /*картинки*/
         img{filter: brightness(50%);}
@@ -362,7 +368,6 @@ h2,span,.name{color: $color_highlight;}
     /*картинки*/
     img{
       width: $percent100;
-      filter: brightness(94%);
       border-radius: 5px;
     }
     /*название технологии*/
@@ -392,9 +397,9 @@ h2,span,.name{color: $color_highlight;}
       width: 45%;
       margin: 1.5%;
       padding: 1% 4%;
+      border-radius: 7px;
       /*при наведении*/
       &:hover{
-        transition: $time;
         transform: scale(1.01);
       }
       /*svg*/
@@ -439,6 +444,7 @@ h2,span,.name{color: $color_highlight;}
   /*блоки с контактной информацией*/
   .flex-container > div{
     width: 25%;
+    border-radius: 7px;
     /*svg*/
     svg{
       width: 30px;
@@ -449,7 +455,6 @@ h2,span,.name{color: $color_highlight;}
     }
     /*при наведении*/
     &:hover{
-      transition: $time;
       transform: scale(1.09);
     }
   }
