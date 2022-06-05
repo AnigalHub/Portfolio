@@ -12,7 +12,7 @@ export default {
       { hid: 'keywords', name: 'description', content: 'Web-разработка, HTML5, CSS3, BOOTSTRAP, VUE.JS, JAVASCRIPT, SASS/SCSS, NUXT.JS, фреймворки' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icons.png' },
+      { rel: 'icon', type: 'image/x-icon', href: 'icons.png' },
       {href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' , rel:'stylesheet'}
     ]
   },
