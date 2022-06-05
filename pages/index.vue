@@ -25,8 +25,6 @@
 </script>
 
 <style>
-  /*меню*/
-  .navbar-light .navbar-toggler{border-color: white !important;}
   /*фраза в логотипе*/
   .navbar-brand{padding-bottom: 0 !important;}
 </style>
@@ -117,8 +115,6 @@ h2,span,.name{color: $color_highlight;}
   #About{
     /*список - черточки (полосочки)*/
     ul li:after{border-left: 1px dotted $color_text;}
-    /*блок с количеством проектов*/
-    .projects{background-color: #f9f9f9;}
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
@@ -171,8 +167,6 @@ h2,span,.name{color: $color_highlight;}
   #About{
     /*список - черточки (полосочки)*/
     ul li:after{border-left: 1px dotted $color_text;}
-    /*блок с количеством проектов*/
-    .projects{background: #080a11;}
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
@@ -213,37 +207,18 @@ h2,span,.name{color: $color_highlight;}
 }
 /*Компонент - "Об мне"*/
 #About{
-  /*блок с количеством проектов*/
-  .projects{
-    width: 60%;
-    margin: 7% auto 2%;
-    cursor: $cursor_pointer;
-    border-radius: 10px;
-    padding: 3%;
-    text-align: $center_text;
-    /*блок под число проектов*/
-    .number{
-      font-weight: $font-weight400;
-      font-size: 1.8rem;
-    }
-    /*при наведении*/
-    &:hover{
-      transition: $time;
-      transform: scale(1.09);
-    }
-  }
   /*бутстрап сетка*/
   .row{margin: 0 5% 0 8%;}
   /*картинка*/
   img{
-    width: 75%;
-    margin: -5% 15% 0;
+    width: 78%;
+    margin: 5% 15% 0;
     border-radius: $circle;
   }
   /*имя*/
   .name{
     font-size: 1.5rem;
-    padding-top: 6%;
+    padding-top: 4%;
     color: $color_highlight;
     font-weight: $font-weight400;
     text-align: $center_text;
@@ -258,7 +233,7 @@ h2,span,.name{color: $color_highlight;}
   /*элементы списка*/
   ul li{
     position: relative;
-    padding: 5px 0 10px 40px;
+    padding: 5px 0 0 40px;
     cursor: $cursor_default;
     /*свой маркер - кружок*/
     &:before{
@@ -538,8 +513,6 @@ h2,span,.name{color: $color_highlight;}
         }
         /*имя*/
         .name{padding: 2% 0 6%;}
-        /*блок с количеством проектов*/
-        .projects{display: $none;}
       }
     }
   }
@@ -633,8 +606,6 @@ h2,span,.name{color: $color_highlight;}
         }
         /*имя*/
         .name{padding: 2% 0 6%;}
-        /*блок с количеством проектов*/
-        .projects{display: $none;}
       }
     }
   }
@@ -713,8 +684,6 @@ h2,span,.name{color: $color_highlight;}
         }
         /*имя*/
         .name{padding: 2% 0 4%;}
-        /*блок с количеством проектов*/
-        .projects{display: $none;}
       }
     }
   }
