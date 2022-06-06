@@ -532,7 +532,7 @@ h2,span,.name{color: $color_highlight;}
     .row{
       flex-direction: column;
       /*сетка бутстрап*/
-      .col-4{
+      .col-5{
          max-width: $percent100;
         /*картинка*/
         img{
@@ -625,7 +625,7 @@ h2,span,.name{color: $color_highlight;}
     .row{
       flex-direction: column;
       /*сетка бутстрап*/
-      .col-4{
+      .col-5{
         max-width: $percent100;
         /*картинки*/
         img{
@@ -703,7 +703,7 @@ h2,span,.name{color: $color_highlight;}
     .row{
       flex-direction: column;
       /*сетка бутстрап*/
-      .col-4{
+      .col-5{
         max-width: $percent100;
         /*картинки*/
         img{
