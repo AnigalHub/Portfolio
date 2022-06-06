@@ -384,8 +384,7 @@ h2,span,.name{color: $color_highlight;}
       cursor: $cursor_pointer;
       /*при наведении*/
       &:hover{
-        width: 45px;
-        height: 45px;
+        transform: scale(0.8);
       }
     }
     /*картинки*/
