@@ -235,7 +235,7 @@ h2,span,.name{color: $color_highlight;}
   img{
     width: 78%;
     margin: 5% 12% 0;
-    border-radius: 7px;
+    border-radius: 50%;
   }
   /*имя*/
   .name{
@@ -532,7 +532,7 @@ h2,span,.name{color: $color_highlight;}
     .row{
       flex-direction: column;
       /*сетка бутстрап*/
-      .col-5{
+      .col-4{
          max-width: $percent100;
         /*картинка*/
         img{
@@ -625,7 +625,7 @@ h2,span,.name{color: $color_highlight;}
     .row{
       flex-direction: column;
       /*сетка бутстрап*/
-      .col-5{
+      .col-4{
         max-width: $percent100;
         /*картинки*/
         img{
@@ -703,7 +703,7 @@ h2,span,.name{color: $color_highlight;}
     .row{
       flex-direction: column;
       /*сетка бутстрап*/
-      .col-5{
+      .col-4{
         max-width: $percent100;
         /*картинки*/
         img{

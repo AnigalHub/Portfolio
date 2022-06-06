@@ -3,7 +3,7 @@
     <b-container>
       <h2>Об мне</h2>
       <b-row>
-        <b-col cols="5">
+        <b-col cols="4">
           <img src="../static/me.jpg">
           <p class="name">Игнатова Анна</p>
         </b-col>
