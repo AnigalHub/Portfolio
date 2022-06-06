@@ -114,6 +114,13 @@ h2,span,.name{color: $color_highlight;}
   #About{
     /*список - черточки (полосочки)*/
     ul li:after{border-left: 1px dotted $color_text;}
+    /*блоки списков*/
+    .block_li{
+      border: $border_color;
+      background: $background_elements;
+      /*при наведении*/
+      &:hover{border: $border_color_hover;}
+    }
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
@@ -170,6 +177,13 @@ h2,span,.name{color: $color_highlight;}
   #About{
     /*список - черточки (полосочки)*/
     ul li:after{border-left: 1px dotted $color_text;}
+    /*блоки списков*/
+    .block_li{
+      border: $border_color;
+      background: #080a11;
+      /*при наведении*/
+      &:hover{border: $border_color_hover;}
+    }
   }
   /*Компонент - "Ключевые навыки"*/
   #Skills{
@@ -221,7 +235,7 @@ h2,span,.name{color: $color_highlight;}
   img{
     width: 78%;
     margin: 5% 12% 0;
-    border-radius: $circle;
+    border-radius: 7px;
   }
   /*имя*/
   .name{
@@ -238,11 +252,22 @@ h2,span,.name{color: $color_highlight;}
     margin-top: -1em !important;
     margin-left: -2.2rem !important;
   }
+  /*блоки списков*/
+  .block_li{
+    border-radius: 7px;
+    padding: 1%;
+    margin-bottom: 2%;
+    p{margin-bottom: .2rem;}
+  }
   /*элементы списка*/
   ul li{
     position: relative;
     padding: 5px 0 0 40px;
     cursor: $cursor_default;
+    /*при наведении*/
+    &:hover .block_li{
+      transform: scale(1.03);
+    }
     /*свой маркер - кружок*/
     &:before{
       border-radius: $circle;
@@ -297,9 +322,7 @@ h2,span,.name{color: $color_highlight;}
       border-radius: 15px;
       padding: 1%;
       /*при наведении*/
-      &:hover{
-        transform: scale(1.09);
-      }
+      &:hover{transform: scale(1.05);}
     }
   }
 }
