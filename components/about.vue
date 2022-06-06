@@ -3,16 +3,18 @@
     <b-container>
       <h2>Об мне</h2>
       <b-row>
-        <b-col cols="4">
+        <b-col cols="5">
           <img src="../static/me.jpg">
           <p class="name">Игнатова Анна</p>
         </b-col>
         <b-col>
           <ul>
             <li class="text" v-for="(education,index) in About" :key="index">
-              <p><b>{{education.name}}<span> {{education.year}}</span></b></p>
-              <p>{{education.direction}}</p>
-              <p>{{education.department}}</p>
+              <div class="block_li">
+                <p><b>{{education.name}}</b></p>
+                <p>{{education.direction}}</p>
+                <p>{{education.department}}</p>
+              </div>
             </li>
           </ul>
         </b-col>
