@@ -1,7 +1,7 @@
 <template>
   <div id="Home">
     <div class="container">
-      <h1 class="front">Junior Frontend Developer</h1>
+      <h1 class="front">Frontend Developer</h1>
     </div>
   </div>
 </template>
