@@ -14,6 +14,7 @@
                 <p><b>{{education.name}}</b></p>
                 <p>{{education.direction}}</p>
                 <p>{{education.department}}</p>
+                <p>{{education.department2}}</p>
               </div>
             </li>
           </ul>
@@ -42,7 +43,8 @@
           {
             name: "Образование",
             direction:"Московский Авиационный Институт (МАИ)",
-            department:"Направление: Информатика и вычислительная техника."
+            department:"Направление: Информатика и вычислительная техника.",
+            department2:"Кафедра: Информационные сети и технологии."
           },
         ]
       }
