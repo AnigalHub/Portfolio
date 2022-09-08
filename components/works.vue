@@ -8,7 +8,7 @@
           <div class="work">
             <div class="name_works">
               <p class="name">{{work.name_company}}</p>
-              <p class="text_works">{{work.tecnology}}</p>
+              <p class="text_works">{{work.technology}}</p>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
                     src:'./home_prom.jpg',
                     alt:'Промэлектронсервис',
                     name_company:'Сайт «Промэлектронсервис»',
-                    tecnology:'HTML, CSS, Bootstrap, PHP.',
+                    technology:'HTML, CSS, Bootstrap, PHP.',
                     url:'https://github.com/AnigalHub/Promelectronservice'
                   },
                   {
@@ -46,7 +46,7 @@
                     src:'./home_gts.png',
                     alt:'Гостехносервис',
                     name_company:'Сайт «Гостехносервис»',
-                    tecnology:'Vue.js, BootstrapVue, Sass.',
+                    technology:'Vue.js, BootstrapVue, Sass.',
                     url:"https://github.com/AnigalHub/Gts"
                   },
                   {
@@ -54,7 +54,7 @@
                     src:'./home_priamyeruki.jpg',
                     alt:'Прямые_руки',
                     name_company:'Сайт «Аваконт»',
-                    tecnology:'Vue.js, Sass, Express.js.',
+                    technology:'Vue.js, Sass, Express.js.',
                     url:'https://github.com/AnigalHub/Priamyeruki'
                   },
                   {
@@ -62,7 +62,7 @@
                     src:'./home_avacont.jpg',
                     alt:'Аваконт',
                     name_company:'Сайт «Аваконт»',
-                    tecnology:'Vue.js, JavaScript, HTML, Sass, Express.js.',
+                    technology:'Vue.js, JavaScript, HTML, Sass, Express.js.',
                     url:'https://github.com/AnigalHub/Avacont'
                   },
                   {
@@ -70,7 +70,7 @@
                     src:'./home_valencia.png',
                     alt:'Валенсия',
                     name_company:'Сайт «Валенсия»',
-                    tecnology:'Nuxt.js, BootstrapVue, HTML, Sass.',
+                    technology:'Nuxt.js, BootstrapVue, HTML, Sass.',
                     url: 'https://github.com/AnigalHub/Valencia'
                   },
                   {
@@ -78,7 +78,7 @@
                     src:'/home_pixelperfect.png',
                     alt:'pixelperfect',
                     name_company:'Сайт по Макету',
-                    tecnology:'Vue.js, BootstrapVue, HTML, Sass.',
+                    technology:'Vue.js, BootstrapVue, HTML, Sass.',
                     url:'https://github.com/AnigalHub/PixelPerfect'
                   },
                   {
@@ -86,7 +86,7 @@
                     src:'/api.png',
                     alt:'api',
                     name_company:'Проект “Аптечка”',
-                    tecnology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
+                    technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
                     url:'https://github.com/AnigalHub/Pills_api'
                   },
                   {
@@ -94,7 +94,7 @@
                     src:'/wishlist.png',
                     alt:'wishlist',
                     name_company:'Проект “Список Желаний”',
-                    tecnology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
+                    technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
                     url:'https://github.com/AnigalHub/WishList'
                   },
                   {
@@ -102,7 +102,7 @@
                     src:'./training.png',
                     alt:'Математический тренажёр',
                     name_company:'Игра "Математический тренажёр"',
-                    tecnology:'JavaScript, HTML, CSS, Webpack.',
+                    technology:'JavaScript, HTML, CSS, Webpack.',
                     url:'https://github.com/AnigalHub/MathTest'
                   },
                   {
@@ -110,7 +110,7 @@
                     src:'./snake.png',
                     alt:'Игра "Змейка"',
                     name_company:'Игра "Змейка"',
-                    tecnology:'JavaScript, Canvas, Webpack.',
+                    technology:'JavaScript, Canvas, Webpack.',
                     url:'https://github.com/AnigalHub/Snake'
                   },
                   {
@@ -118,7 +118,7 @@
                     src:'./home_svgGame.png',
                     alt:'alphabet',
                     name_company:'Игра "Изучение Алфавита"',
-                    tecnology:'Vue.js, JavaScript, Drag and Drop, Sass. ',
+                    technology:'Vue.js, JavaScript, Drag and Drop, Sass. ',
                     url:'https://github.com/AnigalHub/SvgGames'
                   },
                   {
@@ -126,7 +126,7 @@
                     src:'/parser.jpg',
                     alt:'parser',
                     name_company:'Парсинг сайта ',
-                    tecnology:'Node.js',
+                    technology:'Node.js',
                     url:'https://github.com/AnigalHub/Parser'
                   },
                   {
@@ -134,7 +134,7 @@
                     src:'/TestTask.png',
                     alt:'TestTask',
                     name_company:'Страница продажи товаров',
-                    tecnology:'Nuxt.js, Vuex, Sass.',
+                    technology:'Nuxt.js, Vuex, Sass.',
                     url:'https://github.com/AnigalHub/TestTask'
                   },
                   {
@@ -142,7 +142,7 @@
                     src:'/market.png',
                     alt:'market',
                     name_company:'Каталог с корзиной и сортировкой',
-                    tecnology:'Nuxt.js, Vuex, Sass.',
+                    technology:'Nuxt.js, Vuex, Sass.',
                     url:'https://github.com/AnigalHub/Market'
                   },
                   /*   {
@@ -159,7 +159,7 @@
                     src:'/TestBis.png',
                     alt:'TestBis',
                     name_company:'Прототип банковского приложения',
-                    tecnology:'Vue.js (Vuex, VueRouter, BootstrapVue).',
+                    technology:'Vue.js (Vuex, VueRouter, BootstrapVue).',
                     url:'https://github.com/AnigalHub/TestBis'
                   },
             ],
