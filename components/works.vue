@@ -2,21 +2,17 @@
   <div id="Works">
     <b-container>
       <h1>Портфолио</h1>
-<!--      <b-tabs fill>-->
-<!--        <div v-for="(works,index) in Works" :key="index" :title="works.name" >-->
-            <div class="flex-container">
-              <div v-for="(work,index) in Works" :key="index">
-                <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
-                <div class="work">
-                  <div class="name_works">
-                    <p class="name">{{work.name_company}}</p>
-                    <p class="text_works">{{work.tecnology}}</p>
-                  </div>
-                </div>
-              </div>
+      <div class="flex-container">
+        <div v-for="(work,index) in Works" :key="index">
+          <img :src="work.src" :alt="work.alt" @click="showModal(work)"/>
+          <div class="work">
+            <div class="name_works">
+              <p class="name">{{work.name_company}}</p>
+              <p class="text_works">{{work.tecnology}}</p>
             </div>
-<!--          </div>-->
-<!--      </b-tabs>-->
+          </div>
+        </div>
+      </div>
       <b-modal ref="modalWork" id="img" size="xl" :title="SelectedWorks.name_company" centered hide-footer>
         <img :src="SelectedWorks.main_src" :alt="SelectedWorks.alt"/>
       </b-modal>
