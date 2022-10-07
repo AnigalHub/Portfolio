@@ -46,7 +46,7 @@
             about:'Сайт сертификационных испытаний и комплексной поставки электронных компонентов.'
           },
           {
-            src:'./home_gts.png',
+            src:'./home_gts.jpg',
             alt:'Гостехносервис',
             name_company:'«Гостехносервис»',
             git:'https://github.com/AnigalHub/Gts',
@@ -82,7 +82,7 @@
             about:'Сайт частного охранного предприятия, обеспечивающего безопасность на всей территории РФ.'
           },
           {
-            src:'/home_pixelperfect.png',
+            src:'/home_pixelperfect.jpg',
             alt:'pixelperfect',
             name_company:'Startup',
             git:'https://github.com/AnigalHub/PixelPerfect',
@@ -118,7 +118,7 @@
             about:'Игры на знание английского алфавита: изучение алфавита, собери пару и конструктор слов.'
           },
           {
-            src:'/home_testtask.png',
+            src:'/home_testtask.jpg',
             alt:'TestTask',
             name_company:'Продажа товаров',
             git:'https://github.com/AnigalHub/TestTask',
@@ -127,7 +127,7 @@
             about:'Целевая страница с формой на добавление товара и сортировки товара в списке.'
           },
           {
-            src:'/home_market.png',
+            src:'/home_market.jpg',
             alt:'market',
             name_company:'Каталог товаров',
             git:'https://github.com/AnigalHub/Market',
@@ -136,7 +136,7 @@
             about:'Целевая страница с возможностью сортировки товаров, отправки заявки и удалении из корзины товара.'
           },
           {
-            src:'/home_testbis.png',
+            src:'/home_testbis.jpg',
             alt:'TestBis',
             name_company:'Банковское приложение',
             git:'https://github.com/AnigalHub/TestBis',
@@ -145,19 +145,19 @@
             about:'Прототип банковского приложения с возможностью отображения таблиц, изменения и удаления данных из них.'
           },
           // {
-          //   src:'/api.png',
+          //   src:'/api.jpg',
           //   alt:'api',
           //   name_company:'Проект “Аптечка”',
           //   technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
           // },
           // {
-          //   src:'/wishlist.png',
+          //   src:'/wishlist.jpg',
           //   alt:'wishlist',
           //   name_company:'Проект “Список Желаний”',
           //   technology:'Node.js, Express.js, Vue.js, BootstrapVue, PostgreSQL.',
           // },
           // {
-          //    src:'/tgBot.png',
+          //    src:'/tgBot.jpg',
           //    alt:'tgbot',
           //    name_company:'Telegram-бот "Напоминалка"',
           //    tecnology:'TypeScript, PostgreSQL. ',
