@@ -144,6 +144,15 @@
             technology:'Vue',
             about:'Прототип банковского приложения с возможностью отображения таблиц, изменения и удаления данных из них.'
           },
+          {
+            src:'/home_mag.png',
+            alt:'Mag',
+            name_company:'ОАО \"Группа компаний МАГ\"',
+            git:'https://github.com/AnigalHub/GroupOfCompaniesMAG',
+            show:'/mag',
+            technology:'Vue',
+            about:'Сайт компаний, занимающихся строительно-монтажными и пуско-наладочными работами систем.'
+          },
           // {
           //   src:'/api.jpg',
           //   alt:'api',
