@@ -102,6 +102,9 @@ h2,span,.name{color: $color_highlight;}
   $border_color: 1px solid rgba(0, 0, 0, 0.18);
   $border_color_hover: 1px solid rgba(0, 0, 0, 0.4);
 
+  body{
+    background: $background_elements !important;
+  }
   /*ссылки*/
   a{color: $color_text !important;}
   /*Компоненты - "Ключевые навыки", "Контакты"*/
@@ -165,6 +168,9 @@ h2,span,.name{color: $color_highlight;}
   $border_color: 1px solid rgba(255, 255, 255, 0.12);
   $border_color_hover: 1px solid rgba(255, 255, 255, 0.45);
 
+  body{
+    background: #090c13 !important;
+  }
   /*ссылки*/
   a{color: $color_text !important;}
   /*Компоненты - "Об мне", "Ключевые навыки", "Контакты"*/
