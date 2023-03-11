@@ -154,6 +154,15 @@
             about:'Сайт компаний, занимающихся строительно-монтажными и пуско-наладочными работами систем.'
           },
           {
+            src:'/home_greasepaint.png',
+            alt:'Greasepaint',
+            name_company:'#polyakovsteam',
+            git:'https://github.com/AnigalHub/Greasepaint',
+            show:'/greasepaint',
+            technology:'Vue',
+            about:'Сайт о команде профессиональных гримеров спортсменов NBC перед выступлениями.'
+          },
+          {
             src:'/home_calendar.png',
             alt:'Calendar',
             name_company:'Адвент-календарь',
