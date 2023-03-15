@@ -84,7 +84,7 @@
           {
             src:'/home_pixelperfect.jpg',
             alt:'pixelperfect',
-            name_company:'Startup',
+            name_company:'«Startup»',
             git:'https://github.com/AnigalHub/PixelPerfect',
             show:'/pixelperfect',
             technology:'Vue',
@@ -111,7 +111,7 @@
           {
             src:'./home_svgGame.jpg',
             alt:'alphabet',
-            name_company:'"Алфавит"',
+            name_company:'«Алфавит»',
             git:'https://github.com/AnigalHub/SvgGames',
             show:'/svggames',
             technology:'Vue',
@@ -120,7 +120,7 @@
           {
             src:'/home_testtask.jpg',
             alt:'TestTask',
-            name_company:'Продажа товаров',
+            name_company:'«Продажа товаров»',
             git:'https://github.com/AnigalHub/TestTask',
             show:'/testtask',
             technology:'Nuxt',
@@ -129,7 +129,7 @@
           {
             src:'/home_market.jpg',
             alt:'market',
-            name_company:'Каталог товаров',
+            name_company:'«Каталог товаров»',
             git:'https://github.com/AnigalHub/Market',
             show:'/market',
             technology:'Nuxt',
@@ -138,7 +138,7 @@
           {
             src:'/home_testbis.jpg',
             alt:'TestBis',
-            name_company:'Банковское приложение',
+            name_company:'«Банковское приложение»',
             git:'https://github.com/AnigalHub/TestBis',
             show:'/testbis',
             technology:'Vue',
@@ -147,7 +147,7 @@
           {
             src:'/home_mag.png',
             alt:'Mag',
-            name_company:'ОАО \"Группа компаний МАГ\"',
+            name_company:'ОАО «Группа компаний МАГ»',
             git:'https://github.com/AnigalHub/GroupOfCompaniesMAG',
             show:'/mag',
             technology:'Vue',
@@ -156,7 +156,7 @@
           {
             src:'/home_greasepaint.png',
             alt:'Greasepaint',
-            name_company:'#polyakovsteam',
+            name_company:'«#polyakovsteam»',
             git:'https://github.com/AnigalHub/Greasepaint',
             show:'/greasepaint',
             technology:'Vue',
@@ -165,7 +165,7 @@
           {
             src:'/home_calendar.png',
             alt:'Calendar',
-            name_company:'Адвент-календарь',
+            name_company:'«Адвент-календарь»',
             git:'https://github.com/AnigalHub/AdventCalendar',
             show:'/calendar',
             technology:'Vue',
