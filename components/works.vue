@@ -160,7 +160,7 @@
             git:'https://github.com/AnigalHub/Greasepaint',
             show:'/greasepaint',
             technology:'Vue',
-            about:'Сайт о команде профессиональных гримеров спортсменов NBC перед выступлениями.'
+            about:'Сайт о профессиональных гримерах спортсменов на соревнованиях NBC по бодибилдингу и фитнесу.'
           },
           {
             src:'/home_calendar.png',
