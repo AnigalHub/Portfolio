@@ -156,7 +156,7 @@
           {
             src:'/home_greasepaint.png',
             alt:'Greasepaint',
-            name_company:'«Polyakovsteam»',
+            name_company:'«PolyakovsTeam»',
             git:'https://github.com/AnigalHub/Greasepaint',
             show:'/greasepaint',
             technology:'Vue',
