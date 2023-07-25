@@ -336,6 +336,8 @@ h2,span,.name{color: $color_highlight;}
 #Works{
   /*блоки с работами*/
   .flex-container{
+    align-items: center;
+    justify-content: center;
     /*блоки с работой*/
     & > div{
       width: 31%;

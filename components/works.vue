@@ -172,6 +172,15 @@
             about:'Адвент-календарь на месяц с 60 разными интересными заданиями на выбор для детей к Новому году.'
           },
           // {
+          //   src:'/home_calendar.png',
+          //   alt:'Calendar',
+          //   name_company:'«Адвент-календарь»',
+          //   git:'https://github.com/AnigalHub/AdventCalendar',
+          //   show:'/calendar',
+          //   technology:'Vue',
+          //   about:'Адвент-календарь на месяц с 60 разными интересными заданиями на выбор для детей к Новому году.'
+          // },
+          // {
           //   src:'/api.jpg',
           //   alt:'api',
           //   name_company:'Проект “Аптечка”',
