@@ -171,15 +171,15 @@
             technology:'Vue',
             about:'Адвент-календарь на месяц с 60 разными интересными заданиями на выбор для детей к Новому году.'
           },
-          // {
-          //   src:'/home_calendar.png',
-          //   alt:'Calendar',
-          //   name_company:'«Адвент-календарь»',
-          //   git:'https://github.com/AnigalHub/AdventCalendar',
-          //   show:'/calendar',
-          //   technology:'Vue',
-          //   about:'Адвент-календарь на месяц с 60 разными интересными заданиями на выбор для детей к Новому году.'
-          // },
+          {
+            src:'/home_trucking.png',
+            alt:'Trucking',
+            name_company:'«Аваконт»',
+            git:'https://github.com/AnigalHub/Trucking',
+            show:'/trucking',
+            technology:'Vue',
+            about:'Сайт о доставке сборных грузов по России из Китая. Надежная перевозка груза любой категории.'
+          },
           // {
           //   src:'/api.jpg',
           //   alt:'api',
