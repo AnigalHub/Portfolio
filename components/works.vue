@@ -174,11 +174,11 @@
           {
             src:'/home_trucking.png',
             alt:'Trucking',
-            name_company:'«Аваконт»',
+            name_company:'«gtekhno»',
             git:'https://github.com/AnigalHub/Trucking',
             show:'/trucking',
             technology:'Vue',
-            about:'Сайт о доставке сборных грузов по России из Китая. Надежная перевозка груза любой категории.'
+            about:'Сайт о перевозке грузов любой категории из Китая: подбор товара, поиск поставщика, доставка.'
           },
           // {
           //   src:'/api.jpg',
