@@ -180,6 +180,15 @@
             technology:'Vue',
             about:'Сайт о перевозке грузов любой категории из Китая: подбор товара, поиск поставщика, доставка.'
           },
+          {
+            src:'/home_installation.png',
+            alt:'Installation',
+            name_company:'«Аваконт2»',
+            git:'https://github.com/AnigalHub/Installation',
+            show:'/installation',
+            technology:'Vue',
+            about:'Сайт об комплексных услугах по проектированию и строительству многоквартирных домов в РФ.'
+          },
           // {
           //   src:'/api.jpg',
           //   alt:'api',
