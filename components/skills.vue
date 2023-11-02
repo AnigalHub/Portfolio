@@ -19,7 +19,7 @@
   import Nuxt_svg from "~/components/svg_skills/nuxt_svg";
   import Html_svg from "~/components/svg_skills/html_svg";
   import Css_svg from "~/components/svg_skills/css_svg";
-  import Bootstrap_svg from "~/components/svg_skills/boostrap_svg";
+  import Bootstrap_svg from "~/components/svg_skills/bootstrap_svg";
   import Sass_svg from "~/components/svg_skills/sass_svg";
   import Node_svg from "~/components/svg_skills/node_svg";
   import Express_svg from "~/components/svg_skills/express_svg";

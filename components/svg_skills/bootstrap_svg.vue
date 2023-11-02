@@ -7,7 +7,7 @@
 
 <script>
     export default {
-        name: "boostrap_svg"
+        name: "bootstrap_svg"
     }
 </script>
 
