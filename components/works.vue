@@ -189,6 +189,15 @@
             technology:'Vue',
             about:'Сайт об комплексных услугах по проектированию и строительству многоквартирных домов в РФ.'
           },
+          {
+            src:'/home_weather.png',
+            alt:'Weather',
+            name_company:'«Прогноз погоды»',
+            git:'https://github.com/AnigalHub/Weather',
+            show:'/weather',
+            technology:'Vue',
+            about:'Детальный прогноз погоды по нескольким городам с подробными графиками по полученным данным.'
+          },
           // {
           //   src:'/api.jpg',
           //   alt:'api',
