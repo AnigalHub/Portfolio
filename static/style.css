@@ -1,0 +1,37 @@
+:root{
+  --color_highlight: #5584bf;
+  --cursor_pointer: pointer;
+  --cursor_default: default;
+  --circle: 50%;
+  --center_block: 0 auto;
+  --center_text: center;
+  --percent100: 100%;
+  --font-weight400: 400;
+  --font-weight500: 500;
+  --none:none;
+
+}
+.light{
+  --background_components-even: white;
+  --background_components-odd: #f4f4f4;
+  --color_text: black;
+  --color-a: #afadad;
+
+  --background_svg:hsla(0, 0%, 100%, .2);
+  --color-svg-express: #000;
+
+  --border_color: 1px solid rgba(0, 0, 0, 0.18);
+  --border_color_hover: 1px solid rgba(0, 0, 0, 0.4);
+}
+.dark{
+  --background_components-even: #0c111c;
+  --background_components-odd: #090c13;
+  --color_text: #afadad;
+  --color-a: #afadad;
+
+  --background_svg: #111623;
+  --color-svg-express: #afadad;
+
+  --border_color: 1px solid rgba(255, 255, 255, 0.12);
+  --border_color_hover: 1px solid rgba(255, 255, 255, 0.45);
+}
