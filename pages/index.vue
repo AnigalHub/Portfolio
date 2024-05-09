@@ -40,59 +40,92 @@
 
 <style>
   /*фраза в логотипе*/
-  .navbar-brand {padding-bottom: 0 !important;}
+  .navbar-brand {
+    padding-bottom: 0 !important;
+  }
 </style>
 <style lang="scss">
   @import './../static/style.css';
 
   /*Компоненты меню и футера*/
-  #Nav,#Myfooter {
-    background: #030407;
-    color: #dedede;
+  #Nav, #Myfooter {
+    background: var(--background_navbar_footer);
+    color: var(--color_navbar_footer);
   }
   /*Компонент футера*/
-  #Myfooter {padding: 1.5% 14%;}
-  a {
+  #Myfooter {
+    padding: 1.5% 14%;
+  }
+  .navbar a {
     color: var(--color-a) !important;
+  }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: var(--background_switch_active);
+    background-color: var(--background_switch_active);
+  }
+  .custom-switch .custom-control-label::before{
+    border-color: var(--background_switch);
+    background-color: var(--background_switch);
+  }
+  .custom-switch {
+    padding-left: 3rem;
+    padding-top: .8rem;
+  }
+  a {
+    color: var(--color-text) !important;
     text-decoration: var(--none) !important;
     cursor: var(--cursor_pointer) !important;
   }
-  /*заголовки,, текст, текст про технологии, название компании, пункты меню, название, пункты меню*/
-  h1, .text, .text_technology, .name_company, .name, .nav-link, .navbar-brand {font-family: 'Roboto', sans-serif;}
+  /*заголовки, текст, текст про технологии, название компании, пункты меню, название, пункты меню*/
+  h1, .text, .text_technology, .name_company, .name, .nav-link, .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+  }
   /*заголовки*/
   h1 {
-    color: #a1cbff;
-    text-shadow: 1px 1px 0 #000;
+    color: var(--color_h1);
+    text-shadow: 1px 1px 0 var(--color_text_shadow_h1);
     padding: 3%;
   }
-  h2 {padding-bottom: 3%;}
-  h1,h2 {
+  h2 {
+    padding-bottom: 3%;
+  }
+  h1, h2 {
     margin: var(--center_block);
     text-align: var(--center_text);
   }
-  /*заголовок, все кнопки в меню,блок под логотип*/
-  h1,.navbar .nav-link,.navbar-brand {font-weight: 200;}
-  /*заголовок h2,даты в #About, название*/
-  h2,span,.name {color: var(--color_highlight);}
+  /*заголовок, все кнопки в меню, блок под логотип*/
+  h1, .navbar .nav-link, .navbar-brand {
+    font-weight: 200;
+  }
+  /*заголовок h2, даты в #About, название*/
+  h2, span, .name {
+    color: var(--color_highlight);
+  }
    /*текст, заголовок h2, даты в #About, название*/
-  .text,h2,span,.name {font-weight: 300;}
+  .text, h2, span, .name {
+    font-weight: 300;
+  }
   /*текст, пункты меню, фраза в логотипе*/
-  .nav-link,.navbar-brand {line-height: 1.8rem;}
+  .nav-link, .navbar-brand {
+    line-height: 1.8rem;
+  }
   /*текст, пункты меню, фраза в логотипе,текст для компонента "Мои работы"*/
-  .text,.nav-link,.navbar-brand,.name_company,.name,.text_technology {font-size: 1.15rem;}
+  .text, .nav-link, .navbar-brand, .name_company, .name, .text_technology {
+    font-size: 1.15rem;
+  }
   /*svg в логотипе*/
   #logo {
     width: 60px;
     height: 50px;
   }
   /*меню*/
-  .navbar {padding: 0 14%;}
-  /*все кнопки в меню,блок под логотип*/
-  .navbar .nav-link,.navbar-brand {
-    color: #dedede !important;
+  .navbar {
+    padding: 0 14%;
   }
   /*все кнопки в меню*/
-  .nav-link {padding: 0.5rem 1rem !important;}
+  .nav-link {
+    padding: 0.5rem 1rem !important;
+  }
   /*контейнер, который включает в себя повтор блоков*/
   .flex-container {
     display: flex;
@@ -102,13 +135,21 @@
     background: var(--background_components-odd) !important;
   }
   /*Компоненты - "Ключевые навыки", "Контакты"*/
-  #Skills,#Contacts {background: var(--background_components-even);}
+  #Skills, #Contacts {
+    background: var(--background_components-even);
+  }
   /*Компоненты - "Об мне", "Портфолио"*/
-  #About,#Works {background: var(--background_components-odd);}
-  /*Компоненты - "Об мне","Ключевые навыки", "Портфолио", "Контакты"*/
-  #About, #Skills, #Works, #Contacts {color: var(--color_text);}
+  #About, #Works {
+    background: var(--background_components-odd);
+  }
   /*Компоненты - "Об мне", "Ключевые навыки", "Портфолио", "Контакты"*/
-  #About, #Skills, #Works, #Contacts {padding: 3%;}
+  #About, #Skills, #Works, #Contacts {
+    color: var(--color_text);
+  }
+  /*Компоненты - "Об мне", "Ключевые навыки", "Портфолио", "Контакты"*/
+  #About, #Skills, #Works, #Contacts {
+    padding: 3%;
+  }
   /*Компонент - "Главный"*/
   #Home {
     background: url("../static/background.jpg") no-repeat;
@@ -117,7 +158,9 @@
   /*Компонент - "Об мне"*/
   #About {
     /*бутстрап сетка*/
-    .row {margin: 0 5% 0 8%;}
+    .row {
+      margin: 0 5% 0 8%;
+    }
     /*картинка*/
     img {
       width: 78%;
@@ -148,7 +191,7 @@
       background: var(--background_components-even);
       p {margin-bottom: .2rem;}
       /*при наведении*/
-      &:hover  {
+      &:hover {
         border: var(--border_color_hover);
       }
     }
@@ -166,7 +209,7 @@
         border-radius: var(--circle);
         width: 12px;
         height: 12px;
-        background: #77a3db;
+        background: var(--background_circle_li);
         content: "";
         left: 0;
         transition: .3s ease-in-out;
@@ -182,11 +225,17 @@
         top: 48px;
       }
       /*свой маркер - кружок, черточки (полосочки)*/
-      &:before, &:after {position: absolute;}
+      &:before, &:after {
+        position: absolute;
+      }
       /*при наведении*/
-      &:hover:before {box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+      &:hover:before {
+        box-shadow: var(--background_circle_li_hover);
+      }
       /*последний элемент*/
-      &:last-child:after {content: var(--none);}
+      &:last-child:after {
+        content: var(--none);
+      }
     }
   }
   /*Компонент - "Ключевые навыки"*/
@@ -227,7 +276,9 @@
       }
     }
     /*svg - express.js*/
-    .express_svg {fill: var(--color-svg-express);}
+    .express_svg {
+      fill: var(--color-svg-express);
+    }
   }
   /*Компонент - "Портфолио"*/
   #Works {
@@ -245,19 +296,27 @@
         position: relative;
         border-radius: 7px;
         /*картинки*/
-        img {filter: brightness(94%);}
+        img {
+          filter: brightness(94%);
+        }
         /*при наведении*/
         &:hover {
           transform: scale(1.01);
           border: var(--border_color_hover);
           /*картинки*/
-          img {filter: brightness(50%);}
+          img {
+            filter: brightness(50%);
+          }
           /*блок с ссылками на проект*/
-          .link_work {display: block;}
+          .link_work {
+            display: block;
+          }
         }
       }
       /*блок с ссылками на проект, текст технологии*/
-      .link_work,.text_technology {position: absolute;}
+      .link_work, .text_technology {
+        position: absolute;
+      }
       /*блок с ссылками на проект*/
       .link_work {
         display: var(--none);
@@ -288,7 +347,7 @@
         width: 50px;
         height: 50px;
         margin: 2%;
-        background: rgba(222, 222, 222, 0.6);
+        background: var(--svg_background_works);
         padding: 3%;
         border-radius: var(--circle);
         cursor: var(--cursor_pointer);
@@ -363,12 +422,18 @@
           align-items: center;
         }
         /*текст*/
-        .text {margin: 0;}
+        .text {
+          margin: 0;
+        }
       }
     }
     /*цвет svg*/
-    .svg_color {fill: var(--color_highlight);}
-    .svg_color1 {fill: #1a4376;}
+    .svg_color {
+      fill: var(--svg_color_contract_1);
+    }
+    .svg_color1 {
+      fill: var(--svg_color_contract_2);
+    }
   }
   /*Компонент - "Футер"*/
   #Myfooter {
@@ -389,7 +454,7 @@
       /*svg*/
       svg {
         width: 30px;
-        border: 1px solid #dedede;
+        border: 1px solid var(--border-color-svg-footer);
         height: 30px;
         border-radius: var(--circle);
         padding: 4%;
@@ -399,37 +464,53 @@
         transform: scale(1.09);
       }
     }
-    .svg_color {fill: #ffffff;}
-    .svg_color1 {fill: #868080;}
+    .svg_color {
+      fill: var(--svg_color_footer_1);
+    }
+    .svg_color1 {
+      fill: var(--svg_color_footer_2);
+    }
   }
 
    /***********************АДАПТИВНОСТЬ******************/
   @media screen and (max-width: 350px) {
     /*текст технологии, текст, пункты меню*/
-    .text_technology, .text,.nav-link, .navbar-brand {
+    .text_technology, .text, .nav-link, .navbar-brand {
       font-size: 1rem !important;
       line-height: 1rem !important;
     }
     /*Компонент - "Ключевые навыки"*/
     #Skills {
       /*блоки под svg и название*/
-      .flex-container > div {width: 35% !important;}
+      .flex-container > div {
+        width: 35% !important;
+      }
     }
     /*Компонент - "Контакты"*/
     #Contacts {
       /*сетка бутстрап*/
-      .row {padding: 0 !important;}
+      .row {
+        padding: 0 !important;
+      }
     }
   }
   @media screen and (max-width: 500px) {
     /*Компоненты - "Об мне", "Ключевые навыки", "Портфолио", "Контакты"*/
-    #About, #Skills, #Works, #Contacts {padding: 6% 3%;}
+    #About, #Skills, #Works, #Contacts {
+      padding: 6% 3%;
+    }
     /*меню*/
-    .navbar {padding: 0 2%;}
+    .navbar {
+      padding: 0 2%;
+    }
     /*заголовок*/
-    h1,h2 {font-size: 1.4rem !important;}
+    h1, h2 {
+      font-size: 1.4rem !important;
+    }
     /*Компоненты - "Об мне", "Ключевые навыки","Портфолио","Контакты"*/
-    #About, #Skills, #Works, #Contacts {padding: 1rem 0;}
+    #About, #Skills, #Works, #Contacts {
+      padding: 1rem 0;
+    }
     /*текст технологии, текст, пункты меню, название*/
     .text_technology, .name, .text, .nav-link, .navbar-brand, #Works .flex-container .text, #About .name {
       font-size: 1rem;
@@ -438,14 +519,20 @@
     /*Компонент - "Главный"*/
     #Home {
       /*фраза-Junior Frontend-разработчик*/
-      .front {font-size: 1.7rem;}
+      .front {
+        font-size: 1.7rem;
+      }
     }
     /*Компонент - "Об мне"*/
     #About {
       /*список*/
-      ul {margin-left: -4.2rem !important;}
+      ul {
+        margin-left: -4.2rem !important;
+      }
       /*пункты списка*/
-      ul li {padding: 5px 0 5px 40px;}
+      ul li {
+        padding: 5px 0 5px 40px;
+      }
       /*сетка бутстрап*/
       .row {
         flex-direction: column;
@@ -458,16 +545,22 @@
             margin: 0 30% 0;
           }
           /*имя*/
-          .name {padding: 2% 0 6%;}
+          .name {
+            padding: 2% 0 6%;
+          }
         }
       }
     }
     /*Компонент - "Ключевые навыки"*/
     #Skills {
       /*блок под svg и название*/
-      .flex-container {margin: 0 .5%;}
+      .flex-container {
+        margin: 0 .5%;
+      }
       /*блоки под svg и название*/
-      .flex-container  > div {width: 28%;}
+      .flex-container  > div {
+        width: 28%;
+      }
       /*svg навыков (языков, фреймворков, ..)*/
       svg {
         width: 55px;
@@ -482,7 +575,9 @@
         padding: 2.5%;
         margin: 0 2% 4%;
         /*текст технологии*/
-        .text_technology {top: 170px;}
+        .text_technology {
+          top: 170px;
+        }
         /*картинки*/
         img {
           width: var(--percent100);
@@ -506,7 +601,9 @@
           }
         }
         /*сетка бутстрап*/
-        .row {padding: 0 5%;}
+        .row {
+          padding: 0 5%;
+        }
       }
     }
     /*Компонент - "Футер"*/
@@ -527,18 +624,24 @@
   }
   @media screen and (min-width: 500px)and (max-width: 768px) {
     /*меню*/
-    .navbar {padding: 0 2%;}
+    .navbar {
+      padding: 0 2%;
+    }
     /*заголовки*/
-    h1, h2 {font-size: 1.4rem !important;}
+    h1, h2 {
+      font-size: 1.4rem !important;
+    }
     /*текст дтехнологии, текст, пункты меню*/
-    .text_technology, .text,.nav-link,.navbar-brand {
+    .text_technology, .text, .nav-link, .navbar-brand {
       font-size: 1.1rem;
       line-height: 1.25rem;
     }
     /*Компонент - "Об мне"*/
     #About {
       /*пункты списка*/
-      ul li {padding: 5px 0 5px 40px;}
+      ul li {
+        padding: 5px 0 5px 40px;
+      }
       /*сетка бутстрап*/
       .row {
         flex-direction: column;
@@ -551,16 +654,22 @@
             margin: 0 30% 0;
           }
           /*имя*/
-          .name {padding: 2% 0 6%;}
+          .name {
+            padding: 2% 0 6%;
+          }
         }
       }
     }
     /*Компонент - "Ключевые навыки"*/
     #Skills {
       /*блок под svg и название*/
-      .flex-container {margin: 0 .5%;}
+      .flex-container {
+        margin: 0 .5%;
+      }
       /*блоки под svg и название*/
-      .flex-container  > div {width: 16%;}
+      .flex-container  > div {
+        width: 16%;
+      }
       /*svg навыков (языков, фреймворков, ..)*/
       svg {
         width: 55px;
@@ -575,7 +684,9 @@
         padding: 2%;
         margin: 0 2% 4%;
         /*текст технологии*/
-        .text_technology {top: 210px;}
+        .text_technology {
+          top: 210px;
+        }
       }
     }
     /*Компонент - "Контакты"*/
@@ -612,9 +723,13 @@
     }
   }
   @media screen and (min-width: 768px)and (max-width: 992px) {
-    .navbar {padding: 0 5%;}
+    .navbar {
+      padding: 0 5%;
+    }
     /*текст технологии, текст, пункты меню*/
-    .text_technology,.text,.nav-link,.navbar-brand {line-height: 1.25rem;}
+    .text_technology, .text, .nav-link, .navbar-brand {
+      line-height: 1.25rem;
+    }
     /*Компонент - "Об мне"*/
     #About {
       /*сетка бутстрап*/
@@ -629,16 +744,22 @@
             margin: 0 30% 0;
           }
           /*имя*/
-          .name {padding: 2% 0 4%;}
+          .name {
+            padding: 2% 0 4%;
+          }
         }
       }
     }
     /*Компонент - "Ключевые навыки"*/
     #Skills {
       /*блок под svg и название*/
-      .flex-container {margin: 0 .5%;}
+      .flex-container {
+        margin: 0 .5%;
+      }
       /*блоки под svg и название*/
-      .flex-container  > div {width: 12.5%;}
+      .flex-container  > div {
+        width: 12.5%;
+      }
       /*svg навыков (языков, фреймворков, ..)*/
       svg {
         width: 60px;
@@ -652,7 +773,9 @@
         width: 47.5%;
         margin: 0 1.2% 2.3%;
         /*текст технологии*/
-        .text_technology {top: 150px;}
+        .text_technology {
+          top: 150px;
+        }
       }
     }
     /*Компонент - "Контакты"*/
@@ -676,15 +799,23 @@
     #Myfooter {
       padding: 1.5% 5%;
       /*блок с svg*/
-      .svgFooter {width: 25%;}
+      .svgFooter {
+        width: 25%;
+      }
     }
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .navbar {padding: 0 7%;}
+    .navbar {
+      padding: 0 7%;
+    }
     /*текст, пункты меню, фраза в логотипе по всей странице*/
-    .text,.nav-link, .navbar-brand {line-height: 1.4rem;}
-    /* текст, пункты меню, название компании, имя, текст технологии,*/
-    .text, .nav-link, .navbar-brand, .name_company, .name, .text_technology {font-size: 1.1rem;}
+    .text, .nav-link, .navbar-brand {
+      line-height: 1.4rem;
+    }
+    /* текст, пункты меню, название компании, имя, текст технологии */
+    .text, .nav-link, .navbar-brand, .name_company, .name, .text_technology {
+      font-size: 1.1rem;
+    }
     /*Компонент - "Ключевые навыки"*/
     #Skills {
       /*svg навыков (языков, фреймворков, ..)*/
@@ -696,7 +827,9 @@
     /*Компонент - "Портфолио"*/
     #Works {
       /*текст технологии*/
-      .flex-container .text_technology {top: 130px;}
+      .flex-container .text_technology {
+        top: 130px;
+      }
     }
     /*Компонент - "Контакты"*/
     #Contacts {
@@ -714,7 +847,9 @@
     #Myfooter {
       padding: 1.5% 7%;
       /*блок с svg*/
-      .svgFooter {width: 20%;}
+      .svgFooter {
+        width: 20%;
+      }
     }
   }
 </style>

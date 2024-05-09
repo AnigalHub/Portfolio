@@ -1,5 +1,19 @@
 :root{
+  --background_navbar_footer: #030407;
+  --color_navbar_footer: #dedede;
+  --background_switch_active: #335988;
+  --background_switch: #4d617a;
+  --color_h1: #a1cbff;
+  --color_text_shadow_h1: #000;
+  --background_circle_li: #77a3db;
+  --background_circle_li_hover: 0 0 0 10px rgba(0,0,0,.2);
   --color_highlight: #5584bf;
+  --svg_background_works: rgba(222, 222, 222, 0.6);
+  --svg_color_contract_1: #5584bf;
+  --svg_color_contract_2: #1a4376;
+  --svg_color_footer_1: #ffffff;
+  --svg_color_footer_2: #868080;
+  --border-color-svg-footer: #dedede;
   --cursor_pointer: pointer;
   --cursor_default: default;
   --circle: 50%;
@@ -16,10 +30,8 @@
   --background_components-odd: #f4f4f4;
   --color_text: black;
   --color-a: #afadad;
-
   --background_svg:hsla(0, 0%, 100%, .2);
   --color-svg-express: #000;
-
   --border_color: 1px solid rgba(0, 0, 0, 0.18);
   --border_color_hover: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -28,10 +40,8 @@
   --background_components-odd: #090c13;
   --color_text: #afadad;
   --color-a: #afadad;
-
   --background_svg: #111623;
   --color-svg-express: #afadad;
-
   --border_color: 1px solid rgba(255, 255, 255, 0.12);
   --border_color_hover: 1px solid rgba(255, 255, 255, 0.45);
 }
