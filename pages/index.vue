@@ -61,13 +61,29 @@
   }
   /*активный свич смены темы*/
   .custom-control-input:checked ~ .custom-control-label::before {
-    border-color: var(--background_switch_active);
+    border-color: var(--background_switch_active) !important;
     background-color: var(--background_switch_active);
   }
   /*пассивный свич смены темы*/
   .custom-switch .custom-control-label::before{
-    border-color: var(--background_switch);
+    border-color: var(--background_switch) !important;
     background-color: var(--background_switch);
+  }
+  /*пассивный свич - луна*/
+  .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    content: '🌙 ';
+    background-color: transparent;
+    margin-top: -9px;
+    margin-left: -5px;
+    font-size: 1rem;
+  }
+  /*активный свич - солнышко*/
+  .custom-switch .custom-control-label::after{
+    content: '☀️';
+    background-color: transparent;
+    margin-top: -9px;
+    margin-left: -5px;
+    font-size: 1rem;
   }
   /*свич смены темы*/
   .custom-switch {
@@ -127,7 +143,7 @@
   }
   /*все кнопки в меню*/
   .nav-link {
-    padding: 0.5rem 1rem !important;
+    padding: .5rem .7rem !important;
   }
   /*контейнер, который включает в себя повтор блоков*/
   .flex-container {
@@ -853,6 +869,18 @@
       .svgFooter {
         width: 20%;
       }
+    }
+  }
+  @media screen and (max-width: 1200px){
+    /*пассивный свич - луна*/
+    .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+      margin-top: -5px;
+      margin-left: -5px;
+    }
+    /*активный свич - солнышко*/
+    .custom-switch .custom-control-label::after{
+      margin-top: -5px;
+      margin-left: -5px;
     }
   }
 </style>
