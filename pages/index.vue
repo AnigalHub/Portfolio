@@ -59,14 +59,17 @@
   .navbar a {
     color: var(--color-a) !important;
   }
+  /*активный свич смены темы*/
   .custom-control-input:checked ~ .custom-control-label::before {
     border-color: var(--background_switch_active);
     background-color: var(--background_switch_active);
   }
+  /*пассивный свич смены темы*/
   .custom-switch .custom-control-label::before{
     border-color: var(--background_switch);
     background-color: var(--background_switch);
   }
+  /*свич смены темы*/
   .custom-switch {
     padding-left: 3rem;
     padding-top: .8rem;
@@ -103,7 +106,7 @@
   }
    /*текст, заголовок h2, даты в #About, название*/
   .text, h2, span, .name {
-    font-weight: 300;
+    font-weight: 300 !important;
   }
   /*текст, пункты меню, фраза в логотипе*/
   .nav-link, .navbar-brand {

@@ -1,47 +1,46 @@
 :root{
-  --background_navbar_footer: #030407;
-  --color_navbar_footer: #dedede;
-  --background_switch_active: #335988;
-  --background_switch: #4d617a;
-  --color_h1: #a1cbff;
-  --color_text_shadow_h1: #000;
-  --background_circle_li: #77a3db;
-  --background_circle_li_hover: 0 0 0 10px rgba(0,0,0,.2);
-  --color_highlight: #5584bf;
-  --svg_background_works: rgba(222, 222, 222, 0.6);
-  --svg_color_contract_1: #5584bf;
-  --svg_color_contract_2: #1a4376;
-  --svg_color_footer_1: #ffffff;
-  --svg_color_footer_2: #868080;
-  --border-color-svg-footer: #dedede;
-  --cursor_pointer: pointer;
-  --cursor_default: default;
-  --circle: 50%;
-  --center_block: 0 auto;
-  --center_text: center;
-  --percent100: 100%;
-  --font-weight400: 400;
-  --font-weight500: 500;
-  --none:none;
-
+  --background_navbar_footer: #030407; /*фон шапки и футера*/
+  --color_navbar_footer: #dedede; /*цвет текста в шапке и футере*/
+  --background_switch_active: #335988; /*цвет свича при нажатии*/
+  --background_switch: #4d617a; /*цвет свича*/
+  --color_h1: #a1cbff; /*цвет заголовка h1*/
+  --color_text_shadow_h1: #000; /*тень заголовка h1*/
+  --background_circle_li: #77a3db; /*цвет списка (кружочков)*/
+  --background_circle_li_hover: 0 0 0 10px rgba(0,0,0,.2);  /*цвет списка (кружочков) при наведении*/
+  --color_highlight: #5584bf; /*цвет выделенного текста*/
+  --svg_background_works: rgba(222, 222, 222, 0.6); /*цвет svg в компоненте Работы*/
+  --svg_color_contract_1: #5584bf; /*цвет-1 svg в компоненте Контакты*/
+  --svg_color_contract_2: #1a4376; /*цвет-2 svg в компоненте Контакты*/
+  --svg_color_footer_1: #ffffff; /*цвет-1 svg в компоненте Футер*/
+  --svg_color_footer_2: #868080; /*цвет-2 svg в компоненте Футер*/
+  --border-color-svg-footer: #dedede; /*цвет границ svg в компоненте Футер*/
+  --cursor_pointer: pointer; /*указатель*/
+  --cursor_default: default; /*стрелка*/
+  --circle: 50%; /*закругленность*/
+  --center_block: 0 auto; /*отцентрированность блока*/
+  --center_text: center; /*отцентрированность текста*/
+  --percent100: 100%; /*100%*/
+  --font-weight400: 400; /*жирность текста 400*/
+  --font-weight500: 500; /*жирность текста 500*/
+  --none: none; /*скрытие (не показывать)*/
 }
 .light{
-  --background_components-even: white;
-  --background_components-odd: #f4f4f4;
-  --color_text: black;
-  --color-a: #afadad;
-  --background_svg:hsla(0, 0%, 100%, .2);
-  --color-svg-express: #000;
-  --border_color: 1px solid rgba(0, 0, 0, 0.18);
-  --border_color_hover: 1px solid rgba(0, 0, 0, 0.4);
+  --background_components-even: white; /*фон для четных компонентов*/
+  --background_components-odd: #f4f4f4; /*фон для нечетных компонентов*/
+  --color_text: black; /*цвет текста*/
+  --color-a: #afadad; /*цвет ссылок*/
+  --background_svg: hsla(0, 0%, 100%, .2); /*фон svg*/
+  --color-svg-express: #000; /*цвет текста у svg Express.js*/
+  --border_color: 1px solid rgba(0, 0, 0, 0.18); /*цвет границ*/
+  --border_color_hover: 1px solid rgba(0, 0, 0, 0.4); /*цвет границ при наведении*/
 }
 .dark{
-  --background_components-even: #0c111c;
-  --background_components-odd: #090c13;
-  --color_text: #afadad;
-  --color-a: #afadad;
-  --background_svg: #111623;
-  --color-svg-express: #afadad;
-  --border_color: 1px solid rgba(255, 255, 255, 0.12);
-  --border_color_hover: 1px solid rgba(255, 255, 255, 0.45);
+  --background_components-even: #0c111c; /*фон для четных компонентов*/
+  --background_components-odd: #090c13;/*фон для нечетных компонентов*/
+  --color_text: #afadad; /*цвет текста*/
+  --color-a: #afadad; /*цвет ссылок*/
+  --background_svg: #111623; /*фон svg*/
+  --color-svg-express: #afadad; /*цвет текста у svg Express.js*/
+  --border_color: 1px solid rgba(255, 255, 255, 0.12); /*цвет границ*/
+  --border_color_hover: 1px solid rgba(255, 255, 255, 0.45); /*цвет границ при наведении*/
 }
