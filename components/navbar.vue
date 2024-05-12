@@ -9,7 +9,7 @@
             </a>
           </div>
           <div>
-            <b-form-checkbox switch @change="changeTheme"/>
+            <b-form-checkbox switch :checked="isDarkTheme" @change="changeTheme"/>
           </div>
         </div>
       </b-navbar-brand>
@@ -38,6 +38,11 @@
       return {
         isExpanded: false,
       }
+    },
+    computed:{
+      isDarkTheme(){
+        return this.$store.getters['Themes/CurrentTheme'] === 'dark'
+      },
     },
     methods:{
       changeTheme(){

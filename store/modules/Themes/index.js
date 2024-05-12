@@ -10,8 +10,8 @@ export const Themes = {
   },
   actions: {
     changeTheme(ctx){
-      ctx.state.types.push(ctx.state.types.shift())
-      ctx.state.currentTheme = ctx.state.types[0].type;
+      const nextTheme = ctx.state.types.find(x=>x.type !== ctx.state.currentTheme)
+      ctx.state.currentTheme = nextTheme.type;
     },
     setTheme(ctx, theme){
       ctx.state.currentTheme = theme;
