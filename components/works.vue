@@ -42,7 +42,7 @@
             name_company:'«Промэлектронсервис»',
             technology:'HTML & CSS & Bootstrap',
             git:'https://github.com/AnigalHub/Promelectronservice',
-            show:'http://promelektronservis.ru/',
+            show:'http://pes.company/index.html',
             about:'Сайт сертификационных испытаний и комплексной поставки электронных компонентов.'
           },
           {
